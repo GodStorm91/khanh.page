@@ -1,12 +1,5 @@
 @extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="{{ $page->siteName }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="{{ $page->blogDescription }}" />
-@endpush
-
 @section('body')
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
@@ -24,9 +17,9 @@
                 </a>
             </h2>
 
-            <p class="mt-0 mb-4">{!! $featuredPost->excerpt() !!}</p>
+            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}"class="uppercase tracking-wide mb-4">
+            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
                 Read
             </a>
         </div>

@@ -787,6 +787,16 @@ pre code {
   padding: 0;
 }
 
+::-moz-selection {
+  background-color: #3490dc;
+  color: #fff;
+}
+
+::selection {
+  background-color: #3490dc;
+  color: #fff;
+}
+
 .nav-menu {
   background-color: #ecf0f3;
   padding-bottom: .5rem;
