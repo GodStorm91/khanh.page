@@ -8,35 +8,52 @@ description: Mailchimp newsletter signups, just add a url.
 cover_image: /assets/img/post-cover-image-1.png
 ---
 
-[Mailchimp](https://mailchimp.com/) is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.
+# A sample Markdown document
 
-To begin accepting subscribers, simply add your list URL to the form `action` in the `source/_components/newsletter-signup.blade.php` file.
+This is a sample document so you can preview the color themes.
 
-```html
-<!-- source/_components/newsletter-signup.blade.php -->
+## I am a second-level header
 
-<div id="mc_embed_signup">
-    <form action="https://your-mail-chimp-list-manage-url" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-            <h2>Sign up for newsletter</h2>
-            <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address </label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
-            </div>
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+Markdown supports _italics_, __bold__, and ___bold italics___ style.
 
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-</div>
+There are also inline styles like `inline code in monospace font` and ~~strikethrough style~~. __There may be ~~strikethroughed text~~ or `code text` inside bold text.__ _And There may be ~~strikethroughed text~~ or `code text` inside italic text._
+
+To reference something from a URL, [Named Links][links] and [Inline links](https://example.com/index.html) are of great help. Sometimes ![A picture][sample image] is worth a thousand words.
+
+There are two types of lists, numbered and unnumbered.
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+* Item A
+    - Sub list
+        + Sub sub list
+        + Sub sub list 2
+    - Sub list 2
+* Item B
+* Item C
+
+## Fenced code
+
+You can write fenced code inside three backticks.
+
+```javascript
+function fibo(n) {
+    fibo.mem = fibo.mem || []; // I am some comment
+    return fibo.mem[n] || fibo.mem[n] = n <= 1 ? 1 : fibo(n - 1) + fibo(n - 2);
+}
 ```
 
-### Example
+## The following section is used to define named links
 
-<img src="/assets/img/newsletter.png">
+[links]: https://example.com/index.html
+[sample image]: https://example.com/sample.png
 
-[See how to get your Mailchimp list URL.](https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form)
+## Wiki links
+
+This [[SamplePage]] is a wiki link
+
+---
+
+

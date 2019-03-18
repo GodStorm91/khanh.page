@@ -48,4 +48,9 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+    'getPostsByTag' => function ($page, $posts) {
+        return $posts->filter(function ($post) use ($page) {
+            return in_array($page->tag, $post->tags ?? []);
+        });
+    },
 ];

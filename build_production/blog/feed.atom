@@ -1,21 +1,105 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Blog Starter Template</title>
+    <title>Khanh&#039;s Blog</title>
     <link href="https://my-jigsaw-blog.com" />
     <link type="application/atom+xml" rel="self" href="https://my-jigsaw-blog.com/blog/feed.atom" />
-    <updated>2019-02-12T12:43:50+00:00</updated>
+    <updated>2019-03-02T13:54:14+00:00</updated>
     <id>https://my-jigsaw-blog.com/blog/feed.atom</id>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
                 <entry>
+    <id>https://my-jigsaw-blog.com/blog/my-first-blog-post</id>
+    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/my-first-blog-post" />
+    <title>Tôi đã start cái blog này như thế nào ?</title>
+    <published>2019-03-23T00:00:00+00:00</published>
+    <updated>2019-03-23T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: https://nech.info
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này......</summary>
+    <content type="html"><![CDATA[
+        <p>Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: <a href="https://nech.info">https://nech.info</a>
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này</p>
+<p><a href="https://jigsaw.tighten.co/">https://jigsaw.tighten.co/</a></p>
+<h2>Đôi điều về jigsaw</h2>
+<p>Jigsaw là một tools để generate html static pages, tạm dịch là trang tĩnh HTML, mà cái gì là static thì nhanh nhất rồi đấy.</p>
+<h2>Cấu trúc server</h2>
+<p>Trang web này mình tạo bao gồm các components sau:</p>
+<ol>
+<li>S3: tất cả những bài post này đều được viết dưới dạng markdown, và build thành static HTML rồi up lên S3</li>
+<li>CloudFront: Dùng để cache resources vào các Edges để tăng tốc độ load trang </li>
+<li>Goofys: Dùng để mount thư mục build lên S3</li>
+</ol>
+<p><img src="/assets/img/blog.khanh.page.png" alt="infrastructure" /></p>
+<h2>Đôi điều suy nghĩ</h2>
+<p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://my-jigsaw-blog.com/blog/php-serverless-with-bref</id>
+    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/php-serverless-with-bref" />
+    <title>Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+    <published>2019-03-04T00:00:00+00:00</published>
+    <updated>2019-03-04T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) Is it......</summary>
+    <content type="html"><![CDATA[
+        <h2>Mở đầu</h2>
+<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
+<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
+<ul>
+<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
+<ul>
+<li>Tách lớp</li>
+<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
+<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
+</ul></li>
+<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
+</ul>
+<h2>Bref là gì</h2>
+<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
+Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
+<ul>
+<li>PHP Runtimes cho AWS Lambda</li>
+<li>Công cụ để Deploy lên aws lambda </li>
+<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
+</ul>
+<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
+<h3>Bref hoạt động như thế nào</h3>
+<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
+<h4>Stacks</h4>
+<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
+<ul>
+<li>lambda functions</li>
+<li>S3 bucket</li>
+<li>databases</li>
+</ul>
+<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
+<h4>SAM</h4>
+<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
+Deploying sử dụng SAM thì bao gồm 3 steps</p>
+<ul>
+<li>Upload code lên S3 bucket</li>
+<li>Generate một file S3 Config template</li>
+<li>Deploy Cloudformation stack</li>
+</ul>
+<h3>Deploy với SAM</h3>
+<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
+</entry>
+            <entry>
     <id>https://my-jigsaw-blog.com/blog/getting-started</id>
     <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/getting-started" />
     <title>Getting Started</title>
     <published>2018-12-25T00:00:00+00:00</published>
     <updated>2018-12-25T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
     <summary type="html">This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.
 
@@ -70,7 +154,7 @@ npm run dev</code></pre>    ]]></content>
     <published>2018-12-24T00:00:00+00:00</published>
     <updated>2018-12-24T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
     <summary type="html">This starter template comes pre-loaded with Tailwind CSS, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the &lt;code&gt;/source/_assets/sass&lt;/code&gt; folder,......</summary>
     <content type="html"><![CDATA[
@@ -128,7 +212,7 @@ npm run dev</code></pre>    ]]></content>
     <published>2018-12-23T00:00:00+00:00</published>
     <updated>2018-12-23T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
     <summary type="html">This starter template includes a custom 404 Not Found error page, located at &lt;code&gt;/source/404.blade.php&lt;/code&gt;. To preview the 404 page, you can visit &lt;code&gt;/404&lt;/code&gt; in your browser.
 
@@ -163,7 +247,7 @@ Depending on where your site is hosted, you may need to configure......</summary
     <published>2018-12-22T00:00:00+00:00</published>
     <updated>2018-12-22T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
     <summary type="html">To provide fast, local search of your blog, this starter template comes with a pre-built Vue.js component that uses Fuse.js. Fuse.js is a &amp;quot;lightweight fuzzy-search library with no dependencies.&amp;quot; It works by running queries against a JSON index......</summary>
     <content type="html"><![CDATA[
@@ -178,7 +262,7 @@ Depending on where your site is hosted, you may need to configure......</summary
     <published>2018-11-21T00:00:00+00:00</published>
     <updated>2018-11-21T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
     <summary type="html">Mailchimp is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.
 To begin accepting......</summary>
@@ -208,18 +292,5 @@ To begin accepting......</summary>
 <h3>Example</h3>
 <img src="/assets/img/newsletter.png">
 <p><a href="https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form">See how to get your Mailchimp list URL.</a></p>    ]]></content>
-</entry>
-            <entry>
-    <id>https://my-jigsaw-blog.com/blog/my-first-blog-post</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/my-first-blog-post" />
-    <title>My First Blog Post</title>
-    <published>2017-03-23T00:00:00+00:00</published>
-    <updated>2017-03-23T00:00:00+00:00</updated>
-    <author>
-        <name>Author Name</name>
-    </author>
-    <summary type="html">This is the start of your first blog post....</summary>
-    <content type="html"><![CDATA[
-        <p>This is the start of your first blog post.</p>    ]]></content>
 </entry>
     </feed>
