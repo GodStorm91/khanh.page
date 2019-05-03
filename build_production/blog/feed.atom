@@ -1,46 +1,358 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Khanh&#039;s Blog</title>
-    <link href="https://my-jigsaw-blog.com" />
-    <link type="application/atom+xml" rel="self" href="https://my-jigsaw-blog.com/blog/feed.atom" />
-    <updated>2019-03-02T13:54:14+00:00</updated>
-    <id>https://my-jigsaw-blog.com/blog/feed.atom</id>
+    <link href="https://blog.khanh.page" />
+    <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
+    <updated>2019-04-01T09:33:19+00:00</updated>
+    <id>https://blog.khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
-    <id>https://my-jigsaw-blog.com/blog/my-first-blog-post</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/my-first-blog-post" />
-    <title>Tôi đã start cái blog này như thế nào ?</title>
-    <published>2019-03-23T00:00:00+00:00</published>
-    <updated>2019-03-23T00:00:00+00:00</updated>
+    <id>https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
+    <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
     <author>
         <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: https://nech.info
-Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
-Nên mình đã chuyển qua dùng cái này......</summary>
+    <summary type="html">Nhân ngày cuối tuần rảnh rỗi chờ đồ đang giặt, mình sẽ viết vài dòng về quyển sách này, mình nghĩ đây thực sự là một quyển sách rất đáng đọc cho những người muốn xây dựng một tổ chức hay......</summary>
     <content type="html"><![CDATA[
-        <p>Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: <a href="https://nech.info">https://nech.info</a>
-Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
-Nên mình đã chuyển qua dùng cái này</p>
-<p><a href="https://jigsaw.tighten.co/">https://jigsaw.tighten.co/</a></p>
-<h2>Đôi điều về jigsaw</h2>
-<p>Jigsaw là một tools để generate html static pages, tạm dịch là trang tĩnh HTML, mà cái gì là static thì nhanh nhất rồi đấy.</p>
-<h2>Cấu trúc server</h2>
-<p>Trang web này mình tạo bao gồm các components sau:</p>
+        <p>Nhân ngày cuối tuần rảnh rỗi chờ đồ đang giặt, mình sẽ viết vài dòng về quyển sách này, mình nghĩ đây thực sự là một quyển sách <em>rất đáng đọc</em> cho những người muốn xây dựng một tổ chức hay một công ty khởi nghiệp : -)</p>
+<p>Quyển sách bao gồm 9 phần như bên dưới</p>
 <ol>
-<li>S3: tất cả những bài post này đều được viết dưới dạng markdown, và build thành static HTML rồi up lên S3</li>
-<li>CloudFront: Dùng để cache resources vào các Edges để tăng tốc độ load trang </li>
-<li>Goofys: Dùng để mount thư mục build lên S3</li>
+<li>Từ chủ nghĩa cộng sản tới nhà đầu tư mạo hiểm</li>
+<li>“Tôi sẽ tồn tại”</li>
+<li>Cảm xúc với khoảng thời gian</li>
+<li>Khi tất cả mọi thứ nằm ngoài tầm kiểm soát</li>
+<li>Quan tâm đến : Con người, Sản phẩm và Lợi Nhuận - theo thứ tự như thế</li>
+<li>Để ý tới những vấn đề đang cần được để ý : ))</li>
+<li>Cách dẫn đường ngay cả khi bạn không biết rõ tổ chức sẽ đi về đâu</li>
+<li>Luật đầu tiên của khởi nghiệp : Không có</li>
+<li>Kết thúc của sự bắt đầu.</li>
 </ol>
-<p><img src="/assets/img/blog.khanh.page.png" alt="infrastructure" /></p>
-<h2>Đôi điều suy nghĩ</h2>
-<p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
+<p>Chà có vẻ hơi hàn lâm. Nhưng thôi sau đây mình sẽ viết vài nhận xét của mình.
+Quyển này kể về cái con đường mà Ben Horowitz, và đồng sự của ông đã startup, kể từ lúc ông tốt nghiệp và làm cho Netscape sau đó cùng với bạn ông là Andressen ( giờ mình mới biết bác này là người viết nên Mossaic, tiền thân của các thể loại Web Browser hiện giờ <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)">Mosaic (web browser) - Wikipedia</a>)</p>
+<p>Trong đó ấn tượng, nhất với mình là câu chuyện về làm sản phẩm và cách vượt qua những giai đoạn khó khăn, khi mà CEO là người phải đưa ra quyết định về hướng đi cho công ty dựa trên rất, rất nhiều dữ kiện (và không bao giờ là đủ.)
+Trước tiên, một CEO, cần phải là <em>người định nghĩa sản phẩm</em> vì ?</p>
+<ul>
+<li>“Customer only knows what she thinks she wants based on her experience with the current product”: Chúng ta có thể lắng nghe customer, nhưng việc quyết định các tính năng cần thiết của sản phẩm phải là việc của CEO và cộng sự. </li>
+</ul>
+<p><em>Chương 4</em> là một chương cực hay, chúng ta có thể tham khảo , vì chương này chủ yếu đề cập đến các vấn đề của một startup, ví dụ như : định nghĩa về sự <em>đấu tranh</em> (struggle), một startup luôn luôn phải chống chọi với nó. Struggle không phải là thất bại, nó có thể gây ra sự thất bại (tất nhiên rồi) nhưng đó cũng là nơi bắt đầu của sự <em>Vĩ đại</em>. Tiếp theo nó đề cập đến <em>sự thành thật</em>. Công ty đang khó khăn và bạn phải cho thôi việc hơn 1/2 số nhân viên, tốt thôi, bạn là CEO hãy nói điều đấy với các nhân viên ngay khi bạn đã ra quyết định thôi việc. Nếu là mình, làm việc tại một cty mà cứ nơm nớp nhận mail cho thôi việc thì chắc hiệu suất công việc sẽ giảm, đó là điều chắc chắn.
+Và khi đó, những người quản lý trực tiếp phải là người ra quyết định cho thôi việc cấp dưới của họ. HR chỉ có nhiệm vụ gửi mail, vì chính manager mới là người sâu sát và nắm được nhân viên nào nên đi, nhân viên nào nên ở.
+Một vấn đề mình thấy khá hay nữa là: <em>Giáng cấp</em> : )).  Khi startup có những người bạn thân đã cùng chúng ta startup, từ lúc cty mới có 5 người cho tới khi phát triển lên cả trăm người. Tới một lúc bạn nhận thấy, người bạn đó không còn khả năng điều hành <em>một nhóm lớn tầm 40 người</em>  chẳng hạn. Bạn phải giáng cấp. Làm nó như thế nào, để người bạn kia không cảm thấy bị <em>phản bội</em> hay <em>quê</em> cũng là một chủ đề quan trọng. </p>
+<p><em>Chương 5</em> thiên về phát triển và mở rộng tổ chức, chủ yếu là</p>
+<ul>
+<li>Xây dựng quy trình tuyển dụng, ở đây mình thấy có một bài học khá quý giá tác giả đề cập: <em>Hire for their strength rather than lack of weakness</em>, đại để là tuyển dụng một người mà làm tốt công việc mà họ sẽ làm, thay vì là tuyển một người cái gì cũng làm được nhưng không giỏi xuất sắc cái gì.</li>
+<li>Training nội bộ công ty: Ok, dù là startup nhưng cũng cần phải có training nội bộ, đừng lấy cái cớ là không có thời gian, hay phải ưu tiên cơm áo gạo tiền (nếu thế bạn cần phải quay lại tiêu đề chương 5, xem lại thứ tự ưu tiên. Bên dưới là vài lý do trong sách mình thấy hay
+<ul>
+<li><em>Tăng năng suất</em>:</li>
+<li><em>Giúp có thể đánh giá được chất lượng công việc của nhân viên</em> bạn train một người và xây dựng một bộ quy tắc đánh giá chất lượng, họ sẽ lấy bộ quy tắc làm chuẩn, và sẽ tất cả mọi người sẽ có cùng 1 bộ tiêu chuẩn.</li>
+<li><em>Quản lý chất lượng</em>: nếu không được training về chất lượng (ví dụ như mình làm Software Development, nếu không được training về một bộ Tiêu chuẩn lập trình aka Coding Convention chẳng hạn) mình sẽ code lung tung beng, copy những đoạn code có sẵn, code trên mạng, và cuối cùng, sản phẩm của mình sẽ là một thứ hỗn độn</li>
+<li><em>Giữ chân được nhân viên</em>: thông thường thì nhân viên sẽ có hướng phát triển của riêng họ, và nếu công ty không có training, không giúp nhân viên học được những thứ mới, thì đây cũng sẽ là một lý do để họ rời bỏ.
+Nếu làm tốt những điều trên, đây sẽ là một môi trường tốt để nhân viên làm việc, đa phần mình thấy những công ty trước mình làm (điển hình là cty E+1)  thường mọi người sẽ đấu đá lẫn nhau, đôi khi còn không biết mình vào cty để làm gì, và khi kết thúc công việc họ cũng không có cách nào đo đếm công việc đã hoàn thành chưa, chất lượng là tốt - xấu hay tệ…
+Chương 5 này còn đề cập tới một vấn đề mà mình đã từng trải nghiệm nhưng không biết gọi tên nó là gì : <em>Technical Debt</em>. Thuật ngữ <em>“Technical Debt”</em> hay được dùng trong giới Engineer, ở đó :
+/Chúng ta sẽ mượn thời gian, để viết những đoạn code nhanh và không tốt/ để hoàn thành kịp deadline. Đôi khi mình thấy viết nhanh để kịp deadline là có ý nghĩa, nhưng thường thì đây chỉ là một cách trì hoãn cho những vấn đề lớn hơn sẽ xảy ra sau khi release thôi : ))</li>
+</ul></li>
+</ul>
+<p><em>Chương 6</em> thiên về vận hành tổ chức và khi startup đã đi vào quỹ đạo,lúc này công ty đã không phải ở mức <em>Sống hay Chết</em> mà có khoảng thời gian để phát triển, lúc này chính là những lúc có thể xem là <em>/bình yên trước bão/</em> :)) , vì sắp tới sẽ phải đối diện với </p>
+<ul>
+<li>Chính trị</li>
+<li>Phong quan chức ( hơi giống mấy bộ phim Tàu, kiểu phải có tước hiệu cho từng người trong cty), kiểu này cũng có 2 trường phái
+<ul>
+<li>Không tước hiệu (mọi thứ bình đẳng)</li>
+<li>Chức là free có thể dùng thoải mái và ai cũng có : ))</li>
+</ul></li>
+<li>Văn hoá: cái này được bàn kĩ, mà mình cũng thích suy nghĩ về văn hoá. Vậy thì sẽ có các câu hỏi như :
+<ul>
+<li>Văn hoá là gì ??</li>
+<li>Văn hoá có ảnh hưởng như thế nào với cty ???
+Khi trả lời được các câu hỏi trên, mình mới thấy rằng công ty E+1 đã rất mạnh trong việc build văn hoá, và nhờ bộ văn hoá đó mà công ty có thể sống được với giá trị cốt lõi của nó đưa ra (tuy nhiên mình không nghĩ bộ văn hoá của công ty E+1 là phù hợp với mình ). Dù sao đi nữa, nếu đã đạt đến một mức độ thành công nhất định, sẽ thật là đau khổ khi không thấy văn hoá của cty đâu…(aka còn gọi là công ty giàu nhưng vô văn hoá : )) trọc phú chẳng hạn… ) </li>
+</ul></li>
+</ul>
+<p><em>Chương 7</em> đề cập đến công việc của một CEO một cách trần trụi và rõ ràng nhất : “<em>Ra quyết định</em>”.  Thật sự thì có cả tỉ thứ CEO phải ra quyết định từ việc nội bộ như : thuê ai , không thuê ai, cấu trúc hệ thống như nào, lương thưởng cho đến nhận đầu tư hay không nhận, bán mua công ty….
+Tất nhiên là có những lúc stress, nhưng CEO thành công là những người vượt qua được và “<em>đối diện với nỗi đau</em>” (và tất nhiên vì đối diện được nên họ cũng rất dũng cảm nữa :D ).
+Và, không ai sinh ra là một CEO cả, CEO là một ngành không thuộc về tài năng, nó thuộc về nỗ lực và sự học hỏi, đôi khi còn phải có dũng cảm nữa.
+<em>CEO are made not born</em>. </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/php-serverless-with-bref</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/php-serverless-with-bref" />
+    <id>https://blog.khanh.page/blog/what-i-read-napoleon-a-life</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-napoleon-a-life" />
+    <title>What I read - Napoleon</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Hôm nay tự nhiên nghe bài Cát bụi của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là Napoleon
+Trước giờ mình toàn......</summary>
+    <content type="html"><![CDATA[
+        <p>Hôm nay tự nhiên nghe bài <strong>Cát bụi</strong> của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là <strong>Napoleon</strong></p>
+<p>Trước giờ mình toàn đọc về <strong>Napoleon</strong> thông qua các quyển sách kiểu tuyển tập, hay <em>Thập đại tùng thư</em> chưa bao giờ đọc một quyển kiểu về cuộc đời, như thế này (đa phần các quyển lịch sử của mình đọc ngày xưa cũng nói vế các sự kiện, mà trong đó con người nhân vật thường không được miêu tả một cách rõ ràng nhất.)</p>
+<p>Quyển sách này do tác giả <strong>Andrew Roberts</strong> một nhà lịch sử người Anh (trớ trêu là ngày xưa người ghét <em>Napoleon</em> nhất lại là người Anh) lại viết về Napoleon, và hơn hết quyển sách này cho thấy một Napoleon rất khác những cuốn trước mà mình đã đọc, nó nhắc đến <strong>cuộc đời của Napoleon</strong> chứ không phải là <strong>Napoleon's Wars</strong> hay <strong>Campaign</strong>.</p>
+<p>Ít người biết rằng <strong>Napoleon không phải là người Pháp</strong>. Khó có thể nói ông thuộc Pháp Quốc, vì đảo Corsica ban đầu thuộc về Italy và tổ tiên của Napoleon cũng có gốc là người Ý chứ không phải nguòi Pháp. Napoleon có một cuộc sống khá nghèo, với ông bố nợ nần, nhưng lại <strong>có một người mẹ cực kì tốt</strong>, trong cuốn hồi kí còn đề cập đến một câu nói cực kì hữu thú vị, lúc đó Napoleon đã trở thành vua của nước Pháp. Đại để là một lần, khi thấy số tiền mà Napoleon cấp dưỡng cho bà, nhưng bà không dùng đến, Napoleon đã đến và hỏi bà và nhận được câu trả lời: <em>&quot;Ta tiết kiệm số tiền này, vì biết đâu có khi đám con Nữ Hoàng, Hoàng Đế của ta lại sẽ có lúc dùng đến&quot;</em>, và lời tiên liệu của bà không sai, vài năm sau bà đã có dịp dùng đến số tiền đó, khi Napoleon bị đày sang đảo Elba.</p>
+<p><strong>Napoleon cực kì chăm đọc sách</strong>, và sách mà ông đọc là sách lịch sử, về các vị tướng quân, ông cũng đọc các sử thi, anh hùng ca, mình nghĩ chính những sách lịch sử này đã làm dậy lên trong ông tinh thần quốc gia, và yêu nước. Chính vì thế ngay cả khi xin vào học trường sĩ quan pháo binh, ông cũng rất chăm chỉ đọc sách, đến nỗi nhà chỉ có mỗi cái ghế, giường, còn lại là sách.
+Có thể nói nghịch cảnh từ nhỏ đã tạo cho Napoleon được một đức tính khá có ích là <strong>Tiết kiệm</strong> nhờ thế mà ở chiến dịch làm nên tên tuổi của mình, ông đã có thể phát huy được nó, và làm cho nên một trận Toulon lịch sử, để đưa ông tiếp cận được với giới quí tộc nước Pháp.</p>
+<p>Sau khi tham gia vào giới quí tộc nước Pháp,  Napoleon đã gặp được một người phụ nữ quan trọng nhất trong cuộc đời mình, đó chính là vợ ông <strong>Josephine</strong>. Josephine là vợ goá của một quí tộc Pháp, mà quí tộc Pháp thì bà nào bà nấy đều có quan hệ ngoài luồng, bà này cũng không ngoại lệ, vậy mà khi đăng quang làm Hoàng đế Pháp, Napoleon vẫn tấn phong bà này làm Hoàng Hậu, thật là khó hiểu !!???
+Và có một thói quen khá hay là mỗi lần Napoleon đi chiến dịch xa đều viết thư cho Josephine kể đầy đủ tình hình của ông , dù bà này ở Pháp quốc thì đang ngoại tình với một ông khác ?? : D ??
+Nhưng vẫn phải công nhận, Josephine chính là thần May Mắn của Napoleon, sau khi quen biết bà, sự nghiệp của Napoleon đã lên như diều gặp gió, từ một sĩ quan pháo binh cấp thấp, có thể bước vào giới quí tộc Pháp và trở thành Vua của Pháp.
+Có một điều rất hay là Napoleon là người đã đặt ra chế độ <strong>Quân đoàn</strong> hay còn gọi là <strong>Corps</strong> , đây là một chế độ cực kì hiệu quả trong các cuộc chíến khi nó có thể vận dụng ưu thế di chuyển tối đa mà cũng có thể tạo thành nhiều hướng tấn công khi mỗi Quân đoàn có thể xem là một đơn vị tác chiến - hành quân độc lập. Nhờ chế độ này mà Napoleon đã làm gỏi liên quân Nga - Áo trong trận Austerlitz (may mắn là nếu không có Davout dũng cảm chiếm được Pratzen để đưa pháo lên thì chắc người bị dồn xuống hồ là Napoleon)</p>
+<p>Cơ mà đó là những gì mình đọc về chiến dịch, mình cũng không định nói quá nhiều. Hãy đề cập về những biến đổi về mặt xã hội của Napoleon </p>
+<ul>
+<li>Ông là người đặt nền móng cho bình đẳng xã hội </li>
+<li>Ông là người đã tạo ra bộ luật Napoleon - Có thể xem là bộ luật dân sự hiện đại đầu tiên của thế giới</li>
+<li>Ông là người làm rung chuyển chế độ Phong Kiến ở Châu Âu (một thường dân mà dám lên làm vua của một nước )</li>
+<li>Ông là người tạo ra chế độ hành chính hiệu quả từ Trung Ương đến địa phương</li>
+<li>Ông là người phục hồi lại Paris, mang Paris trở thành kinh đô của thời trang văn hoá của châu Âu (để đến bây giờ vẫn còn là quốc gia tiên phong trong lĩnh vực thời trang và xa xỉ  ) </li>
+</ul>
+<p>Về mục tiêu cuộc đời, <strong>Napoleon làm mọi thứ đều cho Pháp</strong>, đơn cử như việc khi đang chinh chiến ở Ai Cập nhưng nghe tin chính phủ quyết định kí hoà đàm cắt lại những lãnh thổ ở Ý mà Napoleon đã giành được, ông lập tức lên tàu trở về châu Âu để làm cho ra lẽ.
+Napoleon không bao giờ chịu dừng lại, nên việc mang chiến tranh tới nước Nga cũng là bắt đầu cho điểm suy tàn của ông, à mà có lẽ nên nói lại 1 tí về Josephine. Bà này thì đúng là kiểu phụ nữ có tiền mà chồng đi chinh chiến xa, lúc nào cũng có tình nhân vây quanh, nhưng tới lúc Napoleon đòi li dị vì bà không thể đẻ được cho ông đứa con nào, bà đã khóc lóc suốt 2 ngày liền cho tới khi được đưa ra khỏi cung điện Tuileries. Chẳng phải nói, Napoleon cũng đã cắt đi sợi dây liên kết với thần May mắn của mình.</p>
+<p>Trong quan hệ với các tướng lĩnh, Napoleon cũng được xem là có số <strong>sát hữu</strong>  khi lần lượt những tướng quân và là bạn thân nhất của ông đều qua đời trên chiến trận : </p>
+<ul>
+<li>Jean Lannes : đây có thể gọi là người bạn thân thiết nhất của Napoleon, một vị chỉ huy kỵ binh tài năng thật sự, nhưng mất đi quá sớm trong trận Aspern-Eslings, nếu Lannes không qua đời sớm, thì chiến dịch của Napoleon ở Nga có thể thành công thay vì thất bại sml. </li>
+<li>Michel Ney: đây cũng là một trong những vị tướng được mệnh danh <em>the bravest of the brave</em>, dù không phải là không có mâu thuẫn với Napoleon, nhưng khi Napoleon trở về từ Elba, ông này đã theo phò tá và khi bị thua trong trận Waterloo, ông có một câu nói khá bất hủ : <em>”I’m French, and I will remain French”</em>. (Ông có quốc tịch Phổ, nếu ông nhận ông là người Phổ thì sẽ không bị xử tử)</li>
+</ul>
+<p>Nói về vợ thì Napoleon có 2 vợ, một là Josephine và người thứ 2 là bà Marie Louise (Duchess of Parma).
+Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là một công chúa, thích được quan tâm và chăm sóc. Có một đoạn trong sách kể khi Napoleon đang tham gia chiến dịch ở Nga, do đường tiếp vận bị cắt đứt nên không thể viết thư về cho Marie, bà này liền hỏi, <em>”Không biết chàng đã có ai ngoài kia hay sao mà lâu rồi không biên thư cho ta”</em> . Và chẳng mấy chốc sau khi Napoleon bị đày đi Elba, bà ấy đã sa vào vòng tay ái tình của một người khác và chưa bao giờ đến Elba để thăm chồng như lời cuối trong thư đã hứa.</p>
+<p>Có một bức tranh mô tả cảnh Napoleon chia tay đội cận vệ của ông, nói chung là mình thấy đội này rất cool và cũng rất là trung thành với Napoleon. Đây là đội quân duy nhất mà có thể phàn nàn về tất cả mọi điều, từ quân trang đến chiến dịch, chỗ cắm trại và thậm chí là cả hoàng đế. Mới nghe thì có vẻ giống vụ kiêu binh của vua Lê chúa Trịnh nhưng đội quân này lại không hề có cách ứng xử như kiêu binh. Họ cực kì tuân thủ kỷ luật, và cực kì trung thành với Napoleon. Đến nỗi khi mà cháu của ông là Louis Napoleon (tức Napoleon đệ tam ) lên, những người lính nằm trong đội cận vệ này đã mặc lại quân phục và tham gia diễu hành. Tất nhiên, cận vệ của Napoleon đệ tam thì thua xa đệ nhất.
+<img src="/assets/img/napoleon-good-bye-old-guard.jpeg" alt="old-guard" /></p>
+<p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/nmap-for-check-ssl-tls</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" />
+    <title>Dùng nmap để check ssl và tls</title>
+    <published>2019-03-18T00:00:00+00:00</published>
+    <updated>2019-03-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Hôm nay mình được assign một task liên quan đến dùng check ssl, tls
+Thật ra original là từ cái này CVE-2016-2183
+Rất không may là nó dính lỗi &lt;code&gt;Sweet32&lt;/code&gt; nên mình phải bỏ nó ra khỏi cipher suite trong......</summary>
+    <content type="html"><![CDATA[
+        <h2>Mở đầu</h2>
+<p>Hôm nay mình được assign một task liên quan đến dùng check ssl, tls
+Thật ra original là từ cái này <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183">CVE-2016-2183</a>
+Rất không may là nó dính lỗi <code>Sweet32</code> nên mình phải bỏ nó ra khỏi cipher suite trong Apache. Đây là suy nghĩ của mình</p>
+<ul>
+<li>Check list cipher suite đang được enable bởi server hiện tại</li>
+<li>Bỏ settings của 3DES</li>
+<li>Check lại list cịper suite của server mất đi 3 cái cipher đang weak chưa</li>
+</ul>
+<h2>Check list cipher suite đang được enable</h2>
+<p>Mình dùng <code>nmap</code> để check thử trang blog của mình xem như nào <code>blog.khanh.page</code></p>
+<pre><code> nmap --script ssl-enum-ciphers -p 443 blog.khanh.page
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers:
+|   TLSv1.1:
+|     ciphers:
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|     compressors:
+|       NULL
+|     cipher preference: server
+|   TLSv1.2:
+|     ciphers:
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|     compressors:
+|       NULL
+|     cipher preference: server
+|_  least strength: A
+</code></pre>
+<p>Ok ngon quá. Trang của mình có strength được đánh giá loại <code>A</code> này.
+Thử với một trang khác của công ty xem nào (cái này mình không public được)</p>
+<pre><code>PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|_  least strength: C
+</code></pre>
+<p>Ẹc, dính chấu rồi. Bị đánh giá loại <code>C</code> luôn.
+Bây giờ mình đi fix cái lỗi này thử nhé.</p>
+<h2>Bỏ settings của 3DES</h2>
+<p>Bỏ đi settings của 3DES thì cũng khá đơn giản. ở đây mình sẽ hướng dẫn cho <code>nginx</code> cũng như <code>apache</code></p>
+<h3>Nginx:</h3>
+<p>Với <code>nginx</code> thì chúng ta settings cipher trong vhost của từng application. Chẳng hạn mình đang có một file như bên dưới </p>
+<pre><code>server {
+    listen 443 ssl http2;
+    server_name ss_nps.test www.ss_nps.test *.ss_nps.test;
+    root /;
+    ssl_ciphers AES128-SHA:AES256-SHA:RC4-SHA:DES-CBC3-SHA:RC4-MD5;
+    charset utf-8;
+    client_max_body_size 128M;
+
+    location /41c270e4-5535-4daa-b23e-c269744c2f45/ {
+        internal;
+        alias /;
+        try_files $uri $uri/;
+    }
+    ...
+}</code></pre>
+<p>Hiên tại ciphers của bạn này đang bị lỗi ở :</p>
+<pre><code>|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity</code></pre>
+<p>Tạm thời chúng ta chỉ đối ứng lỗi <code>3DES</code> trước bằng cách thêm <code>!3DES</code> vào cuối dòng <code>ssl_ciphers</code> như bên dưới </p>
+<pre><code>ssl_ciphers AES128-SHA:AES256-SHA:RC4-SHA:DES-CBC3-SHA:RC4-MD5:!3DES;</code></pre>
+<p>Kiểm tra lại bằng <code>nmap</code></p>
+<pre><code>nmap --script ssl-enum-ciphers -p 443 ss_nps.test
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-18 16:06 JST
+Nmap scan report for ss_nps.test (127.0.0.1)
+Host is up (0.00051s latency).
+rDNS record for 127.0.0.1: localhost
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers:
+|   TLSv1.0:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.1:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.2:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|_  least strength: C
+</code></pre>
+<p>Ngon lành. Lỗi <code>Sweet32</code> đã biến mất</p>
+<h3>Apache</h3>
+<p>Cũng tương tự <code>nginx</code> ta có thể chỉnh trong file vhost của apache, bằng cách thêm đoạn <code>!3DES</code> như bên dưới </p>
+<pre><code>SSLCipherSuite DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!3DES</code></pre>
+<h2>Check lại list cịper suite của server mất đi 3 cái cipher đang weak chưa</h2>
+<p>Với việc sử dụng <code>nmap</code> chúng ta có thể kiểm tra được các lỗi liên quan đến <code>ssl</code>, <code>tls</code> của server.
+Tuy nhiên việc disable các ciphers trên có thể dẫn đến 1 số tình huống ví dụ như những browser quá cũ khi access vào sẽ không thể get data do chúng chỉ hỗ trợ cipher DES (ví dụ như: WinXP IE6, IE8).</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/php-serverless-with-bref</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/php-serverless-with-bref" />
     <title>Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
     <published>2019-03-04T00:00:00+00:00</published>
     <updated>2019-03-04T00:00:00+00:00</updated>
@@ -90,207 +402,40 @@ Deploying sử dụng SAM thì bao gồm 3 steps</p>
 <li>Deploy Cloudformation stack</li>
 </ul>
 <h3>Deploy với SAM</h3>
+<h4>Create deployment bucket</h4>
+<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
+<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
+<h4>Create Deployment bucket</h4>
 <p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/getting-started</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/getting-started" />
-    <title>Getting Started</title>
-    <published>2018-12-25T00:00:00+00:00</published>
-    <updated>2018-12-25T00:00:00+00:00</updated>
+    <id>https://blog.khanh.page/blog/my-first-blog-post</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/my-first-blog-post" />
+    <title>Tôi đã start cái blog này như thế nào ?</title>
+    <published>2019-03-01T00:00:00+00:00</published>
+    <updated>2019-03-01T00:00:00+00:00</updated>
     <author>
         <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.
-
-As with all Jigsaw sites, configuration settings can be found in &lt;code&gt;config.php&lt;/code&gt;;......</summary>
+    <summary type="html">Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: https://nech.info
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này......</summary>
     <content type="html"><![CDATA[
-        <p>This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.</p>
-<h2>Configuration</h2>
-<p>As with all Jigsaw sites, configuration settings can be found in <code>config.php</code>; you can update the variables in that file with settings specific to your site. You can also add new configuration variables there to use across your site; take a look at the <a href="http://jigsaw.tighten.co/docs/site-variables/">Jigsaw documentation</a> to learn more.</p>
-<pre><code class="language-php">// config.php
-return [
-    'baseUrl' =&gt; 'https://my-awesome-jigsaw-site.com/',
-    'production' =&gt; false,
-    'siteName' =&gt; 'My Site',
-    'siteDescription' =&gt; 'Give your blog a boost with Jigsaw.',
-    ...
-];</code></pre>
-<blockquote>
-<p>Tip: This configuration file is also where you’ll define any &quot;collections&quot; (for example, a collection of the contributors to your site, or a collection of blog posts organized by topic). Check out the official <a href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
-</blockquote>
-<hr />
-<h3>Adding Content</h3>
-<p>You can write your content using a <a href="http://jigsaw.tighten.co/docs/content-other-file-types/">variety of file types</a>. By default, this starter template expects your content to be located in the <code>source/_posts/</code> folder.</p>
-<p>The top of each content page contains a YAML header that specifies how it should be rendered. The <code>title</code> attribute is used to dynamically generate HTML <code>title</code> and OpenGraph tags for each page. The <code>extends</code> attribute defines which parent Blade layout this content file will render with (e.g. <code>_layouts.post</code> will render with <code>source/_layouts/post.blade.php</code>), and the <code>section</code> attribute defines the Blade &quot;section&quot; that expects this content to be placed into it.</p>
-<pre><code class="language-yaml">---
-extends: _layouts.post
-section: content
-title: Getting Started
-date: 2018-12-25
-description: Getting started with the Jigsaw blog starter template
-cover_image: /assets/img/post-cover-image-2.png
-featured: true
----</code></pre>
-<h3>Adding Assets</h3>
-<p>Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the <code>source/_assets/</code> directory, and Laravel Mix will process them when running <code>npm run local</code> or <code>npm run production</code>. The processed assets will be stored in <code>/source/assets/build/</code> (note there is no underscore on this second <code>assets</code> directory).</p>
-<p>Then, when Jigsaw builds your site, the entire <code>/source/assets/</code> directory containing your built files (and any other directories containing static assets, such as images or fonts, that you choose to store there) will be copied to the destination build folders (<code>build_local</code>, on your local machine).</p>
-<p>Files that don't require processing (such as images and fonts) can be added directly to <code>/source/assets/</code>.</p>
-<p><a href="http://jigsaw.tighten.co/docs/compiling-assets/">Read more about compiling assets in Jigsaw using Laravel Mix.</a></p>
-<hr />
-<h2 id="getting-started-building-your-site">Building Your Site</h2>
-<p>Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.</p>
-<pre><code class="language-bash"># build static files with Jigsaw
-./vendor/bin/jigsaw build
-
-# compile assets with Laravel Mix
-# options: dev, staging, production
-npm run dev</code></pre>    ]]></content>
-</entry>
-            <entry>
-    <id>https://my-jigsaw-blog.com/blog/customizing-your-site</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/customizing-your-site" />
-    <title>Customizing Your Site</title>
-    <published>2018-12-24T00:00:00+00:00</published>
-    <updated>2018-12-24T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">This starter template comes pre-loaded with Tailwind CSS, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the &lt;code&gt;/source/_assets/sass&lt;/code&gt; folder,......</summary>
-    <content type="html"><![CDATA[
-        <p>This starter template comes pre-loaded with <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the <code>/source/_assets/sass</code> folder, set up with the expectation that you can add any custom CSS into <code>_blog.scss</code>.</p>
-<blockquote>
-<p>You can also re-work the architecture of the Sass files any way you’d like; just make sure to keep the <code>@tailwind</code> references in your final <code>main.scss</code> file.</p>
-</blockquote>
-<pre><code class="language-scss">// source/_assets/sass/main.scss
-
-@tailwind preflight;
-@tailwind components;
-
-// Code syntax highlighting,
-// https://highlightjs.org
-@import '~highlightjs/styles/default';
-
-@import 'base';
-@import 'navigation';
-@import 'mailchimp';
-@import 'blog';
-
-@tailwind utilities;</code></pre>
-<hr />
-<h2>Typography Styles</h2>
-<p>Here’s a quick preview of what some of the basic type styles will look like in this starter template:</p>
-<h1>h1 Heading</h1>
-<h2>h2 Heading</h2>
-<h3>h3 Heading</h3>
-<h4>h4 Heading</h4>
-<h5>h5 Heading</h5>
-<h6>h6 Heading</h6>
-<p>The quick brown fox jumps over the lazy dog</p>
-<p><s>The quick brown fox jumps over the lazy dog</s></p>
-<p><u>The quick brown fox jumps over the lazy dog</u></p>
-<p><em>The quick brown fox jumps over the lazy dog</em></p>
-<p><strong>The quick brown fox jumps over the lazy dog</strong></p>
-<p><code>The quick brown fox jumps over the lazy dog</code></p>
-<p><small>The quick brown fox jumps over the lazy dog</small></p>
-<blockquote>
-<p>The quick brown fox jumps over the lazy dog</p>
-</blockquote>
-<p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
-<pre><code class="language-php">class Foo extends bar
-{
-    public function fooBar()
-    {
-        //
-    }
-}</code></pre>    ]]></content>
-</entry>
-            <entry>
-    <id>https://my-jigsaw-blog.com/blog/custom-404-page</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/custom-404-page" />
-    <title>Custom 404 Pages</title>
-    <published>2018-12-23T00:00:00+00:00</published>
-    <updated>2018-12-23T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">This starter template includes a custom 404 Not Found error page, located at &lt;code&gt;/source/404.blade.php&lt;/code&gt;. To preview the 404 page, you can visit &lt;code&gt;/404&lt;/code&gt; in your browser.
-
-
-Depending on where your site is hosted, you may need to configure......</summary>
-    <content type="html"><![CDATA[
-        <p>This starter template includes a custom <strong>404 Not Found</strong> error page, located at <code>/source/404.blade.php</code>. <a href="/404">To preview the 404 page</a>, you can visit <code>/404</code> in your browser.</p>
-<pre><code class="language-html">&lt;!-- source/404.blade.php --&gt;
-
-@extends('_layouts.master')
-
-@section('body')
-    &lt;div class="flex flex-col items-center text-grey-darker mt-32"&gt;
-        &lt;h1 class="text-6xl font-light leading-none mb-2"&gt;404&lt;/h1&gt;
-
-        &lt;h2 class="text-3xl"&gt;Page not found.&lt;/h2&gt;
-
-        &lt;hr class="block w-full max-w-sm mx-auto border my-8"&gt;
-
-        &lt;p class="text-xl"&gt;
-            Need to update this page? See the &lt;a title="404 Page Documentation" href="https://jigsaw.tighten.co/docs/custom-404-page/"&gt;Jigsaw documentation&lt;/a&gt;.
-        &lt;/p&gt;
-    &lt;/div&gt;
-@endsection</code></pre>
-<hr />
-<p>Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the <a href="https://jigsaw.tighten.co/docs/custom-404-page/">Jigsaw documentation about configuring a custom 404 page</a>.</p>    ]]></content>
-</entry>
-            <entry>
-    <id>https://my-jigsaw-blog.com/blog/fuse-search</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/fuse-search" />
-    <title>Fuse Search</title>
-    <published>2018-12-22T00:00:00+00:00</published>
-    <updated>2018-12-22T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">To provide fast, local search of your blog, this starter template comes with a pre-built Vue.js component that uses Fuse.js. Fuse.js is a &amp;quot;lightweight fuzzy-search library with no dependencies.&amp;quot; It works by running queries against a JSON index......</summary>
-    <content type="html"><![CDATA[
-        <p>To provide fast, local search of your blog, this starter template comes with a pre-built Vue.js component that uses Fuse.js. <a href="http://fusejs.io/">Fuse.js</a> is a &quot;lightweight fuzzy-search library with <em>no</em> dependencies.&quot; It works by running queries against a JSON index of your content.</p>
-<p>During the <a href="http://jigsaw.tighten.co/docs/building-and-previewing/">build process</a>, the contents of your <code>posts</code> collection is processed by the <code>GenerateIndex.php</code> listener, and an <code>index.json</code> file is generated in the build directory. The <code>Search.vue</code> component provides a search input that queries this local index.</p>
-<p>If you'd like to customize the generation of your search index, take a look at the <code>handle</code> method of the <code>GenerateIndex.php</code> file.</p>    ]]></content>
-</entry>
-            <entry>
-    <id>https://my-jigsaw-blog.com/blog/mailchimp-newsletters</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/mailchimp-newsletters" />
-    <title>Mailchimp Newsletters</title>
-    <published>2018-11-21T00:00:00+00:00</published>
-    <updated>2018-11-21T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">Mailchimp is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.
-To begin accepting......</summary>
-    <content type="html"><![CDATA[
-        <p><a href="https://mailchimp.com/">Mailchimp</a> is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.</p>
-<p>To begin accepting subscribers, simply add your list URL to the form <code>action</code> in the <code>source/_components/newsletter-signup.blade.php</code> file.</p>
-<pre><code class="language-html">&lt;!-- source/_components/newsletter-signup.blade.php --&gt;
-
-&lt;div id="mc_embed_signup"&gt;
-    &lt;form action="https://your-mail-chimp-list-manage-url" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate&gt;
-        &lt;div id="mc_embed_signup_scroll"&gt;
-            &lt;h2&gt;Sign up for newsletter&lt;/h2&gt;
-            &lt;div class="mc-field-group"&gt;
-                &lt;label for="mce-EMAIL"&gt;Email Address &lt;/label&gt;
-                &lt;input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address"&gt;
-            &lt;/div&gt;
-            &lt;div id="mce-responses" class="clear"&gt;
-                &lt;div class="response" id="mce-error-response" style="display:none"&gt;&lt;/div&gt;
-                &lt;div class="response" id="mce-success-response" style="display:none"&gt;&lt;/div&gt;
-            &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
-
-            &lt;div style="position: absolute; left: -5000px;" aria-hidden="true"&gt;&lt;input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""&gt;&lt;/div&gt;
-            &lt;div class="clear"&gt;&lt;input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/form&gt;
-&lt;/div&gt;</code></pre>
-<h3>Example</h3>
-<img src="/assets/img/newsletter.png">
-<p><a href="https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form">See how to get your Mailchimp list URL.</a></p>    ]]></content>
+        <p>Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: <a href="https://nech.info">https://nech.info</a>
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này</p>
+<p><a href="https://jigsaw.tighten.co/">https://jigsaw.tighten.co/</a></p>
+<h2>Đôi điều về jigsaw</h2>
+<p>Jigsaw là một tools để generate html static pages, tạm dịch là trang tĩnh HTML, mà cái gì là static thì nhanh nhất rồi đấy.</p>
+<h2>Cấu trúc server</h2>
+<p>Trang web này mình tạo bao gồm các components sau:</p>
+<ol>
+<li>S3: tất cả những bài post này đều được viết dưới dạng markdown, và build thành static HTML rồi up lên S3</li>
+<li>CloudFront: Dùng để cache resources vào các Edges để tăng tốc độ load trang </li>
+<li>Goofys: Dùng để mount thư mục build lên S3</li>
+</ol>
+<p><img src="/assets/img/blog.khanh.page.png" alt="infrastructure" /></p>
+<h2>Đôi điều suy nghĩ</h2>
+<p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
 </entry>
     </feed>

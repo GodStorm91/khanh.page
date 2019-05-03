@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://khanh.page.test',
     'production' => false,
     'siteName' => 'Khanh\'s Blog',
     'siteDescription' => 'To share is to learn',
@@ -21,6 +21,11 @@ return [
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
                 });
             },
+        ],
+        'blog' => [
+          'path' => 'posts/{date|Y/m/d}/{filename}',
+          'author' => 'Khanh Nguyen',
+          'tags' => []
         ],
     ],
 
