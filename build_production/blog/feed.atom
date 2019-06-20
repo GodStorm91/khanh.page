@@ -3,12 +3,201 @@
     <title>Khanh&#039;s Blog</title>
     <link href="https://blog.khanh.page" />
     <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
-    <updated>2019-04-01T09:33:19+00:00</updated>
+    <updated>2019-06-20T04:37:00+00:00</updated>
     <id>https://blog.khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
+    <id>https://blog.khanh.page/blog/til-404-redirect-in-s3</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-404-redirect-in-s3" />
+    <title>TIL - 404 Redirect in S3 static blog post</title>
+    <published>2019-06-20T00:00:00+00:00</published>
+    <updated>2019-06-20T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Today I received a comment from my friends telling me that my blog doesn&#039;t redirect to 404.
+Oops...
+I should have been set it from the beginning instead of making my blog showing something like this:
+
+We should have been let user see something much more......</summary>
+    <content type="html"><![CDATA[
+        <p>Today I received a comment from my friends telling me that my blog doesn't redirect to 404.
+Oops...
+I should have been set it from the beginning instead of making my blog showing something like this:</p>
+<pre><code>403 Forbidden
+Code: AccessDenied
+Message: Access Denied
+RequestId: 5F9506201FD3BF09
+HostId: DlHKCh+6eIyX1OILlLEt2FVz2BMgn3luo6lNcx6xxMr3F0wntH5jDqHQ78Q77i1JWcoEN9xb//c=</code></pre>
+<p>We should have been let user see something much more <strong>friendly</strong> instead of something frank, coldhearted like the error above.
+Below is the steps I have done to make it works.</p>
+<ol>
+<li>Create a 404 folder and its content (the friendlier things I want my user to see)</li>
+<li>Settings S3 error pages in AWS console</li>
+<li>Invalidate cloudfront cache (in case you are using Cloudfront as your CDN)</li>
+</ol>
+<h3>1. Create a 404 folder</h3>
+<p>I've used <code>Jigsaw</code> as my blog cms, so things is super easy. I just have to create a <code>404.blade.php</code> and put it in my root directory. When I do compile the code for deploy, <code>404.html</code> file will be generated.</p>
+<pre><code class="language-html">@extends('_layouts.master')
+
+@section('body')
+    &lt;div class="flex flex-col items-center text-grey-darker mt-32"&gt;
+        &lt;h1 class="text-6xl font-light leading-none mb-2"&gt;404&lt;/h1&gt;
+
+        &lt;h2 class="text-3xl"&gt;Page not found.&lt;/h2&gt;
+
+        &lt;hr class="block w-full max-w-sm mx-auto border my-8"&gt;
+
+        &lt;p class="text-xl"&gt;
+            Need to update this page? See the &lt;a title="404 Page Documentation" href="https://jigsaw.tighten.co/docs/custom-404-page/"&gt;Jigsaw documentation&lt;/a&gt;.
+        &lt;/p&gt;
+    &lt;/div&gt;
+@endsection</code></pre>
+<p>Now, things is pretty better like this </p>
+<p><img src="/assets/img/custom-404.png" alt="404-image" /></p>
+<h3>2. Settings S3 error pages in AWS Console</h3>
+<p>S3 console provide a way to set your error pages (whenever some key is not found or permission forbidden)
+You can set the error pages as below (the path will be based on the bucket root directory )</p>
+<p><img src="/assets/img/s3-error-config.png" alt="s3-error-config" /></p>
+<p>If you don't use any CDN, you can skip step 3, everything now should work fine.
+If you use CDN, you need to clear the cache (or request invalidation as in AWS )</p>
+<h3>3. Create invalidation request</h3>
+<p>You can use AWS Console to create invalition request ( a cache clear request - all of the cache will be updated to the newest contents from origin - so this is an expensive step, please use it considerably).</p>
+<p>I use aws command line to create invalidation, you can use my command or console to create invalidation.</p>
+<pre><code class="language-bash"> aws cloudfront create-invalidation --distribution-id &lt;distribution_id&gt; --paths "/*" --profile &lt;profile_id&gt;</code></pre>
+<p>After that, you can confirm whether your changes have been updated and delegated to all edge locations
+(Please wait about 4,5 minutes for changes completely reflected all edge locations.)</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
+    <title>What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice</title>
+    <published>2019-05-09T00:00:00+00:00</published>
+    <updated>2019-05-09T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Đây là quyển mình đã dành khoảng cuối tháng 4 để đọc. Tất nhiên chủ đề của quyển sách này như tựa của nó, không hướng về lịch sử mà lần này là thiên về
+&lt;code&gt;thiền&lt;/code&gt; của thiền sư......</summary>
+    <content type="html"><![CDATA[
+        <p>Đây là quyển mình đã dành khoảng cuối tháng 4 để đọc. Tất nhiên chủ đề của quyển sách này như tựa của nó, không hướng về lịch sử mà lần này là thiên về
+<code>thiền</code> của thiền sư <a href="https://en.wikipedia.org/wiki/Shunry%C5%AB_Suzuki">Shunryu Suzuki</a></p>
+<p>Ông chính là người đã đưa thiền thuật đến với thế giới phương Tây và phát triển nó ( thầy Thích Nhất Hạnh, hay các Rinpoche của phật giáo Tây Tạng cũng là những người đầu tiên đưa phật giáo thực hành phương Đông đến với phương Tây).</p>
+<p>Quyển sách có 3 phần chính như bên dưới </p>
+<ol>
+<li>Luyện tập đúng</li>
+<li>Thái độ đúng</li>
+<li>Hiểu đúng </li>
+</ol>
+<p>Thật ra thì Shunryu Suzuki không phải là người viết nên quyển sách này, nhưng đây là quyển sách được ghi lại bởi Richard Baker, người mà sau này trở thành truyền nhân chính thức của Suzuki trong Soto Zen, một tổ chức truyền bá thực hành Thiền Soto ở phương Tây</p>
+<p>Mình có vài điều đọng lại rất lâu sau khi đọc quyển sách này.</p>
+<h3>1. Đi về phương đông một dặm , cũng là đi về phương Tây một dặm.</h3>
+<p>Câu này nghe thì hơi vô lý. Vì Đông - Tây là hai khái niệm ngược nhau hoàn toàn. Nhưng, sẽ như thế nào nếu chúng ta biết trái đất là hình cầu? Đi về phương Đông cũng chính là đi về phương Tây, vì thật ra trái Đất hình cầu, chúng ta nếu cứ đi mãi về phía Đông, chẳng phải sẽ đến phía Tây sao? </p>
+<h3>2. Chỉ cần thực hiện nó - Quên đi con người lý tính cũng như trạng tính, quên đi cả bản thân chúng ta khi đang luyện tập.</h3>
+<p>Chúng ta thường hay luyện tập một thứ gì đó, và nghĩ ra thêm hàng tá lí do để thực hiện nó. Ví dụ, tôi chạy bộ vì : chạy bộ tốt cho tim mạch này, chạy bộ giúp tôi giảm stress này, chạy bộ giúp tôi cân đối tiêu mỡ, ... Vậy thì khi chạy bộ, trong đầu chúng ta sẽ có hàng tỉ tưởng tượng diễn ra trong đầu... và nếu thế thì việc chạy bộ sẽ không còn ở mức cao nhất của nó. Điều này làm mình nhớ tới quyển: <code>Running Meditation</code> mà mình có review ở đây <a href="http://nech.info/2018/07/13/running-with-the-mind-of-meditation-phan-1-xay-dung-nen-tang/">Link</a> . Tất nhiên chúng ta có nhiều level, nhưng cao nhất là khi chúng ta là một với điều chúng ta đang luyện tập. </p>
+<h3>3. Và để giải quyết vấn đề, hãy là một phần của vấn đề</h3>
+<p>Chúng ta khi vừa ra đời đã khóc. Cuộc đời của chúng ta sẽ có rất nhiều <code>vấn đề</code>  phía trước. Vậy thì <strong>Vấn đề</strong> chính là một phần của chúng ta. Chúng ta sẽ không hiện hữu nếu không có vấn đề. Khi và chỉ khi chúng ta trở thành một với vấn đề thì vấn đề mới được giải quyết. Tất nhiên, sẽ không bao giờ hết vấn đề cả. Và ngay cả sau khi chết, vẫn còn có vấn đề.</p>
+<h3>4. Hãy nuôi dưỡng tâm hồn. Nhưng đừng có phễu lọc khi tiếp nhận chúng.</h3>
+<p>Thời đại internet phát triển, chúng ta hay có khẩu hiệu <strong>Hãy nuôi dưỡng tâm hồn</strong> , và để nuôi dưỡng tâm hồn, chúng ta làm gì nào: </p>
+<ul>
+<li>Chúng ta đi đi đi và đi tìm nó ở tít các <em>Vương Quốc Hạnh Phúc</em>, <em>Xứ sở cờ hoa</em> ... </li>
+<li>Chúng ta đọc sách một cách công nghiệp, đọc một cách không phân biệt hay dở mà chỉ đọc số lượng.</li>
+<li>Chúng ta ngồi thiền và mơ mộng một ngày nào đó chúng ta sẽ thành công. Chúng ta khinh bỉ những đứa không thiền, cho rằng nó là một tâm hồn thui chột, chúng ta là thanh cao.</li>
+</ul>
+<p>Khi tiếp nhận thông tin, chúng ta thường mang ý muốn sở hữu chúng, thông tin đều phải đi qua bộ lọc của chúng ta, chúng ta thường hay chỉ thích nghe những thông tin <strong>phù hợp với suy nghĩ của mình từ trước</strong>. Giả sử bạn nhìn thấy một ngọn núi cao và đẹp khi đi du lịch, nhưng nó không đẹp như trong cái Wallpaper của bạn đang lưu trong máy tính. Bạn phụng phịu bảo <em>'Trong máy tính của mình còn đẹp hơn'</em>. Không, hãy cảm nhận cảnh ở đó, không so sanh gì với bất kì những thứ có trước đó, đừng cố gắng co ép mọi thứ theo ý mình. Đó mới là điều quan trọng.</p>
+<h3>5. Và để đón nhận được sự thật - Là phải sống lúc này, ở đây</h3>
+<p>Đây cũng là một câu nói quen thuộc của thiền sư Thích Nhật Hạnh, khi ông nói về hạnh phúc. Đơn giản là <strong>Lúc này, Ở đây</strong> hay <strong>Đã về, Đã tới</strong> . Đây cũng chính là sự thật duy nhất trong vũ trụ, khi Đức Phật nhắc đến trong kinh kệ của ngài, Hạnh phúc - Trí Tuệ - Vũ Trụ nằm trong mỗi sát-na. Chúng ta không cần tìm kiếm ở tương lai, không cần nuối tiếc quá khứ, khoảng cách địa lý là vô nghĩa, nếu có thể sống <strong>Lúc này, Ở đây</strong>.</p>
+<h2>What's Next</h2>
+<p>Mình đang đọc quyển <a href="https://www.goodreads.com/book/show/38526454-enlightment-now">Enlightment Now</a> và sẽ lại review sau khi hoàn tất</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/what-i-read-genghis-khan</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-genghis-khan" />
+    <title>What I read - Genghis Khan and the Making of the Modern World</title>
+    <published>2019-05-01T00:00:00+00:00</published>
+    <updated>2019-05-01T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Tiếp nối những quyển sách lịch sử, tháng 3 và một nửa tháng 4 của mình đã đọc quyển sách này. 
+
+Cũng không có nhiều lý do lắm đâu 
+
+Mình luôn thích sống kiểu Normadic (du canh du cư). Ai cần một ngôi......</summary>
+    <content type="html"><![CDATA[
+        <p>Tiếp nối những quyển sách lịch sử, tháng 3 và một nửa tháng 4 của mình đã đọc quyển sách này. </p>
+<h2>Tại sao mình lại chọn quyển này ?</h2>
+<p>Cũng không có nhiều lý do lắm đâu </p>
+<ul>
+<li>Mình luôn thích sống kiểu <strong>Normadic</strong> (du canh du cư). Ai cần một ngôi nhà nào ? </li>
+<li>Genghis Khan là một trong những vị tướng lĩnh tài ba (khi có thể thống nhất được các bộ lạc Mongols), và tất nhiên còn là một nhà chính trị kiệt xuất nữa.</li>
+<li>Năm nay mình muốn đọc 4 quyển lịch sử, đây là quyển thứ 3</li>
+</ul>
+<p>Đấy, chỉ đơn giản là như thế thôi </p>
+<h2>Nội dung quyển sách</h2>
+<p>Quyển sách được chia làm 3 phần chính:</p>
+<ol>
+<li>Cuộc đời của Genghis Khan thưở còn ấu thơ</li>
+<li>Cuộc chinh phạt thống nhất các bộ tộc Mongolia và chống lại các vương quốc Hồi Giáo (Iraq, Iran, Syria)</li>
+<li>Cuộc chinh phạt của người Mongolia sau khi Genghis Khan qua đời (Khubilai thống Nhất Trung Quốc...)</li>
+</ol>
+<h2>Những điều ngộ nhận trước khi đọc sách</h2>
+<p>Tất nhiên trước khi đọc quyển sách này, dù cũng rất thần tượng người Mongolia, nhưng so với các Kỵ sĩ Paladin của Châu Âu thì mình vẫn nghiêng về phía các kỵ binh châu Âu. Tuy nhiên đọc xong quyển sách mình mới thấy rằng việc Mongolia thắng được các Kỵ Binh châu Âu là điều cực kì hợp lý. Ngoài ra mình còn cho rằng Mongolia là man tộc, thắng chẳng qua là nhờ <strong>ăn may</strong>, chẳng hạn như lúc đó, tại Trung Nguyên, Tống đang đánh nhau với Kim, Mongolia đánh Kim thắng là nhờ Kim đang dồn quân với Tống (cũng sai nốt. Lúc này thật ra là Mông Cổ liên quân với Tống, cùng nhau đánh Kim.). Và mình cũng cho rằng đây là thời kì đen tối của châu Á, vì một tộc Man di như Mongol lại làm trùm cả châu Á, đạp lên trên cả <strong>Trung Hoa</strong> anh hùng thì thật là nhọ cho châu Á. Nói chung là ban đầu mình không có cái nhìn thiện cảm lắm với việc đi chinh phạt của Mongol, sâu xa hơn là không chịu có một bộ lạc chăn thả lại thắng cả một nền văn minh lúa nước, phát minh ra giấy, la bàn, thuốc súng như Trung Hoa.
+Tất nhiên là mọi thứ đều có lý do của nó cả. </p>
+<h2>Những thông tin / điều mình học được sau khi đọc quyển sách</h2>
+<p>Nói về những thông tin trong sách thì cực kì nhiều luôn. Thôi để mình chắc lọc lại </p>
+<ol>
+<li>Cha của Gengis Khan, không phải là cha ruột của ông ấy. Mẹ ông ấy bị cướp đi khi cha ruột đang dẫn mẹ ông ấy về lại bộ tộc của mình.</li>
+</ol>
+<blockquote>
+<p>Những bộ lạc du mục, khi một người con trai muốn cưới một người con gái, họ phải đến làm việc cho nhà gái từ 3,4 năm để chứng tỏ năng lực lao động của mình. Cha của Gengis Khan đã ở rể được 3 năm, và khi đang đưa mẹ của Genghis Khan quay lại bộ tộc thì bị cha nuôi của Genghis Khan cướp mất. Và đó là lần cuối cùng Mẹ của Genghis Khan gặp mặt cha ông ấy.</p>
+</blockquote>
+<ol start="2">
+<li>Genghis Khan đã giết anh trai cả của mình sau khi cha ông ấy qua đời.</li>
+</ol>
+<blockquote>
+<p>Đây là một câu chuyện khác, người cha dượng của Genghis Khan đã có vợ và con, theo luật bộ tộc khi người cha qua đời, con trai trưởng có quyền lên thay thế, và cưới hết vợ của cha mình !??? , đây là một trong những lý do Genghis Khan đã giết người con cả này và lên nắm quyền điều khiển gia đình thay cho người anh ấy. Tất nhiên việc này khiến cả gia đình Genghis Khan phải bị bỏ lại, và ông phải tự xây dựng bộ tộc cho riêng mình.</p>
+</blockquote>
+<ol start="3">
+<li>Genghis Khan là một người khá chung thuỷ</li>
+</ol>
+<blockquote>
+<p>Tại sao mình lại nhận định như vậy? Vì khi ông đang xây dựng bộ tộc của mình, trong một lần đi săn, vợ của ông là Borte, đã bị bộ lạc Merkid cướp đi, ông đã phải nhờ tới bạn của bố dượng là Ong Khan để mượn binh cướp lại vợ mình, về sau khi đã nắm quyền ở Mongol ông vẫn xem bà là vợ chính thức duy nhất, và bà là Hoàng Hậu duy nhất của cả đế chế.</p>
+</blockquote>
+<ol start="4">
+<li>Gengis Khan là một người tài giỏi ở cả lĩnh vực chính trị và khoa học.</li>
+</ol>
+<blockquote>
+<p>Thật khó để tin được rằng Genghis Khan là một người hoàn toàn cởi mở và ham học hỏi. Mỗi lần chinh phạt được một thành bang, ông sẽ chia thường dân và học giả làm 2 hàng. Với những người thường dân mà có nghề nghiệp ổn định (kiểu kỹ sư, đầu bếp, thợ xây...) họ sẽ được ông đưa về Mongol để xây dựng bộ lạc. Ngoài ra, ông không hề bắt những người hồi giáo phải bỏ đạo, họ được quyền có tín ngưỡng của riêng họ, được thờ cúng và xây dựng đền đài. Đây là một bước tiến vượt bậc nếu so với cuộc thánh chiến của kỵ sĩ Paladin và Hồi giáo Mameluke.</p>
+</blockquote>
+<ol start="5">
+<li>Người Mongol khoẻ mạnh hơn các bộ tộc trồng lúa vì họ ăn thịt và không lạm dụng quá nhiều đường.</li>
+</ol>
+<blockquote>
+<p>Các bạn ăn theo chế độ low-carb chắc thích sống kiểu Mongol. Những chiến binh Mongol họ ăn uống một chế độ gìau protein và ít chất đường bột hơn bất kì những binh lính nào khác. Ngoài ra, những kị binh Mongol, thường có một tảng thịt mang theo bên mình và để dươí yên ngựa, mục đích là khi phi ngựa đường xa, miếng thịt sẽ trở nên mềm hơn, và khi cần ăn uống họ chỉ cần xẻ thịt ăn, và uống một ít sữa cừu lên men. Có lẽ nhờ chế độ này nên quân Mongol có thể hành quân khá nhanh và đánh đấm được lâu hơn.</p>
+</blockquote>
+<ol start="6">
+<li>Nhờ người Mongol mà giao thương giữa Âu - Á được thuận lợi, mở ra kỷ nguyên <strong>con đường tơ lụa.</strong></li>
+</ol>
+<blockquote>
+<p>Ngày xưa mình cứ nghĩ con đường tơ lụa là thời nhà Đường, thật ra vẫn chưa chính xác. Thời Nhà Đường chỉ mới mở rộng giao thương tới Ấn Độ là cùng, vẫn chưa thể mở rộng được giao thương tới châu Âu. Người đầu tiên làm được việc đó chính là Genghis Khan. Với việc vó ngựa Mongol trải dài từ Đông sang Tây như hình bên dưới, việc phải có một đội ngũ Logistics chuyên lo việc đưa thư cũng như giao dịch là cực kì cấp thiết. Chính Genghis Khan là người nghĩ ra chế độ trạm thư khi đưa thư. Cứ mỗi 30km sẽ có một trạm thư, nơi thư từ và bưu chính được phân chia, xử lý. Nếu không có hệ thống hậu cần hoàn chỉnh thì đế chế Mongol không bao giờ có thể rộng lớn được như vậy.</p>
+<p><img src="https://s3-ap-northeast-1.amazonaws.com/blog-khanh/assets/img/Genghis_khan_empire_at_his_death.png" alt="Bản đồ đế chế Mongol (1227)" /></p>
+</blockquote>
+<ol start="7">
+<li>Ông không tàn sát người dân như trong lịch sử châu Âu ghi lại </li>
+</ol>
+<blockquote>
+<p>Cái này cũng rất là mơ hồ, vì hầu hết chúng ta thường được nghe việc tàn sát người dân của người Mongol thông qua các sử gia Châu Âu. Tuy nhiên ngoài việc xử lý tầng lớp quý tộc của những thành bang mà ông ấy chiếm, việc tàn sát người dân không được ghi lại rõ ràng, ngoài ra cộng với việc mong muốn giao thương giữa các địa bàn mà ông ấy chiếm được mình không cho rằng Genghis Khan là người cổ xuý cho những việc này. Ông không coi việc chém giết là thú vui như một vài thú vui của quí tộc phương Tây thời đó. </p>
+</blockquote>
+<p>Quyển sách đề cập khá là nhiều về văn hoá, tín ngưỡng của người Mongol, thông qua hình ảnh của Genghis Khan, ông có thể xem là một người có tư duy đổi mới, sáng tạo, bình đẳng (ông là vua duy nhất xem trọng vai trò của Phụ nữ mà mình biết, tất nhiên ông không bị ảnh hưởng của Nho giáo, cũng như các học thuyết khác từ Trung Hoa nên có thể ông có cái nhìn đặc sắc và mới lại hơn. )</p>
+<p>Nhưng thiết nghĩ đây cũng là lúc trả lại ông ấy vào vị trí xứng đáng, thay vì xem ông ấy và Mongol là một lũ mọi rợ. </p>
+<p><strong>Ngoài lề:</strong> Mông Cổ hiện giờ đã bị phá nát văn hoá khá nhiều do bị Trung Quốc cũng như Liên Bang Xô Viết quản lý, chữ viết của họ ( giống như chữ viết của người Uighur) đã bị huỷ thay vào đó là chữ Cyrillic, những người trẻ Mông Cổ bị cấm tìm hiểu về ông cha của họ, về tổ tiên của mình, hầu hết gia phả đều bị huỷ... nếu là những người Mông Cổ trẻ và đọc những bài viết này, ắt hẳn họ sẽ thêm tự hào về nguồn gốc của họ.</p>
+<h2>So What's Next ?</h2>
+<p>Mình đã đọc quyển này, tuy nhiên chưa có review, <a href="https://www.goodreads.com/book/show/402843.Zen_Mind_Beginner_s_Mind">Zen Mind Beginner's Mind</a> do vẫn còn hơi mông lung vài chỗ. Chắc sẽ có review sớm thôi, khi mình có thời gian.</p>    ]]></content>
+</entry>
+            <entry>
     <id>https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
     <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
@@ -118,6 +307,35 @@ Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là m�
 <p>Có một bức tranh mô tả cảnh Napoleon chia tay đội cận vệ của ông, nói chung là mình thấy đội này rất cool và cũng rất là trung thành với Napoleon. Đây là đội quân duy nhất mà có thể phàn nàn về tất cả mọi điều, từ quân trang đến chiến dịch, chỗ cắm trại và thậm chí là cả hoàng đế. Mới nghe thì có vẻ giống vụ kiêu binh của vua Lê chúa Trịnh nhưng đội quân này lại không hề có cách ứng xử như kiêu binh. Họ cực kì tuân thủ kỷ luật, và cực kì trung thành với Napoleon. Đến nỗi khi mà cháu của ông là Louis Napoleon (tức Napoleon đệ tam ) lên, những người lính nằm trong đội cận vệ này đã mặc lại quân phục và tham gia diễu hành. Tất nhiên, cận vệ của Napoleon đệ tam thì thua xa đệ nhất.
 <img src="/assets/img/napoleon-good-bye-old-guard.jpeg" alt="old-guard" /></p>
 <p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/til-mongodb-with-fuelphp</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-mongodb-with-fuelphp" />
+    <title>TIL - MongoDB with FuelPHP (PHP7.x)</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Due to lack of keyboard and my own intend to write in English.
+From now on, all of my blog post will be written in English, but I will try to translate some of its content to Vietnamese to encourage reader from Vietnam
+(Of course I want to encourage......</summary>
+    <content type="html"><![CDATA[
+        <p>Due to lack of keyboard and my own intend to write in English.
+From now on, all of my blog post will be written in English, but I will try to translate some of its content to Vietnamese to encourage reader from Vietnam
+(Of course I want to encourage Vietnamese reader to learn another )</p>
+<h2>FuelPHP and MongoDB</h2>
+<h3>1. The Story of PHP MongoDB Driver.</h3>
+<p>Yes, the FuelPHP core has a class support for MongoDB a long, long time ago.
+We can find it here
+<code>fuel/core/classes/mongo/db.php</code></p>
+<p>But the problem is, MongoDB PHP Driver has been re-written.
+<a href="https://derickrethans.nl/new-drivers.html">Link</a>
+Denik Rethans has started to become a MongoDB PHP Driver maintainer around 2012, and he released it around the end of 2015 and this driver supported the newer PHP7.x
+You can read more about the story why he undertook this effort as well as the architect under the hood <a href="https://derickrethans.nl/new-drivers-part2.html">here</a> . </p>
+<p>Now we move on to the next, integrate the new driver with the FuelPHP framework.
+To integrate the framework with our current blogpost</p>
+<pre><code></code></pre>    ]]></content>
 </entry>
             <entry>
     <id>https://blog.khanh.page/blog/nmap-for-check-ssl-tls</id>
