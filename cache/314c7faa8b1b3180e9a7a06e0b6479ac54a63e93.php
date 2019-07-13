@@ -1,0 +1,3 @@
+<?php $__env->startSection('content'); ?><p>Phần này mình học theo các bạn trên group <code>Webuild.vn</code> đại loại là mỗi ngày viết về  một thứ mà mình đã học được trong ngày. Chủ yếu trên tinh thần xây dựng một thói quen và nhắc nhớ mỗi ngày  phải học cái mới.
+Các bài viết sẽ có đan xen giữa anh và việt lẫn lộn (đôi khi mình muốn viết cả tiếng Nhật) nên các bạn chịu khó theo dõi nhé.</p><?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.category', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

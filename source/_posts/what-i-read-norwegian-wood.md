@@ -1,0 +1,36 @@
+---
+extends: _layouts.post
+section: content
+title: What I read - Norwegian Wood
+date: 2019-07-13
+categories: [books]
+description: Norwegian Wood
+cover_image: /assets/img/post-cover-norwegian-wood.jpg
+---
+
+Thay đổi chủ đề một tí, trong những ngày mưa ẩm ương của tháng 7 này, mình bỗng nhiên muốn đọc một cái gì đó ma mị một tí, ít nhất là cũng man mác, và u uất buồn như cái tiết trời tháng 7 này.
+
+## Tại sao mình lại chọn quyển này ? 
+Kì lạ là mình lại chưa đọc **Rừng Nauy** bao giờ, kể cả việc xem phim. Thật ra mình có nghe nhắc đến nó vào những năm đầu của đại học, tuy nhiên mình lại cảm thấy chưa có hứng thú tìm hiểu về nó lúc đó. Có lẽ đó cũng là một cái duyên, để đến bây giờ mình mới bắt đầu đọc nó sau khi đọc được một trích dẫn của thằng bạn, đại để là : "Cậu chỉ nên đọc những cuốn sách đã được thử thách bởi thời gian. Những cuốn sách mà tác giả đã chết từ 30 năm trở lên. Nếu cậu chỉ đọc những cuốn sách mà người khác cũng đang đọc, cậu cũng sẽ chỉ nghĩ mà những điều người khác đang nghĩ." (Nagasawa - trích Rừng Na Uy), nghe cũng hơi rùng mình... mình cũng đang đọc theo list của Bill Gates, thì đúng là thế, nên quyết định đọc **Rừng Nauy**, từ lúc quyết định tới lúc đọc xong là 3 ngày. Tuy nhiên khi đóng trang sách cuối cùng, mình cảm thấy mình không sai khi chọn quyển này :) 
+
+Đấy, chỉ đơn giản là như thế thôi 
+
+## Nội dung quyển sách
+Bắt đầu với việc Watanabe đáp xuống ở sân bay, anh ấy dần dần nhớ lại sự việc của hơn 20 năm trước, khi rời Kobe để lên Tokyo bắt đầu cuộc sống của một sinh viên tại một trường đại học tư.  
+Cậu rời bỏ quê nhà một cách nhanh chóng, chỉ vì cậu muốn đi xa khỏi đó, nơi mà có quá nhiều kỉ niệm của cậu và người bạn quá cố, Kizuki. 
+Watanabe vô tình gặp lại Naoko bạn gái của Kizuki ở Tokyo, và 2 người đã gặp và nói chuyện với nhau, Naoko cũng như Watanabe muốn quên đi cái chết của Kizuki mà bỏ tất cả và bắt đầu cuộc sống mới ở Tokyo. Và rồi trong lần sinh nhật thứ 20 của mình, Watanabe và Naoko đã quan hệ với nhau, sau đó, Naoko rời bỏ Tokyo mà không nói với Watanabe một lời. Ở đại học, anh đã gặp Nagasawa một senpai của mình, một con người thông minh tài năng, và rất có tham vọng. Anh ta đã dạy cho Watanabe câu trích dẫn ở trên, cũng dạy cho Watanabe cách tìm kiếm tình một đêm, đây là một nhân vật rất có chiều sâu, mặc dù đôi lúc mình thấy anh ấy ích kỉ và quá ngạo mạn... anh ấy có mục tiêu, rõ ràng nhưng có phải chính vì thế mà anh ấy sẵn sàng đánh đổi luôn cả tình cảm của người yêu mình, Hatsumi? Nhân vật nữ tiếp theo là Reiko, Reiko Ishida, một nhạc công Piano tài năng, nhưng rơi vào cái bẫy của chính học trò mình đến mức suy sụp tâm lí, và gặp Naoko ở bệnh viện tâm lí khu vực Kyoto. Trong lúc Watanabe đang tìm kiếm Naoko, anh vô tình gặp phải Midori, (cá nhân mà nói đây là nhân vật mình yêu thích nhất trong truyện), con gái của một ông chủ hiệu sách ở khu Toshima ngoại ô Tokyo. Midori, tràn đầy năng lượng, trẻ trung và thành thật. Khá bất ngờ khi cô đề cập đến chuyện tình dục và nhiều vấn đề khác rất thẳng thắn (như đòi xem phim S&M ) hay muốn Watanabe đưa đi các shop đồ chơi... 
+Midori, một cô gái tuy đơn giản, nhưng lại cực kì sâu sắc (tại sao mình lại nói như thế, chắc phải đọc các bạn sẽ hiểu được), đặc biệt sau khi cô tham gia vào một nhóm mà nhóm đó lại muốn cách mạng, và bắt cô phải đọc quyển **Tư bản** của Karl Marx. Và Midori cảm nhận được sự chân thành cũng như đáng yêu của Watanabe... Naoko hay Midori sẽ là lựa chọn của Watanabe. Hãy đọc kĩ quyển sách nhé. ^^. Bên dưới là SPOILER nên các bạn có thể không xem. 
+
+## Những hình ảnh , ẩn dụ trong quyển sách
+Thường thì tác phẩm của Murakami có rất nhiều ẩn dụ và hình ảnh, tất nhiên ý nghĩa của những ẩn dụ đó theo mình sẽ thay đổi, tuỳ vào tâm trạng cũng như kinh nghiệm hiện tại của bạn. Có thể lúc 30 tuổi bạn đọc sẽ khác , lúc 35 tuổi cảm nhận sẽ khác, nó có nhiều tầng và nhiều lớp nghĩa. Ở dưới mình list ra một số ẩn dụ mà mình cảm thấy là hay nhất và ý nghĩa nhất.
+* **Cậu bạn quốc xã**: Cậu bạn này là bạn cùng phòng với Watanabe, một người sạch sẽ và cực kì đúng giờ, cậu ta là một sinh viên ở khoa bản đồ học. Cậu đơn giản, chân thật và đúng giờ, tuy nhiên một ngày nào đó cậu ấy đã rời bỏ Watanabe. Không một lí do. Nhưng chắc chắn Watanabe đã chịu ảnh hưởng rất nhiều từ cậu ta. Nhất là với một người nghệ sĩ như Watanabe... Một mô típ hay lặp lại trong các tiểu thuyết của Murakami, một nhân vật biến mất. Không rõ nguyên do, không biết kết cuộc. Có thể xem đó là nhân vật đã chết. Tuy nhiên cái chết này, còn không được nhắc tới, họ chỉ xuất hiện, đơn giản là thế, và Biến Mất.
+* **Tình bạn của cả 3 người**: Trong truyện của Murakami, việc duy trì sự cân bằng dường như cực kì cần thiết. Giống như sau này quyển **Colorless Tsukuru and the Pilgrimage** cũng đề cập, mỗi người là một liên kết, duy trì được sự cân bằng cho cả nhóm. Khi mà một thành viên trong nhóm mất đi, đó cũng là lúc những thành viên còn lại bị ảnh hưởng. Tuy nó không rõ rệt như **Colorless Tsukuru** nhưng thật sự, chỉ khi có mặt của Watanabe, Kizuki mới có thể hiển thị thế mạnh của mình. Có nhiều lí do dẫn đến cái chết của Kizuki, nhưng mình nghĩ, cậu ấy không muốn phải thấy Watanabe đi xa, và khi một mình thì cậu ấy cảm thấy bé nhỏ và mệt mỏi. Đó chính xác là những gì cậu ấy có, và cậu ấy không muốn Naoko phải thấy mình như thế. Cậu ta có thể chọn **Chết** vì không muốn như thế.
+* **Nỗi khổ thiên tài**: thử nghĩ, cậu chẳng cần làm gì, lên đàn một bản sonate trong một cuộc thi, giải nhất. lúc đó bạn cảm nhận thấy gì ??? Rỗng tuếch phải không ? Thiên tài nó đau đớn ở chỗ đó, hầu như họ không cần phải **khổ luyện**, từ đó không có trong tự điển của họ. Họ cần nó, để thấy sự tưởng thưởng là xứng đáng. Thử nghĩ, chúng ta sinh ra ở ngay vạch đích, mọi thứ trong tay, lúc đó chúng ta sẽ mất phương hướng như thế nào ? Đó chính xác là điều đã xảy ra với Reiko. Và khi ngón tay út của cô bị liệt cô lại trở về làm một người bình thường. Những điều đó tốt hơn cho cô, cho đến khi ....
+* **Midori**: nhân vật mình yêu thích nhất trong truyện. Một cô gái trẻ mạnh mẽ nhưng gìau tình cảm. Không quá ma mị hay u uất như Naoko, cô mang đến cho Watanabe một nguồn năng lượng tích cực. "Trong khi những cô học sinh cấp 3 khác có tiền mua son phấn, cô phải để dành tiền mua chảo rán trừng." ... Có một hình ảnh nhỏ giưã bố cô và cô, khi ông ở trong bệnh viện. "Ueno, vé, Midori.". Midori là nhân vật có thể gọi là ánh nắng trong tác phẩm này. Nếu xem Naoko là hình ảnh khu rừng u uất thì có thể xem Naoko là một đóm lửa, và nếu đốt cháy cả Naoko ta có thể thấy được hình ảnh của Midori trong đó. 
+
+
+**Ngoài lề:** Do mình đã đọc quyển **Colorless Tsukuru and the Pilgrimage** nên những hình ảnh miêu tả về tính dục cuadr Murakami không làm mình quá dội... Tuy nhiên nếu 10 năm trước mình đọc thì chắc sẽ khác. Nhưng mình nghĩ hình ảnh tình dục của Murakami cũng chỉ là ẩn dụ cho những khao khát sâu thẳm bên trong con người. Lựa chọn của Watanabe có chính xác ? Nếu bạn gặp Naoko trong lần sinh nhật thứ 20 đấy, bạn có xử lý giống như Watanabe? Cách sống của Nagasawa có chính xác? Hay Nagasawa chính là Watanabe ở một phương diện nào đấy, nếu Watanabe không có tình yêu, liệu cậu ta có trở thành Nagasawa ?....
+
+## So What's Next ? 
+Mình nghĩ tiếp theo sẽ là quyển **Kafka bên bờ biển**, nhưng ai biết được có thể sẽ là một chọn lựa khác.
+
