@@ -1,6 +1,16 @@
 /build_local/
-/build_staging/
-/build_production/
+/cache/
 /node_modules/
 /vendor/
-.DS_Store
+/.idea/
+/.vscode/
+npm-debug.log
+yarn-error.log
+/source/assets/build/
+
+# Optional ignores
+# /build_staging/
+# /build_production/
+# /source/assets/build/css/
+# /source/assets/build/fonts/
+# /source/assets/build/js/

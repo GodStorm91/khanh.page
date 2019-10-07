@@ -20,6 +20,33 @@ document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block);
 });
 
+(() => {
+  const form = document.querySelector('form');
+  const formResponse = document.querySelector('js-form-response');
+
+  form.onsubmit = e => {
+    e.preventDefault();
+
+    // Prepare data to send
+    const data = {};
+    const formElements = Array.from(form);
+    formElements.map(input => (data[input.name] = input.value));
+
+    axios({
+    	method: 'post',
+    	url: 'https://b0kr5jos0k.execute-api.ap-northeast-1.amazonaws.com/Production',
+    	data: data
+    }).then(function(response){
+    	alert('Thank you, we have received your questions.')
+    }).catch(function(error){
+    	alert('Thank you, we have received your questions.');
+    })
+
+    // Log what our lambda function will receive
+    console.log(JSON.stringify(data));
+  };
+})();
+
 Vue.config.productionTip = false;
 
 new Vue({
