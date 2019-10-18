@@ -3,12 +3,226 @@
     <title>Khanh&#039;s Blog</title>
     <link href="https://blog.khanh.page" />
     <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
-    <updated>2019-08-15T15:27:02+00:00</updated>
+    <updated>2019-10-18T08:08:26+00:00</updated>
     <id>https://blog.khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
+    <id>https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<h2>4.Thoughts:</h2>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
+    <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
+    <published>2019-09-05T00:00:00+00:00</published>
+    <updated>2019-09-05T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Today I have been working with AWS and some serious trouble has been occurred since 2019.08.24.
+The AWS Data center has been outage for around 8 hours which brought all the servers in &lt;code&gt;ap-northeast-1&lt;/code&gt; region down
+(some what they referred as......</summary>
+    <content type="html"><![CDATA[
+        <h2>Preface</h2>
+<p>Today I have been working with AWS and some serious trouble has been occurred since 2019.08.24.
+The AWS Data center has been outage for around 8 hours which brought all the servers in <code>ap-northeast-1</code> region down
+(some what they referred as the temperature failure has been the main problem to this incident).
+And one of our servers has died forever (due to the underlying EBS has been in trouble and couldn't be restored)</p>
+<h2>Workaround</h2>
+<p>Wow, trouble happened and we don't have any backup for that EBS (holy...)
+and we don't have any backup, but luckily, we have 2 instances. And the remaining still working.</p>
+<h2>Make the fix</h2>
+<p>Ofcourse the hotfix is :</p>
+<ul>
+<li>Create the new ebs from the remaining server snapshot</li>
+<li>Stop the error server, detach its ebs and attach a new one</li>
+<li>Restart the error server.</li>
+<li>Testing the new server </li>
+<li>If everything is ok it will be attached to main ELB</li>
+</ul>
+<h2>Root causes fix</h2>
+<p>The root cause is we don't have any or perform any backups. Although AWS has claimed there SLA is 99.99%
+There should be at time where the 0.01% occurred.
+So we intend to use AWS DLM to make the backup regularly and automatically.
+You can read documents about AWS DLM here (Link)[<a href="https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html">https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html</a>].</p>
+<h2>TLDR</h2>
+<p>If we don't backup our data regularly. We will have a lot of mess.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/til-automation-cherry-picking-process</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" />
+    <title>TIL - Automation cherry-picking process</title>
+    <published>2019-08-19T00:00:00+00:00</published>
+    <updated>2019-08-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Sometimes, I want to cherry-pick all merge-commit from a branch. For example, I have a feature that has been developing in &lt;code&gt;feature/xxx&lt;/code&gt; and this branch has been merge to &lt;code&gt;develop&lt;/code&gt; by multiple PRs.
+Now, I want to release this......</summary>
+    <content type="html"><![CDATA[
+        <h3>Use case</h3>
+<p>Sometimes, I want to cherry-pick all merge-commit from a branch. For example, I have a feature that has been developing in <code>feature/xxx</code> and this branch has been merge to <code>develop</code> by multiple PRs.</p>
+<p>Now, I want to release this <code>feature/xxx</code> to <code>master</code>. What should I do ? </p>
+<h3>1. List out all merge commit from feature branch to develop</h3>
+<p>I ran the command below to get all the commit hash </p>
+<pre><code>khanh in ~/project/x on develop &gt; git log --first-parent --oneline | grep feature/xxx
+43501043 Merge pull request #757 feature/573 into develop
+2189c7dd Merge pull request #756 feature/573 into develop
+15196ecd Merge pull request #755 feature/573 into develop
+fa50af01 Merge pull request #735 feature/573 into develop
+b3c729e8 Merge pull request #734 feature/573 into develop
+ec60235e Merge pull request #730 feature/573 into develop
+1c9315ad Merge pull request #725 feature/573 into develop
+9d92b98a Merge pull request #722 feature/573 into develop
+bf8b3f5c Merge pull request #717 feature/573 into develop
+f818f46a Merge pull request #716 feature/573 into develop
+6a257fa6 Merge pull request #715 feature/573 into develop
+c24e194f Merge pull request #712 feature/573 into develop
+89f821df Merge pull request #711 feature/573 into develop
+c0803282 Merge pull request #710 feature/573 into develop
+65dca36f Merge pull request #707 feature/573 into develop</code></pre>
+<p><strong>Note :</strong> To display the merge commit in reverse order, you should </p>
+<h3>2. Copy the result to a file</h3>
+<p>Maybe I will save the file as <code>list_commit.txt</code></p>
+<h3>3. Run the command below to cherry-pick each commit in that file</h3>
+<p>Run the shell script below to cherry-pick all commits in a file ( if there is any conflicts, the command will stop and you should resolve conflicts before continuing.)</p>
+<pre><code>#!/usr/bin/env bash
+
+LIST_FILE="${1}"
+
+if [ "${LIST_FILE}" = "" ] ; then
+  echo "Pleas give path to commit list file!"
+  echo "Usage: cherry-pick-list &lt;file/to/picklist&gt;"
+  exit 1
+fi
+
+echo "Cherry-picking all commits from file ${LIST_FILE} ..."
+
+COUNT=1
+IFS=$'\n'
+for commit in $(cat "${LIST_FILE}") ; do
+  hash=$(echo ${commit} | cut -d$'\t' -f 1)
+  echo -n "cherry picking ${hash} ... "
+  git cherry-pick -m 1 "${hash}"
+
+  if [ $? -eq 0 ] ; then
+    echo "done."
+  else
+    echo "There are conflicts to resolve!"
+    read -p "Press [ENTER] key if you have resolved the conflicts and to continue ..."
+  fi
+
+  COUNT=$((COUNT+1))
+done
+
+echo "Maybe you want to rebase: git rebase -i HEAD~${COUNT}"</code></pre>
+<h3>4. Referrals</h3>
+<p><a href="https://git-scm.com/docs/git-log">https://git-scm.com/docs/git-log</a></p>
+<p><a href="https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh">https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh</a></p>    ]]></content>
+</entry>
+            <entry>
     <id>https://blog.khanh.page/blog/til-rails-server-in-docker-not-start</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start" />
     <title>TIL - Rails server not start after turn off docker</title>
@@ -775,15 +989,17 @@ Deploying sử dụng SAM thì bao gồm 3 steps</p>
             <entry>
     <id>https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
-    <title>Tôi đã start cái blog này như thế nào ?</title>
+    <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
     <published>2019-03-01T00:00:00+00:00</published>
     <updated>2019-03-01T00:00:00+00:00</updated>
     <author>
         <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">...</summary>
+    <summary type="html">
+...</summary>
     <content type="html"><![CDATA[
-            ]]></content>
+        <h2>Opening</h2>
+<h2>Closing</h2>    ]]></content>
 </entry>
             <entry>
     <id>https://blog.khanh.page/blog/my-first-blog-post</id>

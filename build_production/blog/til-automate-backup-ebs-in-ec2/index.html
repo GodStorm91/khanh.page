@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="TIL - Rails server not start after turn off docker | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="TIL - Backup EC2 snapshot by using AWS DLM | Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | TIL - Rails server not start after turn off docker</title>
+        <title>Khanh&#039;s Blog | TIL - Backup EC2 snapshot by using AWS DLM</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="TIL - Rails server not start after turn off docker" />
+            <meta property="og:title" content="TIL - Backup EC2 snapshot by using AWS DLM" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
-    <meta property="og:description" content="Rails, Docker" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2"/>
+    <meta property="og:description" content="S3" />
 
                     <!-- Insert analytics code here -->
         
@@ -117,9 +117,9 @@
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
                 
-    <h1 class="leading-none mb-2">TIL - Rails server not start after turn off docker</h1>
+    <h1 class="leading-none mb-2">TIL - Backup EC2 snapshot by using AWS DLM</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  August 8, 2019</p>
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  September 5, 2019</p>
 
                         <a
                 href="/blog/categories/til"
@@ -130,43 +130,41 @@
     <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
             </main>
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <p>Recently, I have a project which was build by </p>
+        <h2>Preface</h2>
+<p>Today I have been working with AWS and some serious trouble has been occurred since 2019.08.24.
+The AWS Data center has been outage for around 8 hours which brought all the servers in <code>ap-northeast-1</code> region down
+(some what they referred as the temperature failure has been the main problem to this incident).
+And one of our servers has died forever (due to the underlying EBS has been in trouble and couldn't be restored)</p>
+<h2>Workaround</h2>
+<p>Wow, trouble happened and we don't have any backup for that EBS (holy...)
+and we don't have any backup, but luckily, we have 2 instances. And the remaining still working.</p>
+<h2>Make the fix</h2>
+<p>Ofcourse the hotfix is :</p>
 <ul>
-<li>Docker</li>
-<li>Rails </li>
-<li>Sidekiq (Job Scheduler)</li>
-<li>Redis (Cache server)</li>
-<li>MinIO (File storage)</li>
+<li>Create the new ebs from the remaining server snapshot</li>
+<li>Stop the error server, detach its ebs and attach a new one</li>
+<li>Restart the error server.</li>
+<li>Testing the new server </li>
+<li>If everything is ok it will be attached to main ELB</li>
 </ul>
-<p>We use <code>docker-compose up</code>, but sometimes after I turn off docker compose, I couldn't start the webserver process again, as the log below</p>
-<pre><code class="language-bash">web_1      | =&gt; Booting Puma
-web_1      | =&gt; Rails 5.1.4 application starting in development
-web_1      | =&gt; Run `rails server -h` for more startup options
-web_1      | A server is already running. Check /app/tmp/pids/server.pid.
-web_1      | Exiting
-server_web_1 exited with code 1
-</code></pre>
-<p>I kill docker process by command line, and run <code>docker-compose up</code> again, but no hope.</p>
-<h2>Problem:</h2>
-<p>Rails server can't not stop normally when we use <code>Ctrl+C</code> or <code>docker-compose down</code>, this problem should be fixed when we publish docker images or we have to manually remove the <code>pid</code> file that remained in the project folder : <code>&lt;project_root&gt;/tmp/pids/server.pid</code></p>
-<h2>Solution:</h2>
-<p>We have to removed the <code>server.pid</code> file and restart the webserver again.
-With the recent update of docker, we have seen that this problem has been fixed in <code>2.1.0.0</code> (mine was <code>2.0.0.0</code>) as an issue here:
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>
-<h2>Reference</h2>
-<p><a href="https://qiita.com/kmt/items/89c31d647bf42bf2300c">https://qiita.com/kmt/items/89c31d647bf42bf2300c</a>
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    </div>
+<h2>Root causes fix</h2>
+<p>The root cause is we don't have any or perform any backups. Although AWS has claimed there SLA is 99.99%
+There should be at time where the 0.01% occurred.
+So we intend to use AWS DLM to make the backup regularly and automatically.
+You can read documents about AWS DLM here (Link)[<a href="https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html">https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html</a>].</p>
+<h2>TLDR</h2>
+<p>If we don't backup our data regularly. We will have a lot of mess.</p>    </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-                            <a href="https://blog.khanh.page/blog/what-i-read-norwegian-wood" title="Older Post: What I read - Norwegian Wood">
-                    &LeftArrow; What I read - Norwegian Wood
+                            <a href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" title="Older Post: TIL - Automation cherry-picking process">
+                    &LeftArrow; TIL - Automation cherry-picking process
                 </a>
                     </div>
 
         <div>
-                            <a href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" title="Newer Post: TIL - Automation cherry-picking process">
-                    TIL - Automation cherry-picking process &RightArrow;
+                            <a href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" title="Newer Post: TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory">
+                    TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory &RightArrow;
                 </a>
                     </div>
     </nav>

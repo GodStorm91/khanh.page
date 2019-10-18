@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="TIL - Rails server not start after turn off docker | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="TIL - Automation cherry-picking process | Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/til-automation-cherry-picking-process"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | TIL - Rails server not start after turn off docker</title>
+        <title>Khanh&#039;s Blog | TIL - Automation cherry-picking process</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="TIL - Rails server not start after turn off docker" />
+            <meta property="og:title" content="TIL - Automation cherry-picking process" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
-    <meta property="og:description" content="Rails, Docker" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/til-automation-cherry-picking-process"/>
+    <meta property="og:description" content="Git" />
 
                     <!-- Insert analytics code here -->
         
@@ -117,9 +117,9 @@
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
                 
-    <h1 class="leading-none mb-2">TIL - Rails server not start after turn off docker</h1>
+    <h1 class="leading-none mb-2">TIL - Automation cherry-picking process</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  August 8, 2019</p>
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  August 19, 2019</p>
 
                         <a
                 href="/blog/categories/til"
@@ -130,43 +130,76 @@
     <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
             </main>
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <p>Recently, I have a project which was build by </p>
-<ul>
-<li>Docker</li>
-<li>Rails </li>
-<li>Sidekiq (Job Scheduler)</li>
-<li>Redis (Cache server)</li>
-<li>MinIO (File storage)</li>
-</ul>
-<p>We use <code>docker-compose up</code>, but sometimes after I turn off docker compose, I couldn't start the webserver process again, as the log below</p>
-<pre><code class="language-bash">web_1      | =&gt; Booting Puma
-web_1      | =&gt; Rails 5.1.4 application starting in development
-web_1      | =&gt; Run `rails server -h` for more startup options
-web_1      | A server is already running. Check /app/tmp/pids/server.pid.
-web_1      | Exiting
-server_web_1 exited with code 1
-</code></pre>
-<p>I kill docker process by command line, and run <code>docker-compose up</code> again, but no hope.</p>
-<h2>Problem:</h2>
-<p>Rails server can't not stop normally when we use <code>Ctrl+C</code> or <code>docker-compose down</code>, this problem should be fixed when we publish docker images or we have to manually remove the <code>pid</code> file that remained in the project folder : <code>&lt;project_root&gt;/tmp/pids/server.pid</code></p>
-<h2>Solution:</h2>
-<p>We have to removed the <code>server.pid</code> file and restart the webserver again.
-With the recent update of docker, we have seen that this problem has been fixed in <code>2.1.0.0</code> (mine was <code>2.0.0.0</code>) as an issue here:
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>
-<h2>Reference</h2>
-<p><a href="https://qiita.com/kmt/items/89c31d647bf42bf2300c">https://qiita.com/kmt/items/89c31d647bf42bf2300c</a>
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    </div>
+        <h3>Use case</h3>
+<p>Sometimes, I want to cherry-pick all merge-commit from a branch. For example, I have a feature that has been developing in <code>feature/xxx</code> and this branch has been merge to <code>develop</code> by multiple PRs.</p>
+<p>Now, I want to release this <code>feature/xxx</code> to <code>master</code>. What should I do ? </p>
+<h3>1. List out all merge commit from feature branch to develop</h3>
+<p>I ran the command below to get all the commit hash </p>
+<pre><code>khanh in ~/project/x on develop &gt; git log --first-parent --oneline | grep feature/xxx
+43501043 Merge pull request #757 feature/573 into develop
+2189c7dd Merge pull request #756 feature/573 into develop
+15196ecd Merge pull request #755 feature/573 into develop
+fa50af01 Merge pull request #735 feature/573 into develop
+b3c729e8 Merge pull request #734 feature/573 into develop
+ec60235e Merge pull request #730 feature/573 into develop
+1c9315ad Merge pull request #725 feature/573 into develop
+9d92b98a Merge pull request #722 feature/573 into develop
+bf8b3f5c Merge pull request #717 feature/573 into develop
+f818f46a Merge pull request #716 feature/573 into develop
+6a257fa6 Merge pull request #715 feature/573 into develop
+c24e194f Merge pull request #712 feature/573 into develop
+89f821df Merge pull request #711 feature/573 into develop
+c0803282 Merge pull request #710 feature/573 into develop
+65dca36f Merge pull request #707 feature/573 into develop</code></pre>
+<p><strong>Note :</strong> To display the merge commit in reverse order, you should </p>
+<h3>2. Copy the result to a file</h3>
+<p>Maybe I will save the file as <code>list_commit.txt</code></p>
+<h3>3. Run the command below to cherry-pick each commit in that file</h3>
+<p>Run the shell script below to cherry-pick all commits in a file ( if there is any conflicts, the command will stop and you should resolve conflicts before continuing.)</p>
+<pre><code>#!/usr/bin/env bash
+
+LIST_FILE="${1}"
+
+if [ "${LIST_FILE}" = "" ] ; then
+  echo "Pleas give path to commit list file!"
+  echo "Usage: cherry-pick-list &lt;file/to/picklist&gt;"
+  exit 1
+fi
+
+echo "Cherry-picking all commits from file ${LIST_FILE} ..."
+
+COUNT=1
+IFS=$'\n'
+for commit in $(cat "${LIST_FILE}") ; do
+  hash=$(echo ${commit} | cut -d$'\t' -f 1)
+  echo -n "cherry picking ${hash} ... "
+  git cherry-pick -m 1 "${hash}"
+
+  if [ $? -eq 0 ] ; then
+    echo "done."
+  else
+    echo "There are conflicts to resolve!"
+    read -p "Press [ENTER] key if you have resolved the conflicts and to continue ..."
+  fi
+
+  COUNT=$((COUNT+1))
+done
+
+echo "Maybe you want to rebase: git rebase -i HEAD~${COUNT}"</code></pre>
+<h3>4. Referrals</h3>
+<p><a href="https://git-scm.com/docs/git-log">https://git-scm.com/docs/git-log</a></p>
+<p><a href="https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh">https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh</a></p>    </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-                            <a href="https://blog.khanh.page/blog/what-i-read-norwegian-wood" title="Older Post: What I read - Norwegian Wood">
-                    &LeftArrow; What I read - Norwegian Wood
+                            <a href="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start" title="Older Post: TIL - Rails server not start after turn off docker">
+                    &LeftArrow; TIL - Rails server not start after turn off docker
                 </a>
                     </div>
 
         <div>
-                            <a href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" title="Newer Post: TIL - Automation cherry-picking process">
-                    TIL - Automation cherry-picking process &RightArrow;
+                            <a href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" title="Newer Post: TIL - Backup EC2 snapshot by using AWS DLM">
+                    TIL - Backup EC2 snapshot by using AWS DLM &RightArrow;
                 </a>
                     </div>
     </nav>

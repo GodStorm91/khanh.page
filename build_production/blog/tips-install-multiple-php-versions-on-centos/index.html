@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="TIL - Rails server not start after turn off docker | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory | Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | TIL - Rails server not start after turn off docker</title>
+        <title>Khanh&#039;s Blog | TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="TIL - Rails server not start after turn off docker" />
+            <meta property="og:title" content="TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start"/>
-    <meta property="og:description" content="Rails, Docker" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos"/>
+    <meta property="og:description" content="Multiple PHP versions on Centos7" />
 
                     <!-- Insert analytics code here -->
         
@@ -117,57 +117,95 @@
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
                 
-    <h1 class="leading-none mb-2">TIL - Rails server not start after turn off docker</h1>
+    <h1 class="leading-none mb-2">TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  August 8, 2019</p>
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  October 18, 2019</p>
 
                         <a
-                href="/blog/categories/til"
-                title="View posts in til"
+                href="/blog/categories/tips"
+                title="View posts in tips"
                 class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >til</a>
+            >tips</a>
              <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
     <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
             </main>
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <p>Recently, I have a project which was build by </p>
-<ul>
-<li>Docker</li>
-<li>Rails </li>
-<li>Sidekiq (Job Scheduler)</li>
-<li>Redis (Cache server)</li>
-<li>MinIO (File storage)</li>
-</ul>
-<p>We use <code>docker-compose up</code>, but sometimes after I turn off docker compose, I couldn't start the webserver process again, as the log below</p>
-<pre><code class="language-bash">web_1      | =&gt; Booting Puma
-web_1      | =&gt; Rails 5.1.4 application starting in development
-web_1      | =&gt; Run `rails server -h` for more startup options
-web_1      | A server is already running. Check /app/tmp/pids/server.pid.
-web_1      | Exiting
-server_web_1 exited with code 1
-</code></pre>
-<p>I kill docker process by command line, and run <code>docker-compose up</code> again, but no hope.</p>
-<h2>Problem:</h2>
-<p>Rails server can't not stop normally when we use <code>Ctrl+C</code> or <code>docker-compose down</code>, this problem should be fixed when we publish docker images or we have to manually remove the <code>pid</code> file that remained in the project folder : <code>&lt;project_root&gt;/tmp/pids/server.pid</code></p>
-<h2>Solution:</h2>
-<p>We have to removed the <code>server.pid</code> file and restart the webserver again.
-With the recent update of docker, we have seen that this problem has been fixed in <code>2.1.0.0</code> (mine was <code>2.0.0.0</code>) as an issue here:
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>
-<h2>Reference</h2>
-<p><a href="https://qiita.com/kmt/items/89c31d647bf42bf2300c">https://qiita.com/kmt/items/89c31d647bf42bf2300c</a>
-<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    </div>
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<h2>4.Thoughts:</h2>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-                            <a href="https://blog.khanh.page/blog/what-i-read-norwegian-wood" title="Older Post: What I read - Norwegian Wood">
-                    &LeftArrow; What I read - Norwegian Wood
+                            <a href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" title="Older Post: TIL - Backup EC2 snapshot by using AWS DLM">
+                    &LeftArrow; TIL - Backup EC2 snapshot by using AWS DLM
                 </a>
                     </div>
 
         <div>
-                            <a href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" title="Newer Post: TIL - Automation cherry-picking process">
-                    TIL - Automation cherry-picking process &RightArrow;
-                </a>
                     </div>
     </nav>
         </main>
