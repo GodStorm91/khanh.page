@@ -3,114 +3,12 @@
     <title>Khanh&#039;s Blog</title>
     <link href="https://blog.khanh.page" />
     <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
-    <updated>2019-10-18T08:08:26+00:00</updated>
+    <updated>2019-10-15T08:47:38+00:00</updated>
     <id>https://blog.khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
-    <id>https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
-    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
-    <published>2019-10-18T00:00:00+00:00</published>
-    <updated>2019-10-18T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
-
-
-Install PHP 5.6 and php56-fpm
-
-
-
-Install PHP 7.1 and php71-fpm
-
-
-
-
-Update your httpd first:
-
-
-
-
-Install fcgi modules
-
-The easy way:
-
-We just run this command
-
-If your......</summary>
-    <content type="html"><![CDATA[
-        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
-<h2>1. Install Multiple Versions of PHP</h2>
-<ol>
-<li>Install PHP 5.6 and php56-fpm</li>
-</ol>
-<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
-<ol start="2">
-<li>Install PHP 7.1 and php71-fpm</li>
-</ol>
-<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
-<h2>2. Install Apache fcgi modules</h2>
-<ol>
-<li>Update your httpd first:</li>
-</ol>
-<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
-<ol start="2">
-<li>
-<p>Install fcgi modules</p>
-<ol>
-<li>The easy way:</li>
-</ol>
-<p>We just run this command</p>
-<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
-<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
-<ol start="2">
-<li>
-<p>The hard way:
-2.1 Download the latest tar ball from source</p>
-<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
-<p>2.2 Unzip</p>
-<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
-<p>2.3 Build it</p>
-<pre><code>$ cd mod_fcgid-2.3.9
-$ ./configure.apxs</code></pre>
-<p>If you get some error like me, congratulation, we have to fix somethings.</p>
-<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
-or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
-<p>You can refer to this link to get the apsx [link]()</p>
-</li>
-<li>
-<p>Config the build</p>
-<pre><code class="language-bash">$ ./configure.apxs
-$ make
-$ make install</code></pre>
-<p>You can check the result by calling phpinfo.</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2>3. Config PHP-FPM listening ports</h2>
-<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
-Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
-We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
-<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
-<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
-<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
-<p>We then force these service to read from its own config file by uncomment these lines:</p>
-<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
-<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
-<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
-We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
-Then we will start both service by the comment below:</p>
-<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
-$ /etc/init.d/php-fpm-7.1 start</code></pre>
-<h2>4.Thoughts:</h2>
-<p>Mutliple php versions help us to check the consistency of our application.
-With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
-</entry>
-            <entry>
     <id>https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
     <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
