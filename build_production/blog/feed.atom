@@ -3,12 +3,453 @@
     <title>Khanh&#039;s Blog</title>
     <link href="https://blog.khanh.page" />
     <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
-    <updated>2019-10-15T08:47:38+00:00</updated>
+    <updated>2019-12-27T06:38:05+00:00</updated>
     <id>https://blog.khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
+    <id>https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
+    <title>TIL - Run multiple php-fpm instances on centos</title>
+    <published>2019-12-23T00:00:00+00:00</published>
+    <updated>2019-12-23T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Working as an Infrastructure Engineer, I have to deal a lot with migration tasks. One of my most paintful experience is to using multiple versions of php on the same server.
+Here is my notes when installing multiple php-fpm on the same servers 
+For......</summary>
+    <content type="html"><![CDATA[
+        <p>Working as an Infrastructure Engineer, I have to deal a lot with migration tasks. One of my most paintful experience is to using multiple versions of php on the same server.
+Here is my notes when installing multiple php-fpm on the same servers </p>
+<p>For example when I install php-fpm-7.2 and php-fpm-7.1 on the same server, I always get this error when starting the two processes:</p>
+<pre><code>$ sudo /etc/init.d/php-fpm-7.2 start
+$ sudo /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>When running these two commands, I always got php-fpm-7.1 started, not php-fpm-7.2, so what is the problem ?
+Because these two processes used the same configurations file in <code>/etc/php-fpm.conf</code> so whether we started <code>php-fpm-7.1</code> or <code>php-fpm-7.2</code>, only one processes get called.
+So what can you do in this situation ?</p>
+<ol>
+<li>Rename the file in <code>/etc/php-fpm.conf</code> to something else</li>
+<li>Enable custom config file in <code>/etc/sysconfig/php-fpm-7.2</code>. Below is the file's content :</li>
+</ol>
+<pre><code>  1 # Additional environment file for php-fpm
+  2 # Uncomment below to use the php 7.2 specific configuration file
+  3 OPTIONS="-y /etc/php-fpm-7.2.conf"</code></pre>
+<p>Just uncomment the third line, then everything is OK.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/others-my-dev-day</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/others-my-dev-day" />
+    <title>Others - My Dev day</title>
+    <published>2019-11-15T00:00:00+00:00</published>
+    <updated>2019-11-15T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Hi, my name is Khanh, who is working as a web application engineer at the company called in-g.jp in Yokohama.
+I also work at a startup called &amp;quot;AskVietnamese&amp;quot;,:x and we are working hard to make our first release this...</summary>
+    <content type="html"><![CDATA[
+        <p>Hi, my name is Khanh, who is working as a web application engineer at the company called in-g.jp in Yokohama.
+I also work at a startup called &quot;AskVietnamese&quot;,:x and we are working hard to make our first release this</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
+    <title>TIPS - How to install Apache 2.4.41 on Amazon Linux AMI</title>
+    <published>2019-10-21T00:00:00+00:00</published>
+    <updated>2019-10-21T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This guide will guide you needed steps to install Apache 2.4.41 on Amazon Linux AMI. Apache 2.4.41 has been released on 2019.08 but Amazon has not yet released the package to
+Amazon Repositories, so we will have to install it from source.
+
+
+
+
+
+
+
+Download......</summary>
+    <content type="html"><![CDATA[
+        <p>This guide will guide you needed steps to install Apache 2.4.41 on Amazon Linux AMI. Apache 2.4.41 has been released on 2019.08 but Amazon has not yet released the package to
+Amazon Repositories, so we will have to install it from source.</p>
+<h2>1. Yum update</h2>
+<pre><code class="language-bash">$ yum -y update</code></pre>
+<h2>2. Install OpenSSL 1.1.1</h2>
+<h3>2.1 Install perl-core and zlib-devel</h3>
+<pre><code class="language-bash">$ yum -y install zlib-devel
+$ yum -y install perl-core</code></pre>
+<h3>2.2 Install OpenSSL from source</h3>
+<ol>
+<li>Download the package</li>
+</ol>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget https://www.openssl.org/source/openssl-1.1.1c.tar.gz</code></pre>
+<ol start="2">
+<li>Run these commands below to unzip, make and install the package</li>
+</ol>
+<pre><code class="language-bash">$ tar xzvf openssl-1.1.1c.tar.gz
+$ cd openssl-1.1.1c
+$ ./config --prefix=/usr/local/openssl-1.1.1c shared zlib
+$ make depend
+$ make
+$ make test
+$ make install</code></pre>
+<ol start="3">
+<li>Set the path for OpenSSL</li>
+</ol>
+<pre><code class="language-bash">$ echo /usr/local/openssl-1.1.1c./lib &gt; /etc/ld.so.conf.d/openssl1111.conf
+$ ldconfig</code></pre>
+<h2>3. Install prerequisite tools for Apache Httpd</h2>
+<p>Prerequisites tools : <code>pcre-devel</code> and <code>expat-devel</code></p>
+<pre><code class="language-bash">$ yum -y install pcre-devel
+$ yum -y install expat-devel</code></pre>
+<h3>Install APR</h3>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget http://ftp.jaist.ac.jp/pub/apache//apr/apr-1.7.0.tar.gz
+$ tar xvzf apr-1.7.0.tar.gz
+$ cd apr-1.7.0/
+$ ./configure
+$ make
+$ make install</code></pre>
+<h3>Install APR Util</h3>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget http://ftp.jaist.ac.jp/pub/apache//apr/apr-util-1.6.1.tar.gz
+$ tar xvzf apr-util-1.6.1.tar.gz
+$ cd apr-util-1.6.1/
+$ ./configure --with-apr=/usr/local/apr
+$ make
+$ make install</code></pre>
+<h2>4. Install Apache 2.4.41</h2>
+<pre><code class="language-bash">$ cd /usr/local/usr
+$ wget http://ftp.jaist.ac.jp/pub/apache//httpd/httpd-2.4.41.tar.gz</code></pre>
+<p>Unzip the downloaded file and change to that directory</p>
+<pre><code class="language-bash">$ tar xvzf httpd-2.4.41.tar.gz
+$ cd httpd-2.4.41</code></pre>
+<p>Config and build from source</p>
+<pre><code class="language-bash">./configure \
+--enable-http2 \
+--enable-ssl \
+--with-ssl=/usr/local/openssl-1.1.1c \
+--with-apr=/usr/local/apr \
+--with-apr-util=/usr/local/apr \
+--enable-so \
+--enable-mods-shared=all \
+--enable-mpms-shared=all
+
+make
+make install</code></pre>
+<p>We can check the server information by running:</p>
+<pre><code class="language-bash">$ /usr/local/apache2/bin/httpd -v</code></pre>
+<h2>5. Thoughts</h2>
+<p>Apache 2.4.41 fixed some CVEs that has been noted from 2.4.39, so it is advised that you guys should update to this version asap.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/tips-install-mcrypt-on-php73</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-mcrypt-on-php73" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/tips-install-mysql57-centos-6</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-mysql57-centos-6" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
     <id>https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
     <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
@@ -456,6 +897,49 @@ Tất nhiên là mọi thứ đều có lý do của nó cả. </p>
 <p>Mình đã đọc quyển này, tuy nhiên chưa có review, <a href="https://www.goodreads.com/book/show/402843.Zen_Mind_Beginner_s_Mind">Zen Mind Beginner's Mind</a> do vẫn còn hơi mông lung vài chỗ. Chắc sẽ có review sớm thôi, khi mình có thời gian.</p>    ]]></content>
 </entry>
             <entry>
+    <id>https://blog.khanh.page/blog/what-i-read-napoleon-a-life</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-napoleon-a-life" />
+    <title>What I read - Napoleon</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Hôm nay tự nhiên nghe bài Cát bụi của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là Napoleon
+Trước giờ mình toàn......</summary>
+    <content type="html"><![CDATA[
+        <p>Hôm nay tự nhiên nghe bài <strong>Cát bụi</strong> của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là <strong>Napoleon</strong></p>
+<p>Trước giờ mình toàn đọc về <strong>Napoleon</strong> thông qua các quyển sách kiểu tuyển tập, hay <em>Thập đại tùng thư</em> chưa bao giờ đọc một quyển kiểu về cuộc đời, như thế này (đa phần các quyển lịch sử của mình đọc ngày xưa cũng nói vế các sự kiện, mà trong đó con người nhân vật thường không được miêu tả một cách rõ ràng nhất.)</p>
+<p>Quyển sách này do tác giả <strong>Andrew Roberts</strong> một nhà lịch sử người Anh (trớ trêu là ngày xưa người ghét <em>Napoleon</em> nhất lại là người Anh) lại viết về Napoleon, và hơn hết quyển sách này cho thấy một Napoleon rất khác những cuốn trước mà mình đã đọc, nó nhắc đến <strong>cuộc đời của Napoleon</strong> chứ không phải là <strong>Napoleon's Wars</strong> hay <strong>Campaign</strong>.</p>
+<p>Ít người biết rằng <strong>Napoleon không phải là người Pháp</strong>. Khó có thể nói ông thuộc Pháp Quốc, vì đảo Corsica ban đầu thuộc về Italy và tổ tiên của Napoleon cũng có gốc là người Ý chứ không phải nguòi Pháp. Napoleon có một cuộc sống khá nghèo, với ông bố nợ nần, nhưng lại <strong>có một người mẹ cực kì tốt</strong>, trong cuốn hồi kí còn đề cập đến một câu nói cực kì hữu thú vị, lúc đó Napoleon đã trở thành vua của nước Pháp. Đại để là một lần, khi thấy số tiền mà Napoleon cấp dưỡng cho bà, nhưng bà không dùng đến, Napoleon đã đến và hỏi bà và nhận được câu trả lời: <em>&quot;Ta tiết kiệm số tiền này, vì biết đâu có khi đám con Nữ Hoàng, Hoàng Đế của ta lại sẽ có lúc dùng đến&quot;</em>, và lời tiên liệu của bà không sai, vài năm sau bà đã có dịp dùng đến số tiền đó, khi Napoleon bị đày sang đảo Elba.</p>
+<p><strong>Napoleon cực kì chăm đọc sách</strong>, và sách mà ông đọc là sách lịch sử, về các vị tướng quân, ông cũng đọc các sử thi, anh hùng ca, mình nghĩ chính những sách lịch sử này đã làm dậy lên trong ông tinh thần quốc gia, và yêu nước. Chính vì thế ngay cả khi xin vào học trường sĩ quan pháo binh, ông cũng rất chăm chỉ đọc sách, đến nỗi nhà chỉ có mỗi cái ghế, giường, còn lại là sách.
+Có thể nói nghịch cảnh từ nhỏ đã tạo cho Napoleon được một đức tính khá có ích là <strong>Tiết kiệm</strong> nhờ thế mà ở chiến dịch làm nên tên tuổi của mình, ông đã có thể phát huy được nó, và làm cho nên một trận Toulon lịch sử, để đưa ông tiếp cận được với giới quí tộc nước Pháp.</p>
+<p>Sau khi tham gia vào giới quí tộc nước Pháp,  Napoleon đã gặp được một người phụ nữ quan trọng nhất trong cuộc đời mình, đó chính là vợ ông <strong>Josephine</strong>. Josephine là vợ goá của một quí tộc Pháp, mà quí tộc Pháp thì bà nào bà nấy đều có quan hệ ngoài luồng, bà này cũng không ngoại lệ, vậy mà khi đăng quang làm Hoàng đế Pháp, Napoleon vẫn tấn phong bà này làm Hoàng Hậu, thật là khó hiểu !!???
+Và có một thói quen khá hay là mỗi lần Napoleon đi chiến dịch xa đều viết thư cho Josephine kể đầy đủ tình hình của ông , dù bà này ở Pháp quốc thì đang ngoại tình với một ông khác ?? : D ??
+Nhưng vẫn phải công nhận, Josephine chính là thần May Mắn của Napoleon, sau khi quen biết bà, sự nghiệp của Napoleon đã lên như diều gặp gió, từ một sĩ quan pháo binh cấp thấp, có thể bước vào giới quí tộc Pháp và trở thành Vua của Pháp.
+Có một điều rất hay là Napoleon là người đã đặt ra chế độ <strong>Quân đoàn</strong> hay còn gọi là <strong>Corps</strong> , đây là một chế độ cực kì hiệu quả trong các cuộc chíến khi nó có thể vận dụng ưu thế di chuyển tối đa mà cũng có thể tạo thành nhiều hướng tấn công khi mỗi Quân đoàn có thể xem là một đơn vị tác chiến - hành quân độc lập. Nhờ chế độ này mà Napoleon đã làm gỏi liên quân Nga - Áo trong trận Austerlitz (may mắn là nếu không có Davout dũng cảm chiếm được Pratzen để đưa pháo lên thì chắc người bị dồn xuống hồ là Napoleon)</p>
+<p>Cơ mà đó là những gì mình đọc về chiến dịch, mình cũng không định nói quá nhiều. Hãy đề cập về những biến đổi về mặt xã hội của Napoleon </p>
+<ul>
+<li>Ông là người đặt nền móng cho bình đẳng xã hội </li>
+<li>Ông là người đã tạo ra bộ luật Napoleon - Có thể xem là bộ luật dân sự hiện đại đầu tiên của thế giới</li>
+<li>Ông là người làm rung chuyển chế độ Phong Kiến ở Châu Âu (một thường dân mà dám lên làm vua của một nước )</li>
+<li>Ông là người tạo ra chế độ hành chính hiệu quả từ Trung Ương đến địa phương</li>
+<li>Ông là người phục hồi lại Paris, mang Paris trở thành kinh đô của thời trang văn hoá của châu Âu (để đến bây giờ vẫn còn là quốc gia tiên phong trong lĩnh vực thời trang và xa xỉ  ) </li>
+</ul>
+<p>Về mục tiêu cuộc đời, <strong>Napoleon làm mọi thứ đều cho Pháp</strong>, đơn cử như việc khi đang chinh chiến ở Ai Cập nhưng nghe tin chính phủ quyết định kí hoà đàm cắt lại những lãnh thổ ở Ý mà Napoleon đã giành được, ông lập tức lên tàu trở về châu Âu để làm cho ra lẽ.
+Napoleon không bao giờ chịu dừng lại, nên việc mang chiến tranh tới nước Nga cũng là bắt đầu cho điểm suy tàn của ông, à mà có lẽ nên nói lại 1 tí về Josephine. Bà này thì đúng là kiểu phụ nữ có tiền mà chồng đi chinh chiến xa, lúc nào cũng có tình nhân vây quanh, nhưng tới lúc Napoleon đòi li dị vì bà không thể đẻ được cho ông đứa con nào, bà đã khóc lóc suốt 2 ngày liền cho tới khi được đưa ra khỏi cung điện Tuileries. Chẳng phải nói, Napoleon cũng đã cắt đi sợi dây liên kết với thần May mắn của mình.</p>
+<p>Trong quan hệ với các tướng lĩnh, Napoleon cũng được xem là có số <strong>sát hữu</strong>  khi lần lượt những tướng quân và là bạn thân nhất của ông đều qua đời trên chiến trận : </p>
+<ul>
+<li>Jean Lannes : đây có thể gọi là người bạn thân thiết nhất của Napoleon, một vị chỉ huy kỵ binh tài năng thật sự, nhưng mất đi quá sớm trong trận Aspern-Eslings, nếu Lannes không qua đời sớm, thì chiến dịch của Napoleon ở Nga có thể thành công thay vì thất bại sml. </li>
+<li>Michel Ney: đây cũng là một trong những vị tướng được mệnh danh <em>the bravest of the brave</em>, dù không phải là không có mâu thuẫn với Napoleon, nhưng khi Napoleon trở về từ Elba, ông này đã theo phò tá và khi bị thua trong trận Waterloo, ông có một câu nói khá bất hủ : <em>”I’m French, and I will remain French”</em>. (Ông có quốc tịch Phổ, nếu ông nhận ông là người Phổ thì sẽ không bị xử tử)</li>
+</ul>
+<p>Nói về vợ thì Napoleon có 2 vợ, một là Josephine và người thứ 2 là bà Marie Louise (Duchess of Parma).
+Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là một công chúa, thích được quan tâm và chăm sóc. Có một đoạn trong sách kể khi Napoleon đang tham gia chiến dịch ở Nga, do đường tiếp vận bị cắt đứt nên không thể viết thư về cho Marie, bà này liền hỏi, <em>”Không biết chàng đã có ai ngoài kia hay sao mà lâu rồi không biên thư cho ta”</em> . Và chẳng mấy chốc sau khi Napoleon bị đày đi Elba, bà ấy đã sa vào vòng tay ái tình của một người khác và chưa bao giờ đến Elba để thăm chồng như lời cuối trong thư đã hứa.</p>
+<p>Có một bức tranh mô tả cảnh Napoleon chia tay đội cận vệ của ông, nói chung là mình thấy đội này rất cool và cũng rất là trung thành với Napoleon. Đây là đội quân duy nhất mà có thể phàn nàn về tất cả mọi điều, từ quân trang đến chiến dịch, chỗ cắm trại và thậm chí là cả hoàng đế. Mới nghe thì có vẻ giống vụ kiêu binh của vua Lê chúa Trịnh nhưng đội quân này lại không hề có cách ứng xử như kiêu binh. Họ cực kì tuân thủ kỷ luật, và cực kì trung thành với Napoleon. Đến nỗi khi mà cháu của ông là Louis Napoleon (tức Napoleon đệ tam ) lên, những người lính nằm trong đội cận vệ này đã mặc lại quân phục và tham gia diễu hành. Tất nhiên, cận vệ của Napoleon đệ tam thì thua xa đệ nhất.
+<img src="/assets/img/napoleon-good-bye-old-guard.jpeg" alt="old-guard" /></p>
+<p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
+</entry>
+            <entry>
     <id>https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
     <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
@@ -522,49 +1006,6 @@ Khi trả lời được các câu hỏi trên, mình mới thấy rằng công 
 Tất nhiên là có những lúc stress, nhưng CEO thành công là những người vượt qua được và “<em>đối diện với nỗi đau</em>” (và tất nhiên vì đối diện được nên họ cũng rất dũng cảm nữa :D ).
 Và, không ai sinh ra là một CEO cả, CEO là một ngành không thuộc về tài năng, nó thuộc về nỗ lực và sự học hỏi, đôi khi còn phải có dũng cảm nữa.
 <em>CEO are made not born</em>. </p>    ]]></content>
-</entry>
-            <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-napoleon-a-life</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-napoleon-a-life" />
-    <title>What I read - Napoleon</title>
-    <published>2019-03-19T00:00:00+00:00</published>
-    <updated>2019-03-19T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">Hôm nay tự nhiên nghe bài Cát bụi của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là Napoleon
-Trước giờ mình toàn......</summary>
-    <content type="html"><![CDATA[
-        <p>Hôm nay tự nhiên nghe bài <strong>Cát bụi</strong> của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là <strong>Napoleon</strong></p>
-<p>Trước giờ mình toàn đọc về <strong>Napoleon</strong> thông qua các quyển sách kiểu tuyển tập, hay <em>Thập đại tùng thư</em> chưa bao giờ đọc một quyển kiểu về cuộc đời, như thế này (đa phần các quyển lịch sử của mình đọc ngày xưa cũng nói vế các sự kiện, mà trong đó con người nhân vật thường không được miêu tả một cách rõ ràng nhất.)</p>
-<p>Quyển sách này do tác giả <strong>Andrew Roberts</strong> một nhà lịch sử người Anh (trớ trêu là ngày xưa người ghét <em>Napoleon</em> nhất lại là người Anh) lại viết về Napoleon, và hơn hết quyển sách này cho thấy một Napoleon rất khác những cuốn trước mà mình đã đọc, nó nhắc đến <strong>cuộc đời của Napoleon</strong> chứ không phải là <strong>Napoleon's Wars</strong> hay <strong>Campaign</strong>.</p>
-<p>Ít người biết rằng <strong>Napoleon không phải là người Pháp</strong>. Khó có thể nói ông thuộc Pháp Quốc, vì đảo Corsica ban đầu thuộc về Italy và tổ tiên của Napoleon cũng có gốc là người Ý chứ không phải nguòi Pháp. Napoleon có một cuộc sống khá nghèo, với ông bố nợ nần, nhưng lại <strong>có một người mẹ cực kì tốt</strong>, trong cuốn hồi kí còn đề cập đến một câu nói cực kì hữu thú vị, lúc đó Napoleon đã trở thành vua của nước Pháp. Đại để là một lần, khi thấy số tiền mà Napoleon cấp dưỡng cho bà, nhưng bà không dùng đến, Napoleon đã đến và hỏi bà và nhận được câu trả lời: <em>&quot;Ta tiết kiệm số tiền này, vì biết đâu có khi đám con Nữ Hoàng, Hoàng Đế của ta lại sẽ có lúc dùng đến&quot;</em>, và lời tiên liệu của bà không sai, vài năm sau bà đã có dịp dùng đến số tiền đó, khi Napoleon bị đày sang đảo Elba.</p>
-<p><strong>Napoleon cực kì chăm đọc sách</strong>, và sách mà ông đọc là sách lịch sử, về các vị tướng quân, ông cũng đọc các sử thi, anh hùng ca, mình nghĩ chính những sách lịch sử này đã làm dậy lên trong ông tinh thần quốc gia, và yêu nước. Chính vì thế ngay cả khi xin vào học trường sĩ quan pháo binh, ông cũng rất chăm chỉ đọc sách, đến nỗi nhà chỉ có mỗi cái ghế, giường, còn lại là sách.
-Có thể nói nghịch cảnh từ nhỏ đã tạo cho Napoleon được một đức tính khá có ích là <strong>Tiết kiệm</strong> nhờ thế mà ở chiến dịch làm nên tên tuổi của mình, ông đã có thể phát huy được nó, và làm cho nên một trận Toulon lịch sử, để đưa ông tiếp cận được với giới quí tộc nước Pháp.</p>
-<p>Sau khi tham gia vào giới quí tộc nước Pháp,  Napoleon đã gặp được một người phụ nữ quan trọng nhất trong cuộc đời mình, đó chính là vợ ông <strong>Josephine</strong>. Josephine là vợ goá của một quí tộc Pháp, mà quí tộc Pháp thì bà nào bà nấy đều có quan hệ ngoài luồng, bà này cũng không ngoại lệ, vậy mà khi đăng quang làm Hoàng đế Pháp, Napoleon vẫn tấn phong bà này làm Hoàng Hậu, thật là khó hiểu !!???
-Và có một thói quen khá hay là mỗi lần Napoleon đi chiến dịch xa đều viết thư cho Josephine kể đầy đủ tình hình của ông , dù bà này ở Pháp quốc thì đang ngoại tình với một ông khác ?? : D ??
-Nhưng vẫn phải công nhận, Josephine chính là thần May Mắn của Napoleon, sau khi quen biết bà, sự nghiệp của Napoleon đã lên như diều gặp gió, từ một sĩ quan pháo binh cấp thấp, có thể bước vào giới quí tộc Pháp và trở thành Vua của Pháp.
-Có một điều rất hay là Napoleon là người đã đặt ra chế độ <strong>Quân đoàn</strong> hay còn gọi là <strong>Corps</strong> , đây là một chế độ cực kì hiệu quả trong các cuộc chíến khi nó có thể vận dụng ưu thế di chuyển tối đa mà cũng có thể tạo thành nhiều hướng tấn công khi mỗi Quân đoàn có thể xem là một đơn vị tác chiến - hành quân độc lập. Nhờ chế độ này mà Napoleon đã làm gỏi liên quân Nga - Áo trong trận Austerlitz (may mắn là nếu không có Davout dũng cảm chiếm được Pratzen để đưa pháo lên thì chắc người bị dồn xuống hồ là Napoleon)</p>
-<p>Cơ mà đó là những gì mình đọc về chiến dịch, mình cũng không định nói quá nhiều. Hãy đề cập về những biến đổi về mặt xã hội của Napoleon </p>
-<ul>
-<li>Ông là người đặt nền móng cho bình đẳng xã hội </li>
-<li>Ông là người đã tạo ra bộ luật Napoleon - Có thể xem là bộ luật dân sự hiện đại đầu tiên của thế giới</li>
-<li>Ông là người làm rung chuyển chế độ Phong Kiến ở Châu Âu (một thường dân mà dám lên làm vua của một nước )</li>
-<li>Ông là người tạo ra chế độ hành chính hiệu quả từ Trung Ương đến địa phương</li>
-<li>Ông là người phục hồi lại Paris, mang Paris trở thành kinh đô của thời trang văn hoá của châu Âu (để đến bây giờ vẫn còn là quốc gia tiên phong trong lĩnh vực thời trang và xa xỉ  ) </li>
-</ul>
-<p>Về mục tiêu cuộc đời, <strong>Napoleon làm mọi thứ đều cho Pháp</strong>, đơn cử như việc khi đang chinh chiến ở Ai Cập nhưng nghe tin chính phủ quyết định kí hoà đàm cắt lại những lãnh thổ ở Ý mà Napoleon đã giành được, ông lập tức lên tàu trở về châu Âu để làm cho ra lẽ.
-Napoleon không bao giờ chịu dừng lại, nên việc mang chiến tranh tới nước Nga cũng là bắt đầu cho điểm suy tàn của ông, à mà có lẽ nên nói lại 1 tí về Josephine. Bà này thì đúng là kiểu phụ nữ có tiền mà chồng đi chinh chiến xa, lúc nào cũng có tình nhân vây quanh, nhưng tới lúc Napoleon đòi li dị vì bà không thể đẻ được cho ông đứa con nào, bà đã khóc lóc suốt 2 ngày liền cho tới khi được đưa ra khỏi cung điện Tuileries. Chẳng phải nói, Napoleon cũng đã cắt đi sợi dây liên kết với thần May mắn của mình.</p>
-<p>Trong quan hệ với các tướng lĩnh, Napoleon cũng được xem là có số <strong>sát hữu</strong>  khi lần lượt những tướng quân và là bạn thân nhất của ông đều qua đời trên chiến trận : </p>
-<ul>
-<li>Jean Lannes : đây có thể gọi là người bạn thân thiết nhất của Napoleon, một vị chỉ huy kỵ binh tài năng thật sự, nhưng mất đi quá sớm trong trận Aspern-Eslings, nếu Lannes không qua đời sớm, thì chiến dịch của Napoleon ở Nga có thể thành công thay vì thất bại sml. </li>
-<li>Michel Ney: đây cũng là một trong những vị tướng được mệnh danh <em>the bravest of the brave</em>, dù không phải là không có mâu thuẫn với Napoleon, nhưng khi Napoleon trở về từ Elba, ông này đã theo phò tá và khi bị thua trong trận Waterloo, ông có một câu nói khá bất hủ : <em>”I’m French, and I will remain French”</em>. (Ông có quốc tịch Phổ, nếu ông nhận ông là người Phổ thì sẽ không bị xử tử)</li>
-</ul>
-<p>Nói về vợ thì Napoleon có 2 vợ, một là Josephine và người thứ 2 là bà Marie Louise (Duchess of Parma).
-Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là một công chúa, thích được quan tâm và chăm sóc. Có một đoạn trong sách kể khi Napoleon đang tham gia chiến dịch ở Nga, do đường tiếp vận bị cắt đứt nên không thể viết thư về cho Marie, bà này liền hỏi, <em>”Không biết chàng đã có ai ngoài kia hay sao mà lâu rồi không biên thư cho ta”</em> . Và chẳng mấy chốc sau khi Napoleon bị đày đi Elba, bà ấy đã sa vào vòng tay ái tình của một người khác và chưa bao giờ đến Elba để thăm chồng như lời cuối trong thư đã hứa.</p>
-<p>Có một bức tranh mô tả cảnh Napoleon chia tay đội cận vệ của ông, nói chung là mình thấy đội này rất cool và cũng rất là trung thành với Napoleon. Đây là đội quân duy nhất mà có thể phàn nàn về tất cả mọi điều, từ quân trang đến chiến dịch, chỗ cắm trại và thậm chí là cả hoàng đế. Mới nghe thì có vẻ giống vụ kiêu binh của vua Lê chúa Trịnh nhưng đội quân này lại không hề có cách ứng xử như kiêu binh. Họ cực kì tuân thủ kỷ luật, và cực kì trung thành với Napoleon. Đến nỗi khi mà cháu của ông là Louis Napoleon (tức Napoleon đệ tam ) lên, những người lính nằm trong đội cận vệ này đã mặc lại quân phục và tham gia diễu hành. Tất nhiên, cận vệ của Napoleon đệ tam thì thua xa đệ nhất.
-<img src="/assets/img/napoleon-good-bye-old-guard.jpeg" alt="old-guard" /></p>
-<p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
 </entry>
             <entry>
     <id>https://blog.khanh.page/blog/til-mongodb-with-fuelphp</id>
@@ -885,21 +1326,6 @@ Deploying sử dụng SAM thì bao gồm 3 steps</p>
 <p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
-    <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
-    <published>2019-03-01T00:00:00+00:00</published>
-    <updated>2019-03-01T00:00:00+00:00</updated>
-    <author>
-        <name>Khanh Nguyen</name>
-    </author>
-    <summary type="html">
-...</summary>
-    <content type="html"><![CDATA[
-        <h2>Opening</h2>
-<h2>Closing</h2>    ]]></content>
-</entry>
-            <entry>
     <id>https://blog.khanh.page/blog/my-first-blog-post</id>
     <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/my-first-blog-post" />
     <title>Tôi đã start cái blog này như thế nào ?</title>
@@ -928,5 +1354,20 @@ Nên mình đã chuyển qua dùng cái này</p>
 <p><img src="/assets/img/blog.khanh.page.png" alt="infrastructure" /></p>
 <h2>Đôi điều suy nghĩ</h2>
 <p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
+    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
+    <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
+    <published>2019-03-01T00:00:00+00:00</published>
+    <updated>2019-03-01T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+...</summary>
+    <content type="html"><![CDATA[
+        <h2>Opening</h2>
+<h2>Closing</h2>    ]]></content>
 </entry>
     </feed>

@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="TIL - Run multiple php-fpm instances on centos | Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+        <title>Khanh&#039;s Blog | TIL - Run multiple php-fpm instances on centos</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda" />
+            <meta property="og:title" content="TIL - Run multiple php-fpm instances on centos" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
-    <meta property="og:description" content="bref.sh a tools to run PHP on AWS Lambda" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux"/>
+    <meta property="og:description" content="php-fpm, server, infrastructure" />
 
                     <!-- Insert analytics code here -->
         
@@ -116,73 +116,45 @@
 </nav>
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
-                        <img src="/assets/img/post-cover-image-2.png" alt="Bref.sh, một tools giúp chạy PHP trên AWS Lambda cover image" class="mb-2">
-    
-    <h1 class="leading-none mb-2">Bref.sh, một tools giúp chạy PHP trên AWS Lambda</h1>
+                
+    <h1 class="leading-none mb-2">TIL - Run multiple php-fpm instances on centos</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  March 4, 2019</p>
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  December 23, 2019</p>
 
-     <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
+                        <a
+                href="/blog/categories/til"
+                title="View posts in til"
+                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+            >til</a>
+             <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
     <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
             </main>
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <h2>Mở đầu</h2>
-<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
-<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
-<ul>
-<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
-<ul>
-<li>Tách lớp</li>
-<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
-<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
-</ul></li>
-<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
-</ul>
-<h2>Bref là gì</h2>
-<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
-Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
-<ul>
-<li>PHP Runtimes cho AWS Lambda</li>
-<li>Công cụ để Deploy lên aws lambda </li>
-<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
-</ul>
-<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
-<h3>Bref hoạt động như thế nào</h3>
-<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
-<h4>Stacks</h4>
-<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
-<ul>
-<li>lambda functions</li>
-<li>S3 bucket</li>
-<li>databases</li>
-</ul>
-<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
-<h4>SAM</h4>
-<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
-Deploying sử dụng SAM thì bao gồm 3 steps</p>
-<ul>
-<li>Upload code lên S3 bucket</li>
-<li>Generate một file S3 Config template</li>
-<li>Deploy Cloudformation stack</li>
-</ul>
-<h3>Deploy với SAM</h3>
-<h4>Create deployment bucket</h4>
-<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
-<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
-<h4>Create Deployment bucket</h4>
-<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    </div>
+        <p>Working as an Infrastructure Engineer, I have to deal a lot with migration tasks. One of my most paintful experience is to using multiple versions of php on the same server.
+Here is my notes when installing multiple php-fpm on the same servers </p>
+<p>For example when I install php-fpm-7.2 and php-fpm-7.1 on the same server, I always get this error when starting the two processes:</p>
+<pre><code>$ sudo /etc/init.d/php-fpm-7.2 start
+$ sudo /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>When running these two commands, I always got php-fpm-7.1 started, not php-fpm-7.2, so what is the problem ?
+Because these two processes used the same configurations file in <code>/etc/php-fpm.conf</code> so whether we started <code>php-fpm-7.1</code> or <code>php-fpm-7.2</code>, only one processes get called.
+So what can you do in this situation ?</p>
+<ol>
+<li>Rename the file in <code>/etc/php-fpm.conf</code> to something else</li>
+<li>Enable custom config file in <code>/etc/sysconfig/php-fpm-7.2</code>. Below is the file's content :</li>
+</ol>
+<pre><code>  1 # Additional environment file for php-fpm
+  2 # Uncomment below to use the php 7.2 specific configuration file
+  3 OPTIONS="-y /etc/php-fpm-7.2.conf"</code></pre>
+<p>Just uncomment the third line, then everything is OK.</p>    </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-                            <a href="https://blog.khanh.page/blog/my-first-blog-post" title="Older Post: Tôi đã start cái blog này như thế nào ?">
-                    &LeftArrow; Tôi đã start cái blog này như thế nào ?
+                            <a href="https://blog.khanh.page/blog/others-my-dev-day" title="Older Post: Others - My Dev day">
+                    &LeftArrow; Others - My Dev day
                 </a>
                     </div>
 
         <div>
-                            <a href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" title="Newer Post: Dùng nmap để check ssl và tls">
-                    Dùng nmap để check ssl và tls &RightArrow;
-                </a>
                     </div>
     </nav>
         </main>

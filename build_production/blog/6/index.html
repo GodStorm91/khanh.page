@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/6"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+        <title>Khanh&#039;s Blog</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
-    <meta property="og:description" content="bref.sh a tools to run PHP on AWS Lambda" />
+            <meta property="og:title" content="Khanh&#039;s Blog Blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/6"/>
+    <meta property="og:description" content="The list of blog posts for Khanh&#039;s Blog" />
 
                     <!-- Insert analytics code here -->
         
@@ -116,76 +116,74 @@
 </nav>
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
-                        <img src="/assets/img/post-cover-image-2.png" alt="Bref.sh, một tools giúp chạy PHP trên AWS Lambda cover image" class="mb-2">
-    
-    <h1 class="leading-none mb-2">Bref.sh, một tools giúp chạy PHP trên AWS Lambda</h1>
+                <h1>Blog</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  March 4, 2019</p>
+    <hr class="border-b my-6">
 
-     <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
-    <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
+            <div class="flex flex-col mb-4">
+    <p class="text-grey-darker font-medium my-2">
+        March 1, 2019
+    </p>
+
+    <h2 class="text-3xl mt-0">
+        <a
+            href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1"
+            title="Read more - Chấm dứt chery picking và bắt đầu merging - Phần 1"
+            class="text-black font-extrabold"
+        >Chấm dứt chery picking và bắt đầu merging - Phần 1</a>
+    </h2>
+
+    <p class="mb-4 mt-0">
+</p>
+
+    <a
+        href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1"
+        title="Read more - Chấm dứt chery picking và bắt đầu merging - Phần 1"
+        class="uppercase font-semibold tracking-wide mb-2"
+    >Read</a>
+</div>
+
+            
+            <nav class="flex text-base my-8">
+                            <a
+                    href="/blog/5"
+                    title="Previous Page"
+                    class="bg-grey-lighter hover:bg-grey-light rounded mr-3 px-5 py-3"
+                >&LeftArrow;</a>
+            
+                            <a
+                    href="/blog"
+                    title="Go to Page 1"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 "
+                >1</a>
+                            <a
+                    href="/blog/2"
+                    title="Go to Page 2"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 "
+                >2</a>
+                            <a
+                    href="/blog/3"
+                    title="Go to Page 3"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 "
+                >3</a>
+                            <a
+                    href="/blog/4"
+                    title="Go to Page 4"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 "
+                >4</a>
+                            <a
+                    href="/blog/5"
+                    title="Go to Page 5"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 "
+                >5</a>
+                            <a
+                    href="/blog/6"
+                    title="Go to Page 6"
+                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 text-blue-dark"
+                >6</a>
+            
+                    </nav>
             </main>
-    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <h2>Mở đầu</h2>
-<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
-<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
-<ul>
-<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
-<ul>
-<li>Tách lớp</li>
-<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
-<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
-</ul></li>
-<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
-</ul>
-<h2>Bref là gì</h2>
-<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
-Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
-<ul>
-<li>PHP Runtimes cho AWS Lambda</li>
-<li>Công cụ để Deploy lên aws lambda </li>
-<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
-</ul>
-<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
-<h3>Bref hoạt động như thế nào</h3>
-<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
-<h4>Stacks</h4>
-<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
-<ul>
-<li>lambda functions</li>
-<li>S3 bucket</li>
-<li>databases</li>
-</ul>
-<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
-<h4>SAM</h4>
-<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
-Deploying sử dụng SAM thì bao gồm 3 steps</p>
-<ul>
-<li>Upload code lên S3 bucket</li>
-<li>Generate một file S3 Config template</li>
-<li>Deploy Cloudformation stack</li>
-</ul>
-<h3>Deploy với SAM</h3>
-<h4>Create deployment bucket</h4>
-<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
-<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
-<h4>Create Deployment bucket</h4>
-<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    </div>
-
-    <nav class="flex justify-between text-sm md:text-base">
-        <div>
-                            <a href="https://blog.khanh.page/blog/my-first-blog-post" title="Older Post: Tôi đã start cái blog này như thế nào ?">
-                    &LeftArrow; Tôi đã start cái blog này như thế nào ?
-                </a>
-                    </div>
-
-        <div>
-                            <a href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" title="Newer Post: Dùng nmap để check ssl và tls">
-                    Dùng nmap để check ssl và tls &RightArrow;
-                </a>
-                    </div>
-    </nav>
-        </main>
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-reset">

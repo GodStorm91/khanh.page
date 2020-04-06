@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="To share is to learn">
 
-        <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda | Khanh&#039;s Blog"/>
+        <meta property="og:title" content="TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory | Khanh&#039;s Blog"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
+        <meta property="og:url" content="https://blog.khanh.page/blog/tips-install-mcrypt-on-php73"/>
         <meta property="og:description" content="To share is to learn" />
 
-        <title>Khanh&#039;s Blog | Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+        <title>Khanh&#039;s Blog | TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
 
         <link rel="home" href="https://blog.khanh.page">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
 
-            <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda" />
+            <meta property="og:title" content="TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
-    <meta property="og:description" content="bref.sh a tools to run PHP on AWS Lambda" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/tips-install-mcrypt-on-php73"/>
+    <meta property="og:description" content="Multiple PHP versions on Centos7" />
 
                     <!-- Insert analytics code here -->
         
@@ -116,72 +116,97 @@
 </nav>
 
         <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
-                        <img src="/assets/img/post-cover-image-2.png" alt="Bref.sh, một tools giúp chạy PHP trên AWS Lambda cover image" class="mb-2">
-    
-    <h1 class="leading-none mb-2">Bref.sh, một tools giúp chạy PHP trên AWS Lambda</h1>
+                
+    <h1 class="leading-none mb-2">TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  March 4, 2019</p>
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  October 18, 2019</p>
 
-     <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
+                        <a
+                href="/blog/categories/tips"
+                title="View posts in tips"
+                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+            >tips</a>
+             <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
     <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
             </main>
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        <h2>Mở đầu</h2>
-<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
-<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
-<ul>
-<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
-<ul>
-<li>Tách lớp</li>
-<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
-<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
-</ul></li>
-<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
-</ul>
-<h2>Bref là gì</h2>
-<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
-Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
-<ul>
-<li>PHP Runtimes cho AWS Lambda</li>
-<li>Công cụ để Deploy lên aws lambda </li>
-<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
-</ul>
-<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
-<h3>Bref hoạt động như thế nào</h3>
-<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
-<h4>Stacks</h4>
-<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
-<ul>
-<li>lambda functions</li>
-<li>S3 bucket</li>
-<li>databases</li>
-</ul>
-<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
-<h4>SAM</h4>
-<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
-Deploying sử dụng SAM thì bao gồm 3 steps</p>
-<ul>
-<li>Upload code lên S3 bucket</li>
-<li>Generate một file S3 Config template</li>
-<li>Deploy Cloudformation stack</li>
-</ul>
-<h3>Deploy với SAM</h3>
-<h4>Create deployment bucket</h4>
-<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
-<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
-<h4>Create Deployment bucket</h4>
-<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    </div>
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    </div>
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-                            <a href="https://blog.khanh.page/blog/my-first-blog-post" title="Older Post: Tôi đã start cái blog này như thế nào ?">
-                    &LeftArrow; Tôi đã start cái blog này như thế nào ?
+                            <a href="https://blog.khanh.page/blog/tips-install-mysql57-centos-6" title="Older Post: TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory">
+                    &LeftArrow; TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory
                 </a>
                     </div>
 
         <div>
-                            <a href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" title="Newer Post: Dùng nmap để check ssl và tls">
-                    Dùng nmap để check ssl và tls &RightArrow;
+                            <a href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" title="Newer Post: TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory">
+                    TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory &RightArrow;
                 </a>
                     </div>
     </nav>
