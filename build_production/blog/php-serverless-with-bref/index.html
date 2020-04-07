@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="To share is to learn">
+
+        <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda | Khanh&#039;s Blog"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
+        <meta property="og:description" content="To share is to learn" />
+
+        <title>Khanh&#039;s Blog | Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+
+        <link rel="home" href="https://blog.khanh.page">
+        <link rel="icon" href="/favicon.ico">
+        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
+
+            <meta property="og:title" content="Bref.sh, một tools giúp chạy PHP trên AWS Lambda" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/php-serverless-with-bref"/>
+    <meta property="og:description" content="bref.sh a tools to run PHP on AWS Lambda" />
+
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=8a9a2a737bf5aeb99a9a">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76723458-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76723458-7');
+</script>
+
+    </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-grey-lightest text-grey-darkest leading-normal font-sans">
+        <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
+            <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Khanh&#039;s Blog home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="Khanh&#039;s Blog logo" />
+
+                        <h1 class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0">Khanh&#039;s Blog</h1>
+                    </a>
+                </div>
+
+                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                    <search></search>
+
+                    <nav class="hidden lg:flex items-center justify-end text-lg">
+    <a title="Khanh&#039;s Blog Blog" href="/blog"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        Blog
+    </a>
+
+    <a title="Khanh&#039;s Blog About" href="/about"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        About
+    </a>
+
+    <a title="Khanh&#039;s Blog Contact" href="/contact"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        Contact
+    </a>
+</nav>
+
+                    <button class="flex justify-center items-center bg-blue border border-blue h-10 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+                </div>
+            </div>
+        </header>
+
+        <nav id="js-nav-menu" class="nav-menu hidden lg:hidden">
+    <ul class="list-reset my-0">
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog Blog"
+                href="/blog"
+                class="nav-menu__item hover:text-blue "
+            >Blog</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog About"
+                href="/about"
+                class="nav-menu__item hover:text-blue "
+            >About</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog Contact"
+                href="/contact"
+                class="nav-menu__item hover:text-blue "
+            >Contact</a>
+        </li>
+    </ul>
+</nav>
+
+        <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
+                        <img src="/assets/img/post-cover-image-2.png" alt="Bref.sh, một tools giúp chạy PHP trên AWS Lambda cover image" class="mb-2">
+    
+    <h1 class="leading-none mb-2">Bref.sh, một tools giúp chạy PHP trên AWS Lambda</h1>
+
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  March 4, 2019</p>
+
+     <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
+    <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
+            </main>
+    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+        <h2>Mở đầu</h2>
+<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
+<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
+<ul>
+<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
+<ul>
+<li>Tách lớp</li>
+<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
+<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
+</ul></li>
+<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
+</ul>
+<h2>Bref là gì</h2>
+<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
+Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
+<ul>
+<li>PHP Runtimes cho AWS Lambda</li>
+<li>Công cụ để Deploy lên aws lambda </li>
+<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
+</ul>
+<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
+<h3>Bref hoạt động như thế nào</h3>
+<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
+<h4>Stacks</h4>
+<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
+<ul>
+<li>lambda functions</li>
+<li>S3 bucket</li>
+<li>databases</li>
+</ul>
+<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
+<h4>SAM</h4>
+<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
+Deploying sử dụng SAM thì bao gồm 3 steps</p>
+<ul>
+<li>Upload code lên S3 bucket</li>
+<li>Generate một file S3 Config template</li>
+<li>Deploy Cloudformation stack</li>
+</ul>
+<h3>Deploy với SAM</h3>
+<h4>Create deployment bucket</h4>
+<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
+<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
+<h4>Create Deployment bucket</h4>
+<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    </div>
+
+    <nav class="flex justify-between text-sm md:text-base">
+        <div>
+                            <a href="https://blog.khanh.page/blog/my-first-blog-post" title="Older Post: Tôi đã start cái blog này như thế nào ?">
+                    &LeftArrow; Tôi đã start cái blog này như thế nào ?
+                </a>
+                    </div>
+
+        <div>
+                            <a href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" title="Newer Post: Dùng nmap để check ssl và tls">
+                    Dùng nmap để check ssl và tls &RightArrow;
+                </a>
+                    </div>
+    </nav>
+        </main>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center list-reset">
+                <li class="md:mr-2">
+                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2020.
+                </li>
+
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+
+        <script src="/assets/build/js/main.js?id=cc825c909d6cbf1b0707"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+    </body>
+            
+</html>

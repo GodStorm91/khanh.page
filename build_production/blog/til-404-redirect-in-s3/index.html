@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="To share is to learn">
+
+        <meta property="og:title" content="TIL - 404 Redirect in S3 static blog post | Khanh&#039;s Blog"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://blog.khanh.page/blog/til-404-redirect-in-s3"/>
+        <meta property="og:description" content="To share is to learn" />
+
+        <title>Khanh&#039;s Blog | TIL - 404 Redirect in S3 static blog post</title>
+
+        <link rel="home" href="https://blog.khanh.page">
+        <link rel="icon" href="/favicon.ico">
+        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Khanh&#039;s Blog Atom Feed">
+
+            <meta property="og:title" content="TIL - 404 Redirect in S3 static blog post" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://blog.khanh.page/blog/til-404-redirect-in-s3"/>
+    <meta property="og:description" content="S3" />
+
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=8a9a2a737bf5aeb99a9a">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76723458-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76723458-7');
+</script>
+
+    </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-grey-lightest text-grey-darkest leading-normal font-sans">
+        <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
+            <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Khanh&#039;s Blog home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="Khanh&#039;s Blog logo" />
+
+                        <h1 class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0">Khanh&#039;s Blog</h1>
+                    </a>
+                </div>
+
+                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                    <search></search>
+
+                    <nav class="hidden lg:flex items-center justify-end text-lg">
+    <a title="Khanh&#039;s Blog Blog" href="/blog"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        Blog
+    </a>
+
+    <a title="Khanh&#039;s Blog About" href="/about"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        About
+    </a>
+
+    <a title="Khanh&#039;s Blog Contact" href="/contact"
+        class="ml-6 text-grey-darker hover:text-blue-dark ">
+        Contact
+    </a>
+</nav>
+
+                    <button class="flex justify-center items-center bg-blue border border-blue h-10 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+                </div>
+            </div>
+        </header>
+
+        <nav id="js-nav-menu" class="nav-menu hidden lg:hidden">
+    <ul class="list-reset my-0">
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog Blog"
+                href="/blog"
+                class="nav-menu__item hover:text-blue "
+            >Blog</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog About"
+                href="/about"
+                class="nav-menu__item hover:text-blue "
+            >About</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="Khanh&#039;s Blog Contact"
+                href="/contact"
+                class="nav-menu__item hover:text-blue "
+            >Contact</a>
+        </li>
+    </ul>
+</nav>
+
+        <main role="main" class="flex-auto w-full container max-w-xl mx-auto py-16 px-6">
+                
+    <h1 class="leading-none mb-2">TIL - 404 Redirect in S3 static blog post</h1>
+
+    <p class="text-grey-darker text-xl md:mt-0">Khanh Nguyen  •  June 20, 2019</p>
+
+                        <a
+                href="/blog/categories/til"
+                title="View posts in til"
+                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+            >til</a>
+             <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal"></h1>
+    <main class="mt-6 sm:mt-12 text-lg antialiased leading-normal" role="main">
+            </main>
+    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+        <p>Today I received a comment from my friends telling me that my blog doesn't redirect to 404.
+Oops...
+I should have been set it from the beginning instead of making my blog showing something like this:</p>
+<pre><code>403 Forbidden
+Code: AccessDenied
+Message: Access Denied
+RequestId: 5F9506201FD3BF09
+HostId: DlHKCh+6eIyX1OILlLEt2FVz2BMgn3luo6lNcx6xxMr3F0wntH5jDqHQ78Q77i1JWcoEN9xb//c=</code></pre>
+<p>We should have been let user see something much more <strong>friendly</strong> instead of something frank, coldhearted like the error above.
+Below is the steps I have done to make it works.</p>
+<ol>
+<li>Create a 404 folder and its content (the friendlier things I want my user to see)</li>
+<li>Settings S3 error pages in AWS console</li>
+<li>Invalidate cloudfront cache (in case you are using Cloudfront as your CDN)</li>
+</ol>
+<h3>1. Create a 404 folder</h3>
+<p>I've used <code>Jigsaw</code> as my blog cms, so things is super easy. I just have to create a <code>404.blade.php</code> and put it in my root directory. When I do compile the code for deploy, <code>404.html</code> file will be generated.</p>
+<pre><code class="language-html">@extends('_layouts.master')
+
+@section('body')
+    &lt;div class="flex flex-col items-center text-grey-darker mt-32"&gt;
+        &lt;h1 class="text-6xl font-light leading-none mb-2"&gt;404&lt;/h1&gt;
+
+        &lt;h2 class="text-3xl"&gt;Page not found.&lt;/h2&gt;
+
+        &lt;hr class="block w-full max-w-sm mx-auto border my-8"&gt;
+
+        &lt;p class="text-xl"&gt;
+            Need to update this page? See the &lt;a title="404 Page Documentation" href="https://jigsaw.tighten.co/docs/custom-404-page/"&gt;Jigsaw documentation&lt;/a&gt;.
+        &lt;/p&gt;
+    &lt;/div&gt;
+@endsection</code></pre>
+<p>Now, things is pretty better like this </p>
+<p><img src="/assets/img/custom-404.png" alt="404-image" /></p>
+<h3>2. Settings S3 error pages in AWS Console</h3>
+<p>S3 console provide a way to set your error pages (whenever some key is not found or permission forbidden)
+You can set the error pages as below (the path will be based on the bucket root directory )</p>
+<p><img src="/assets/img/s3-error-config.png" alt="s3-error-config" /></p>
+<p>If you don't use any CDN, you can skip step 3, everything now should work fine.
+If you use CDN, you need to clear the cache (or request invalidation as in AWS )</p>
+<h3>3. Create invalidation request</h3>
+<p>You can use AWS Console to create invalition request ( a cache clear request - all of the cache will be updated to the newest contents from origin - so this is an expensive step, please use it considerably).</p>
+<p>I use aws command line to create invalidation, you can use my command or console to create invalidation.</p>
+<pre><code class="language-bash"> aws cloudfront create-invalidation --distribution-id &lt;distribution_id&gt; --paths "/*" --profile &lt;profile_id&gt;</code></pre>
+<p>After that, you can confirm whether your changes have been updated and delegated to all edge locations
+(Please wait about 4,5 minutes for changes completely reflected all edge locations.)</p>    </div>
+
+    <nav class="flex justify-between text-sm md:text-base">
+        <div>
+                            <a href="https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" title="Older Post: What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice">
+                    &LeftArrow; What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice
+                </a>
+                    </div>
+
+        <div>
+                            <a href="https://blog.khanh.page/blog/tips-fix-fuelphp-email-header-broken" title="Newer Post: TIPS - How to fix header broken in FuelPHP">
+                    TIPS - How to fix header broken in FuelPHP &RightArrow;
+                </a>
+                    </div>
+    </nav>
+        </main>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center list-reset">
+                <li class="md:mr-2">
+                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2020.
+                </li>
+
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+
+        <script src="/assets/build/js/main.js?id=cc825c909d6cbf1b0707"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+    </body>
+            
+</html>
