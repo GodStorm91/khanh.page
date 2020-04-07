@@ -32,34 +32,33 @@ Và rồi từ từ mình bắt đầu chạy được lâu hơn, ban đầu mì
 
 Tiếp theo mình sẽ kể câu chuyện con ếch:
 Có năm con ếch ngồi trên một khúc gỗ. Bốn con quyết định nhảy khỏi khúc gỗ đó. Vậy hỏi còn bao nhiêu con ? 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-----------------------
 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 
 Câu trả lời là 5 con. Vì sao ư ? Vì có khoảng cách rất lớn giữa việc quyết định và việc thực hiện 
