@@ -1,198 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://blog.khanh.page/PseudoCollectionGenerator.php</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/PseudoCollectionGenerator.php</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/categories/books</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/categories/books</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/categories/til</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/categories/til</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/my-first-blog-post</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/my-first-blog-post</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/my-running-life-march-2020</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/my-running-life-march-2020</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/nmap-for-check-ssl-tls</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/nmap-for-check-ssl-tls</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/others-my-dev-day</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/others-my-dev-day</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/php-serverless-with-bref</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/php-serverless-with-bref</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-404-redirect-in-s3</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-404-redirect-in-s3</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-automate-backup-ebs-in-ec2</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-automation-cherry-picking-process</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-automation-cherry-picking-process</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-mongodb-with-fuelphp</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-mongodb-with-fuelphp</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-rails-server-in-docker-not-start</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-rails-server-in-docker-not-start</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tips-fix-fuelphp-email-header-broken</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tips-fix-fuelphp-email-header-broken</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tips-install-apache-2441-on-amazon-linux</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tips-install-apache-2441-on-amazon-linux</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tips-install-mcrypt-on-php73</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tips-install-mcrypt-on-php73</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tips-install-multiple-php-versions-on-centos</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tips-install-mysql57-centos-6</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tips-install-mysql57-centos-6</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-atomic-habits</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-atomic-habits</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner's-mind</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-beginner-mind-zen-beginner's-mind</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-genghis-khan</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-genghis-khan</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-napoleon-a-life</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-napoleon-a-life</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-norwegian-wood</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-norwegian-wood</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tags/server</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tags/server</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tags/infratructure</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tags/infratructure</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/tags/php'</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/tags/php'</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/about</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/about</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/2</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/2</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/3</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/3</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/4</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/4</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/5</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/5</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/6</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/6</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/blog/feed.atom</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/blog/feed.atom</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page/contact</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page/contact</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://blog.khanh.page</loc>
-  <lastmod>2020-04-07T15:36:11+00:00</lastmod>
+  <loc>https://khanh.page</loc>
+  <lastmod>2020-04-07T15:56:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://blog.khanh.page',
+    'baseUrl' => 'https://khanh.page',
     'production' => true,
 ];

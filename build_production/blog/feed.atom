@@ -1,35 +1,38 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Khanh&#039;s Blog</title>
-    <link href="https://blog.khanh.page" />
-    <link type="application/atom+xml" rel="self" href="https://blog.khanh.page/blog/feed.atom" />
-    <updated>2020-04-07T15:36:10+00:00</updated>
-    <id>https://blog.khanh.page/blog/feed.atom</id>
+    <link href="https://khanh.page" />
+    <link type="application/atom+xml" rel="self" href="https://khanh.page/blog/feed.atom" />
+    <updated>2020-04-07T15:56:10+00:00</updated>
+    <id>https://khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
-    <id>https://blog.khanh.page/blog/my-running-life-march-2020</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/my-running-life-march-2020" />
+    <id>https://khanh.page/blog/my-running-life-march-2020</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/my-running-life-march-2020" />
     <title>My Running Life  - March 2020 -</title>
     <published>2020-04-07T00:00:00+00:00</published>
     <updated>2020-04-07T00:00:00+00:00</updated>
     <author>
         <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)......</summary>
+    <summary type="html">
+Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)......</summary>
     <content type="html"><![CDATA[
-        <p>Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)
+        <h2>Mở</h2>
+<p>Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)
 Tháng 3, mình hoàn tất được một half marathon, và điều lạ là bước sang tháng 4 mình đã có thể hoàn tất được 2 half marathon trong 3 ngày. Cơ thể mình có vẻ đang dần thích nghi được với việc chạy bộ trên 10km. Thật sự mà nói trước đây mình hiếm khi nào chạy trên 10km, cũng không hiểu vì sao, gần đây mình lại có dũng cảm nhấn chân chạy qua km thứ 10 rồi thứ 11 (có phải là do ảnh hưởng câu chuyện con ếch của đứa bạn không nhỉ ? ). Mọi thứ cũng dần dần tốt hơn, nhịp thở, sải chân cũng như nhịp tim.
 Cuối tháng 3 cũng là mùa sakura nở rộ, nhất là vào cuối tuần trước (tầm 2020.04.05 ~ 06). Mình chạy half-marathon dọc bờ sông　旧江戸川 vào sáng thứ 7, cảm giác thật thanh bình và thư thái, đây là course mình đã canh me từ lâu trên runtrip, một là vì nó đẹp, hai là cũng muốn chạy ngang disneyland một lần, nhưng mình cũng sợ không biết có hoàn thành nổi course đó không vì nó hơn 20 cây số mà 2 ngày trước mình vừa chạy xong một half.
-<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/92316701_852686901864356_6140147274279288832_n.jpg?_nc_cat=102&amp;_nc_sid=b96e70&amp;_nc_ohc=lHxh-06dnxAAX96NxC3&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=9&amp;_nc_ht=scontent.xx&amp;oh=c7352f5d6a4fec1bcb410778d3c7053e&amp;oe=5EACAA62" alt="sakura" />
-Nhắc đến half-marathon đầu tiên trong tháng 4, mình cũng hơi kinh hãi, chẳng là vì gió ngược khá mạnh. Quãng dọc bờ sông Tamagawa từ phía Shinmaruko về Kamata thì rất là thoải mái mình chạy khá nhanh tầm pace 5:50 tuy vậy quãng ngược lại thì khá là kinh khủng vì gió ngược, pace mình rơi xuống còn pace 6:45 đôi khi là pace 7. Đấy, con người thật đúng nực cười, khi anh chạy nhanh thì anh nghĩ là do mình mạnh khoẻ, khi anh chạy chậm thì đổ thừa gió máy, ôi con người mới tội nghiệp và bất nhất làm sao. Nghĩ thì thế rồi lại cười, nhấn chân tiếp cho hết 6km còn lại để hoàn thành một half-marathon ( không thôi bị bảo là con ếch ộp - sau này ngồi nghĩ lại, ừ, có là con ếch ộp thì có sao đâu - biết mình khi nào là con ếch ộp mới quan trọng )
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/92316701_852686901864356_6140147274279288832_n.jpg?_nc_cat=102&amp;_nc_sid=b96e70&amp;_nc_ohc=lHxh-06dnxAAX96NxC3&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=9&amp;_nc_ht=scontent.xx&amp;oh=c7352f5d6a4fec1bcb410778d3c7053e&amp;oe=5EACAA62" alt="sakura" /></p>
+<h2>Trung</h2>
+<p>Nhắc đến half-marathon đầu tiên trong tháng 4, mình cũng hơi kinh hãi, chẳng là vì gió ngược khá mạnh. Quãng dọc bờ sông Tamagawa từ phía Shinmaruko về Kamata thì rất là thoải mái mình chạy khá nhanh tầm pace 5:50 tuy vậy quãng ngược lại thì khá là kinh khủng vì gió ngược, pace mình rơi xuống còn pace 6:45 đôi khi là pace 7. Đấy, con người thật đúng nực cười, khi anh chạy nhanh thì anh nghĩ là do mình mạnh khoẻ, khi anh chạy chậm thì đổ thừa gió máy, ôi con người mới tội nghiệp và bất nhất làm sao. Nghĩ thì thế rồi lại cười, nhấn chân tiếp cho hết 6km còn lại để hoàn thành một half-marathon ( không thôi bị bảo là con ếch ộp - sau này ngồi nghĩ lại, ừ, có là con ếch ộp thì có sao đâu - biết mình khi nào là con ếch ộp mới quan trọng )
 <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/91972455_667246510705768_9106216178107285504_n.jpg?_nc_cat=105&amp;_nc_sid=b96e70&amp;_nc_ohc=fXVYlqFTkpAAX-Jl7zG&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=9&amp;_nc_ht=scontent.xx&amp;oh=ea78603bde5801d8e23c36d8a8d74785&amp;oe=5EB0B6C9" alt="tamagawa" /></p>
 <p>Mình cũng đọc lại quyển &quot;Running with the mind of Medidation&quot; của Sakyong Mipham, đây là quyển sách về chạy bộ thứ 2 mình đọc sau quyển &quot;Tôi nói gì khi nói về chạy bộ&quot; của Murakami, mình nhớ là mình mua nó vào năm 2016, đến giờ đã hơn 4 năm rồi. Mình mua vì mình thấy nó có một sợi dây liên kết mơ hồ nào đó giữa chạy bộ và thiền. Thật ra lúc mình bắt đầu chạy bộ, khá là chật vật, mình vẫn còn nhớ đó là quãng thời gian mình vừa sang Nhật được 3 tháng, tầm tháng 7, lúc trời mưa lâm thâm mà mình thì chỉ có đi làm về vào phòng chat chit lung tung rồi đi ngủ ( vì mình làm gì có bạn với biết chỗ nào đi chơi nhiều ở Nhật) thế rồi nảy ra ý tưởng chạy bộ cho mệt về cho dễ ngủ. Vậy là lục tục lên mạng tìm giày. Đôi giày đầu tiên mình mang chạy bộ là đôi giày mình mang từ Việt Nam sang, đế khá cứng và nặng, cảm tưởng cứ như giày này để tránh giẫm phải đinh khi đi quốc lộ chứ không phải là giầy chạy. Sau này mới thấy đế gìay có cứng và nặng, nhưng không quyết đoán mà chạy thì cái tư tưởng đó còn cứng và nặng hơn gấp ngàn lần.
 Thế rồi bắt đầu chạy, ban đầu là dùng ứng dụng RunKeeper, để lưu lại số km mình đã từng chạy. 3km, 5km rồi 10km. Sau này mình vẫn nhớ lần đầu mình hoàn thành được 10K đầu đời, đó là khi chạy vào chiều thứ 7, quãng đường từ Kawasaki đến Yokohama, đó là một quãng chạy mà đến giờ mình vẫn nhớ.
 Đường chạy của mình dọc theo đường tàu Keihin, mình cứ chạy một đoạn thì lại thấy tàu chạy xuôi chiều hoặc ngược lại, lúc đó lại biết mình đã chạy đc tầm 4 phút rồi (tất nhiên là App RunKeeper có thông báo với mình) tuy nhiên mình thích nhìn xung quanh nên mình tắt nốt cái tiếng đó. Nhiều người khi chạy bộ thích nghe nhạc, mình thì không. Không hẳn là mình không thích âm nhạc, vì mình khi code vẫn hay nghe nhạc, và lúc mình nghe nhạc Rock Hunno (của nhóm The HU) thì mình code được nhanh nhất, tuy nhiên nó không áp dụng cho khi chạy bộ. Khi chạy mình thích lắng nghe âm thanh xung quanh hơn - đôi khi đó đơn giản chỉ là tiếng nện chân xuống mặt đường, tiếng thở khi phải lên dốc hoặc đơn giản là một tiếng roạc khi đầu gối của mình chạy trên những chỗ hơi gồ ghề. Đấy, chỉ đơn giản là những âm thanh đấy mà mình nghe đi nghe lại liên tục trong hơn 2 tiếng đồng hồ. Ấy vậy rồi cũng tới đích. Đôi khi điều khó nhất ngăn cản giữa sự vĩ đại và tầm thường lại chín là sự nhàm chán. (Mình lại nhớ đến câu chuyện trong quyển Tôi nói gì khi nói về chạy bộ của Murakami - Ở đó ông gặp một vận động viên tầm cỡ olimpic - cũng trả lời là để đạt được tầm cỡ thứ duy nhất ta phải chịu đựng là sự nhàm chán.)</p>
 <p>Và rồi từ từ mình bắt đầu chạy được lâu hơn, ban đầu mình chỉ thấy được 4m trước mặt, nhưng cứ nhấn bước rồi sẽ thấy quãng đường mình đi là bao xa.</p>
-<p><img src="https://gyazo.com/df01a8e417736421dfbc326e7d445f82" alt="gyazo" /></p>
+<p><img src="https://i.gyazo.com/df01a8e417736421dfbc326e7d445f82.png" alt="gyazo" /></p>
 <h2>Tiếp theo mình sẽ kể câu chuyện con ếch:
 Có năm con ếch ngồi trên một khúc gỗ. Bốn con quyết định nhảy khỏi khúc gỗ đó. Vậy hỏi còn bao nhiêu con ?
 .
@@ -62,8 +65,8 @@ Có năm con ếch ngồi trên một khúc gỗ. Bốn con quyết định nh�
 (trích: 15 nguyên tắc vàng về phát triển bản thân)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-atomic-habits</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-atomic-habits" />
+    <id>https://khanh.page/blog/what-i-read-atomic-habits</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-atomic-habits" />
     <title>What I read - Atomic Habits , an easy &amp; proven way to build good habits and break bad ones</title>
     <published>2020-03-14T00:00:00+00:00</published>
     <updated>2020-03-14T00:00:00+00:00</updated>
@@ -113,8 +116,8 @@ Quyển sách này có các......</summary>
 <p>Quyển sách đề cập rất nhiều phương pháp để thực hiện - review lại những thói quen mà các bạn có thể download các template trên trang web của tác giả: <a href="https://www.jamesclear.com">jamesclear.com</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
+    <id>https://khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
     <title>TIL - Run multiple php-fpm instances on centos</title>
     <published>2019-12-23T00:00:00+00:00</published>
     <updated>2019-12-23T00:00:00+00:00</updated>
@@ -143,8 +146,8 @@ So what can you do in this situation ?</p>
 <p>Just uncomment the third line, then everything is OK.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/others-my-dev-day</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/others-my-dev-day" />
+    <id>https://khanh.page/blog/others-my-dev-day</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/others-my-dev-day" />
     <title>Others - My Dev day</title>
     <published>2019-11-15T00:00:00+00:00</published>
     <updated>2019-11-15T00:00:00+00:00</updated>
@@ -158,8 +161,8 @@ I also work at a startup called &amp;quot;AskVietnamese&amp;quot;,:x and we are 
 I also work at a startup called &quot;AskVietnamese&quot;,:x and we are working hard to make our first release this</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
+    <id>https://khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
     <title>TIPS - How to install Apache 2.4.41 on Amazon Linux AMI</title>
     <published>2019-10-21T00:00:00+00:00</published>
     <updated>2019-10-21T00:00:00+00:00</updated>
@@ -251,8 +254,8 @@ make install</code></pre>
 <p>Apache 2.4.41 fixed some CVEs that has been noted from 2.4.39, so it is advised that you guys should update to this version asap.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/tips-install-mcrypt-on-php73</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-mcrypt-on-php73" />
+    <id>https://khanh.page/blog/tips-install-mcrypt-on-php73</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/tips-install-mcrypt-on-php73" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -352,8 +355,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/tips-install-mysql57-centos-6</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-mysql57-centos-6" />
+    <id>https://khanh.page/blog/tips-install-mysql57-centos-6</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/tips-install-mysql57-centos-6" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -453,8 +456,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
+    <id>https://khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -554,8 +557,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
+    <id>https://khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-automate-backup-ebs-in-ec2" />
     <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
     <published>2019-09-05T00:00:00+00:00</published>
     <updated>2019-09-05T00:00:00+00:00</updated>
@@ -593,8 +596,8 @@ You can read documents about AWS DLM here (Link)[<a href="https://docs.aws.amazo
 <p>If we don't backup our data regularly. We will have a lot of mess.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-automation-cherry-picking-process</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-automation-cherry-picking-process" />
+    <id>https://khanh.page/blog/til-automation-cherry-picking-process</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-automation-cherry-picking-process" />
     <title>TIL - Automation cherry-picking process</title>
     <published>2019-08-19T00:00:00+00:00</published>
     <updated>2019-08-19T00:00:00+00:00</updated>
@@ -666,8 +669,8 @@ echo "Maybe you want to rebase: git rebase -i HEAD~${COUNT}"</code></pre>
 <p><a href="https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh">https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-rails-server-in-docker-not-start</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-rails-server-in-docker-not-start" />
+    <id>https://khanh.page/blog/til-rails-server-in-docker-not-start</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-rails-server-in-docker-not-start" />
     <title>TIL - Rails server not start after turn off docker</title>
     <published>2019-08-08T00:00:00+00:00</published>
     <updated>2019-08-08T00:00:00+00:00</updated>
@@ -712,8 +715,8 @@ With the recent update of docker, we have seen that this problem has been fixed 
 <a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-norwegian-wood</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-norwegian-wood" />
+    <id>https://khanh.page/blog/what-i-read-norwegian-wood</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-norwegian-wood" />
     <title>What I read - Norwegian Wood</title>
     <published>2019-07-13T00:00:00+00:00</published>
     <updated>2019-07-13T00:00:00+00:00</updated>
@@ -744,8 +747,8 @@ Midori, một cô gái tuy đơn giản, nhưng lại cực kì sâu sắc (tạ
 <p>Mình nghĩ tiếp theo sẽ là quyển <strong>Kafka bên bờ biển</strong>, nhưng ai biết được có thể sẽ là một chọn lựa khác.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/tips-fix-fuelphp-email-header-broken</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/tips-fix-fuelphp-email-header-broken" />
+    <id>https://khanh.page/blog/tips-fix-fuelphp-email-header-broken</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/tips-fix-fuelphp-email-header-broken" />
     <title>TIPS - How to fix header broken in FuelPHP</title>
     <published>2019-06-21T00:00:00+00:00</published>
     <updated>2019-06-21T00:00:00+00:00</updated>
@@ -812,8 +815,8 @@ return array(
 <p>Don't have any special thoughts about this problem. I'm considering to move away from FuelPHP to another framework.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-404-redirect-in-s3</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-404-redirect-in-s3" />
+    <id>https://khanh.page/blog/til-404-redirect-in-s3</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-404-redirect-in-s3" />
     <title>TIL - 404 Redirect in S3 static blog post</title>
     <published>2019-06-20T00:00:00+00:00</published>
     <updated>2019-06-20T00:00:00+00:00</updated>
@@ -874,8 +877,8 @@ If you use CDN, you need to clear the cache (or request invalidation as in AWS )
 (Please wait about 4,5 minutes for changes completely reflected all edge locations.)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
+    <id>https://khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
     <title>What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice</title>
     <published>2019-05-09T00:00:00+00:00</published>
     <updated>2019-05-09T00:00:00+00:00</updated>
@@ -916,8 +919,8 @@ If you use CDN, you need to clear the cache (or request invalidation as in AWS )
 <p>Mình đang đọc quyển <a href="https://www.goodreads.com/book/show/38526454-enlightment-now">Enlightment Now</a> và sẽ lại review sau khi hoàn tất</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-genghis-khan</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-genghis-khan" />
+    <id>https://khanh.page/blog/what-i-read-genghis-khan</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-genghis-khan" />
     <title>What I read - Genghis Khan and the Making of the Modern World</title>
     <published>2019-05-01T00:00:00+00:00</published>
     <updated>2019-05-01T00:00:00+00:00</updated>
@@ -1001,8 +1004,8 @@ Tất nhiên là mọi thứ đều có lý do của nó cả. </p>
 <p>Mình đã đọc quyển này, tuy nhiên chưa có review, <a href="https://www.goodreads.com/book/show/402843.Zen_Mind_Beginner_s_Mind">Zen Mind Beginner's Mind</a> do vẫn còn hơi mông lung vài chỗ. Chắc sẽ có review sớm thôi, khi mình có thời gian.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-napoleon-a-life</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-napoleon-a-life" />
+    <id>https://khanh.page/blog/what-i-read-napoleon-a-life</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-napoleon-a-life" />
     <title>What I read - Napoleon</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1044,8 +1047,8 @@ Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là m�
 <p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/til-mongodb-with-fuelphp</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/til-mongodb-with-fuelphp" />
+    <id>https://khanh.page/blog/til-mongodb-with-fuelphp</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/til-mongodb-with-fuelphp" />
     <title>TIL - MongoDB with FuelPHP (PHP7.x)</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1073,8 +1076,8 @@ To integrate the framework with our current blogpost</p>
 <pre><code></code></pre>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
+    <id>https://khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
     <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1141,8 +1144,8 @@ Và, không ai sinh ra là một CEO cả, CEO là một ngành không thuộc v
 <em>CEO are made not born</em>. </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/nmap-for-check-ssl-tls</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/nmap-for-check-ssl-tls" />
+    <id>https://khanh.page/blog/nmap-for-check-ssl-tls</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/nmap-for-check-ssl-tls" />
     <title>Dùng nmap để check ssl và tls</title>
     <published>2019-03-18T00:00:00+00:00</published>
     <updated>2019-03-18T00:00:00+00:00</updated>
@@ -1372,8 +1375,8 @@ PORT    STATE SERVICE
 Tuy nhiên việc disable các ciphers trên có thể dẫn đến 1 số tình huống ví dụ như những browser quá cũ khi access vào sẽ không thể get data do chúng chỉ hỗ trợ cipher DES (ví dụ như: WinXP IE6, IE8).</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/php-serverless-with-bref</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/php-serverless-with-bref" />
+    <id>https://khanh.page/blog/php-serverless-with-bref</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/php-serverless-with-bref" />
     <title>Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
     <published>2019-03-04T00:00:00+00:00</published>
     <updated>2019-03-04T00:00:00+00:00</updated>
@@ -1430,8 +1433,8 @@ Deploying sử dụng SAM thì bao gồm 3 steps</p>
 <p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/my-first-blog-post</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/my-first-blog-post" />
+    <id>https://khanh.page/blog/my-first-blog-post</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/my-first-blog-post" />
     <title>Tôi đã start cái blog này như thế nào ?</title>
     <published>2019-03-01T00:00:00+00:00</published>
     <updated>2019-03-01T00:00:00+00:00</updated>
@@ -1460,8 +1463,8 @@ Nên mình đã chuyển qua dùng cái này</p>
 <p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
-    <link type="text/html" rel="alternate" href="https://blog.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
+    <id>https://khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
+    <link type="text/html" rel="alternate" href="https://khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
     <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
     <published>2019-03-01T00:00:00+00:00</published>
     <updated>2019-03-01T00:00:00+00:00</updated>
