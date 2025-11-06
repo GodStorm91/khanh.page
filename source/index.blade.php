@@ -12,7 +12,7 @@
             </p>
 
             <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-black font-extrabold">
+                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-pink font-extrabold">
                     {{ $featuredPost->title }}
                 </a>
             </h2>
