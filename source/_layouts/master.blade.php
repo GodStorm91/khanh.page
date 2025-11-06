@@ -51,6 +51,8 @@
                 <div id="vue-search" class="flex flex-1 justify-end items-center">
                     <search></search>
 
+                    @include('_nav.theme-toggle')
+
                     @include('_nav.menu')
 
                     @include('_nav.menu-toggle')
