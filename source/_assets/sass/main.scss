@@ -3,7 +3,8 @@
 
 // Code syntax highlighting,
 // powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-light.css';
+// Using Dracula theme for dark mode
+@import '~highlight.js/styles/dracula.css';
 
 @import 'base';
 @import 'navigation';

@@ -46,87 +46,88 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#1f2e41',
-  'grey-darkest': '#3e4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#e2e8ee',
-  'grey-lighter': '#ecf0f3',
-  'grey-lightest': '#f9f9f9',
-  'white': '#ffffff',
+  // Dracula Theme Colors - Dark purple/pink theme
+  'black': '#21222c',           // Darker background
+  'grey-darkest': '#191a21',    // Darkest background
+  'grey-darker': '#44475a',     // Current line
+  'grey-dark': '#6272a4',       // Comment
+  'grey': '#7d8ba3',            // Lighter comment
+  'grey-light': '#9aa1b8',      // Light grey
+  'grey-lighter': '#282a36',    // Main background (Dracula)
+  'grey-lightest': '#21222c',   // Slightly darker than main
+  'white': '#f8f8f2',           // Foreground text
 
-  'red-darkest': '#3b0d0c',
-  'red-darker': '#621b18',
-  'red-dark': '#cc1f1a',
-  'red': '#e3342f',
-  'red-light': '#ef5753',
-  'red-lighter': '#f9acaa',
-  'red-lightest': '#fcebea',
+  'red-darkest': '#8b1922',
+  'red-darker': '#b31e2a',
+  'red-dark': '#e83c4e',
+  'red': '#ff5555',             // Dracula red
+  'red-light': '#ff6e6e',
+  'red-lighter': '#ff9999',
+  'red-lightest': '#ffcccc',
 
-  'orange-darkest': '#462a16',
-  'orange-darker': '#613b1f',
-  'orange-dark': '#de751f',
-  'orange': '#f6993f',
-  'orange-light': '#faad63',
-  'orange-lighter': '#fcd9b6',
-  'orange-lightest': '#fff5eb',
+  'orange-darkest': '#bd5b00',
+  'orange-darker': '#d97000',
+  'orange-dark': '#f28500',
+  'orange': '#ffb86c',          // Dracula orange
+  'orange-light': '#ffc98a',
+  'orange-lighter': '#ffddb3',
+  'orange-lightest': '#ffeed9',
 
-  'yellow-darkest': '#453411',
-  'yellow-darker': '#684f1d',
-  'yellow-dark': '#f2d024',
-  'yellow': '#ffed4a',
-  'yellow-light': '#fff382',
-  'yellow-lighter': '#fff9c2',
-  'yellow-lightest': '#fcfbeb',
+  'yellow-darkest': '#a89500',
+  'yellow-darker': '#c8b600',
+  'yellow-dark': '#e8d600',
+  'yellow': '#f1fa8c',          // Dracula yellow
+  'yellow-light': '#f4fba5',
+  'yellow-lighter': '#f9fdc9',
+  'yellow-lightest': '#fcfee6',
 
-  'green-darkest': '#0f2f21',
-  'green-darker': '#1a4731',
-  'green-dark': '#1f9d55',
-  'green': '#38c172',
-  'green-light': '#51d88a',
-  'green-lighter': '#a2f5bf',
-  'green-lightest': '#e3fcec',
+  'green-darkest': '#3d8f4e',
+  'green-darker': '#48a95d',
+  'green-dark': '#54c46b',
+  'green': '#50fa7b',           // Dracula green
+  'green-light': '#73fb95',
+  'green-lighter': '#a0fcb7',
+  'green-lightest': '#d0fed9',
 
-  'teal-darkest': '#0d3331',
-  'teal-darker': '#20504f',
-  'teal-dark': '#38a89d',
-  'teal': '#4dc0b5',
-  'teal-light': '#64d5ca',
-  'teal-lighter': '#a0f0ed',
-  'teal-lightest': '#e8fffe',
+  'teal-darkest': '#5c9f9f',
+  'teal-darker': '#6dbaba',
+  'teal-dark': '#7dd5d5',
+  'teal': '#8be9fd',            // Dracula cyan
+  'teal-light': '#a3edfd',
+  'teal-lighter': '#c1f3fe',
+  'teal-lightest': '#e0f9ff',
 
-  'blue-darkest': '#24548f',
-  'blue-darker': '#1a4d8c',
-  'blue-dark': '#0174d4',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  'blue-darkest': '#4d6d9f',
+  'blue-darker': '#5d83c4',
+  'blue-dark': '#6d99e8',
+  'blue': '#6272a4',            // Dracula blue (comment color)
+  'blue-light': '#7d8bb5',
+  'blue-lighter': '#a0abcc',
+  'blue-lightest': '#d0d5e6',
 
-  'indigo-darkest': '#191e38',
-  'indigo-darker': '#2f365f',
-  'indigo-dark': '#5661b3',
-  'indigo': '#6574cd',
-  'indigo-light': '#7886d7',
-  'indigo-lighter': '#b2b7ff',
-  'indigo-lightest': '#e6e8ff',
+  'indigo-darkest': '#5649a8',
+  'indigo-darker': '#6b5cc4',
+  'indigo-dark': '#806fe0',
+  'indigo': '#7c70db',
+  'indigo-light': '#9489e3',
+  'indigo-lighter': '#b5aeec',
+  'indigo-lightest': '#dad7f5',
 
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
+  'purple-darkest': '#7d4fb8',
+  'purple-darker': '#9864d4',
+  'purple-dark': '#b279f0',
+  'purple': '#bd93f9',          // Dracula purple (primary)
+  'purple-light': '#cba9fa',
+  'purple-lighter': '#dcc5fc',
+  'purple-lightest': '#ede2fd',
 
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
+  'pink-darkest': '#c94581',
+  'pink-darker': '#e4579d',
+  'pink-dark': '#ff69b9',
+  'pink': '#ff79c6',            // Dracula pink
+  'pink-light': '#ff94d4',
+  'pink-lighter': '#ffb8e3',
+  'pink-lightest': '#ffdcf1',
 }
 
 module.exports = {
