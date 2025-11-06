@@ -1,144 +1,1086 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Blog Starter Template</title>
-    <link href="https://my-jigsaw-blog.com" />
-    <link type="application/atom+xml" rel="self" href="https://my-jigsaw-blog.com/blog/feed.atom" />
-    <updated>2019-02-07T02:28:47+00:00</updated>
-    <id>https://my-jigsaw-blog.com/blog/feed.atom</id>
+    <title>Khanh&#039;s Blog</title>
+    <link href="https://www.khanh.page" />
+    <link type="application/atom+xml" rel="self" href="https://www.khanh.page/blog/feed.atom" />
+    <updated>2025-11-06T06:20:17+00:00</updated>
+    <id>https://www.khanh.page/blog/feed.atom</id>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
                 <entry>
-    <id>https://my-jigsaw-blog.com/blog/getting-started</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/getting-started" />
-    <title>Getting Started</title>
-    <published>2018-12-25T00:00:00+00:00</published>
-    <updated>2018-12-25T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/my-running-life-july-2020</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-july-2020" />
+    <title>My Running Life  - July 2020</title>
+    <published>2020-08-05T00:00:00+00:00</published>
+    <updated>2020-08-05T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.
-
-As with all Jigsaw sites, configuration settings can be found in &lt;code&gt;config.php&lt;/code&gt;;......</summary>
+    <summary type="html">
+Tháng 7 đến, mang theo cái nóng của mùa hè, nhiệt độ hằng ngày cũng tăng dần từ tầm 25 độ của tháng 6 lên gần 32 độ vào giữa trưa.
+Tháng 7 tôi không có buổi chạy cự ly nào dài quá 18 km, nhưng bù......</summary>
     <content type="html"><![CDATA[
-        <p>This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a few settings and you’re ready to go.</p>
-<h2>Configuration</h2>
-<p>As with all Jigsaw sites, configuration settings can be found in <code>config.php</code>; you can update the variables in that file with settings specific to your site. You can also add new configuration variables there to use across your site; take a look at the <a href="http://jigsaw.tighten.co/docs/site-variables/">Jigsaw documentation</a> to learn more.</p>
-<pre><code class="language-php">// config.php
-return [
-    'baseUrl' =&gt; 'https://my-awesome-jigsaw-site.com/',
-    'production' =&gt; false,
-    'siteName' =&gt; 'My Site',
-    'siteDescription' =&gt; 'Give your blog a boost with Jigsaw.',
-    ...
-];</code></pre>
-<blockquote>
-<p>Tip: This configuration file is also where you’ll define any &quot;collections&quot; (for example, a collection of the contributors to your site, or a collection of blog posts organized by topic). Check out the official <a href="https://jigsaw.tighten.co/docs/collections/">Jigsaw documentation</a> to learn more.</p>
-</blockquote>
-<hr />
-<h3>Adding Content</h3>
-<p>You can write your content using a <a href="http://jigsaw.tighten.co/docs/content-other-file-types/">variety of file types</a>. By default, this starter template expects your content to be located in the <code>source/_posts/</code> folder.</p>
-<p>The top of each content page contains a YAML header that specifies how it should be rendered. The <code>title</code> attribute is used to dynamically generate HTML <code>title</code> and OpenGraph tags for each page. The <code>extends</code> attribute defines which parent Blade layout this content file will render with (e.g. <code>_layouts.post</code> will render with <code>source/_layouts/post.blade.php</code>), and the <code>section</code> attribute defines the Blade &quot;section&quot; that expects this content to be placed into it.</p>
-<pre><code class="language-yaml">---
-extends: _layouts.post
-section: content
-title: Getting Started
-date: 2018-12-25
-description: Getting started with the Jigsaw blog starter template
-cover_image: /assets/img/post-cover-image-2.png
-featured: true
----</code></pre>
-<h3>Adding Assets</h3>
-<p>Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the <code>source/_assets/</code> directory, and Laravel Mix will process them when running <code>npm run local</code> or <code>npm run production</code>. The processed assets will be stored in <code>/source/assets/build/</code> (note there is no underscore on this second <code>assets</code> directory).</p>
-<p>Then, when Jigsaw builds your site, the entire <code>/source/assets/</code> directory containing your built files (and any other directories containing static assets, such as images or fonts, that you choose to store there) will be copied to the destination build folders (<code>build_local</code>, on your local machine).</p>
-<p>Files that don't require processing (such as images and fonts) can be added directly to <code>/source/assets/</code>.</p>
-<p><a href="http://jigsaw.tighten.co/docs/compiling-assets/">Read more about compiling assets in Jigsaw using Laravel Mix.</a></p>
-<hr />
-<h2 id="getting-started-building-your-site">Building Your Site</h2>
-<p>Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.</p>
-<pre><code class="language-bash"># build static files with Jigsaw
-./vendor/bin/jigsaw build
-
-# compile assets with Laravel Mix
-# options: dev, staging, production
-npm run dev</code></pre>    ]]></content>
+        <h2>Tháng 7 - 2017, tháng của mùa hè - TIU - Quả chanh và Cái chén</h2>
+<p>Tháng 7 đến, mang theo cái nóng của mùa hè, nhiệt độ hằng ngày cũng tăng dần từ tầm 25 độ của tháng 6 lên gần 32 độ vào giữa trưa.
+Tháng 7 tôi không có buổi chạy cự ly nào dài quá 18 km, nhưng bù lại tôi chạy nhiều và tăng tốc độ hơn trước, tôi muốn luyện tinh cho cơ bắp tôi quen dần với việc chạy dưới nền nhiệt độ cao vì Marathon ở Nhật thường tập trung vào đầu xuân hoặc đầu thu ( là giai đoạn mà nhiệt độ dễ chịu nhất - nhưng cũng có những Marathon cuối thu đầu đông - như Marathon Katsuta ở Ibaraki thường diễn ra vào cuối tháng 1) nên cần phải đẩy cơ bắp đến cực hạn vào tầm trước đó khoảng 1 tháng. </p>
+<p>Tháng 7 của 3 năm trước, tôi đã hoàn thành chặng Half Marathon đầu tiên trong cuộc đời. Đó là cuộc chạy Half Marathon ở 魚沼市, đường chạy khá là bằng phẳng xuyên qua ruộng lúa ( ở đây đặc sản nổi tiếng là gạo コシヒカリ, nên Marathon này còn được gọi là Gourmet Marathon), gió thổi bát ngát. Đường chạy ở đây khá bằng phẳng, nhưng ở đoạn km thứ 13 có một con dốc khá cao, mà nếu chạy lên con dốc này có thể nhìn thấy đỉnh 八海山 ở phía xa bên phải. Mùa hè, nhưng 八海山 vẫn còn đội mũ trắng, nhưng không phải kiểu 富士山 mà nhìn trắng loáng như có ai nạm một lớp bạc mỏng lên. (Bên dưới là hình Panorama khi tôi đang ở km thứ 10, phía xa là 八海山)</p>
+<p><a href="https://gyazo.com/6b745f0df75d96b6a44d1829afca17fe"><img src="https://i.gyazo.com/6b745f0df75d96b6a44d1829afca17fe.jpg" alt="Image from Gyazo" /></a></p>
+<p>Đoạn đường từ km thứ 15 đến thứ 18 sẽ dắt người chạy xuyên qua khuôn viên của Đại học Quốc Tế Nhật Bản (TIU - đến giờ tôi mới biết đây là đại học có nhiều bạn nữ xinh nhất Tokyo - theo lời thuật lại của HA ), một khuôn viên đại học trầm mặc, không phải kiểu cổ kính như Đại học Tokyo, nó như một khối bê-tông đứng đối diện với 八海山 ở phía xa, nhìn nhau tư lự. Chắc ít người chọn học ở đây - hoặc nơi đây chỉ dành cho những sinh viên khép kín, kiểu tự kỉ không cần sống trong xã hội loài người mà chỉ muốn biệt lập với thế giới - nhưng hơn 2 năm sau tôi lại gặp một người chị ( trong một cuộc thi startup ) - lại học đúng cái trường này, và lại là một người khá quảng giao. Đôi khi những thứ chúng ta cảm nhận chưa chắc đã chính xác, như cái cách tôi cảm nhận khoảng cách về đích của cuộc đua hôm ấy. Tôi còn nhớ đã vượt qua km thứ 18 một cách khá ngon lành sau một quãng nghỉ ở km thứ 17. Cổ chân tôi đau nhưng không phải là một thứ gì đó quá nghiêm trọng, tôi chắc mẩm có thể về đích sớm hơn dự định của tôi tầm 3p. Ấy vậy mà khi vừa qua km thứ 19, tự nhiên cái nghị lực cái ham muốn chạy của ở km thứ 17 của tôi nó trôi tuột đi đâu mất, lỗ chân lông của tôi ễnh ra, và tôi cứ như là một quả bóng hơi đang xì, nghị lực thì trôi tuốt tuồn tuột đi đâu mất, mà lần này không phải một lỗ, có cả hàng vạn lỗ.
+Tự nhiên đến cái đầu gối của tôi nó biểu tình, nó nhắc tôi rằng tôi đã từng có một vết thương khá nặng nơi đầu gối - ừ, nhưng đây đâu phải là lúc đó. Tôi chuyển sang kiểu chạy tiếp đất bằng nửa gan bàn chân trước, như chú thỏ vậy, khi 1/2 bàn chân vừa tiếp đất tôi sẽ lập tức nhúng lên, cách chạy này thì sẽ giảm được áp lực lên cái đầu gối đang rên la kia nhưng bù lại thì cơ đùi của tôi phải cố làm việc bù lại cho gối. Đến được km 19,5 bên đường người ta có phát nước chanh, trời nắng thế này mà làm cốc nước chanh thì chắc hết xảy. Người ta không phát nước chanh có sẵn, nhưng phát 1 cốc nước và một quả chanh đã cắt sẵn làm đôi. Tôi không biết lúc đó mắt nhắm mở thế nào, chỉ lấy mỗi quả chanh mà quên lấy cốc nước, chạy đoạn định uống thì tôi mới nhớ ra tôi chỉ cầm mỗi quả chanh, lại đang khát khô cả cổ, tôi cho cả quả chanh vào mồm, nhai rao ráo, vị đắng hoà quyện vị chua cộng thêm tinh dầu của vỏ chanh xộc lên mũi làm tôi tỉnh hết cả người. Giờ nghĩ lại không có quả chanh đó, có khi tôi lại cuốc bộ về đích mất. </p>
+<p>Thêm ảnh đường chạy </p>
+<p><a href="https://gyazo.com/f4719d7f60b089b22443a76f88ffe927"><img src="https://i.gyazo.com/f4719d7f60b089b22443a76f88ffe927.jpg" alt="Image from Gyazo" /></a></p>
+<p>và ở đích, thì mỗi người được phát cho một cái chén, đó cũng là phần quà lưu niệm ( giải này không tặng áo - tôi nghĩ tặng áo cũng hơi phô trương nên tôi vẫn thích giải này nhất), và sau khi lấy chén thì dùng ngay được vì ở cuối hành lang là một dãy các hàng quán bán đủ loại thức ăn từ cá ayu nướng muối, takoyaki, và cơm ( miễn phí ). Do quên mang tiền ( thật ra là để trong balo ở quầy ) tôi xin một chén cơm trắng to cùng muối mè, và ăn sạch. Bữa cơm ngon nhất trong đời tôi cho đến giờ. </p>
+<p><a href="https://gyazo.com/ff66d27bf477b61266f80c4024b1680f"><img src="https://i.gyazo.com/ff66d27bf477b61266f80c4024b1680f.jpg" alt="Image from Gyazo" /></a></p>
+<h2>Tháng 7 - 2020, Okinawa nắng bỏng da - Nếu tôi vẫn còn đá bóng</h2>
+<p>Tôi thích đá bóng - chính xác thì cái sở thích xem bóng đá của tôi được hình thành từ khi tôi tầm lớp 1 hay lớp 2 gì đó từ bố. Tôi cũng không hỏi vì sao bố tôi lại mê bóng đá, vì bố tôi không phải dạng người chơi thể thao. Ông có dáng người không cao, nếu không muốn nói là khá thấp, tầm hơn 1m55, nhưng đậm người ( tôi nghĩ là do nhậu bia nhiều - sau này khi ông mắc bệnh tiểu đường, có ốm đi - và chuyển sang nhậu rượu - nhưng vẫn mê bóng lắm). Ông cũng không cá độ bóng đá, ông chỉ thích xem bóng đá - một cách chân phương nhất. Có lần ông khoe với tôi khi một cầu thủ dáng người nhỏ thó - số 17 - cầm bóng, là người bạn cấp 3 của ông, Ngô Công Nhậm. Giờ nghĩ lại, có khi đơn giản chỉ là ông muốn cổ võ một người bạn cấp 3 của mình chăng? Dù gì đi nữa, thì tôi vẫn hay chọn số áo 17 cho riêng mình sau này khi hay đá bóng, không biết đó là sự trùng hợp, hay là kỉ niệm ấu thơ thôi thúc tôi chọn số áo 17 đó nữa.
+Các bạn có thể xem clip về Công Nhậm bên dưới ( tôi có gặp Công Nhậm ngoài đời mấy lần - lúc chú ấy đi nhậu cùng bố tôi - Tôi chỉ nhớ chú hiền và đen.)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LbOLEqlvlMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Kể từ khi bị chấn thương lúc chơi bóng và phải phẫu thuật, tôi cũng có thử đá bóng lại mấy lần. Tôi không muốn phải cất lại chiếc áo cầu thủ mình yêu thích, tôi vẫn nhớ có một câu nói của một danh thủ bảo rằng: &quot;Ly nước ngon nhất trần đời tôi uống là ly nước sau mỗi trận đấu&quot;, cũng có lý, tôi và lũ bạn vẫn hay rủ nhau đi uông nước sau mỗi trận cầu thứ 5, thường là quán nước mía ở đối diện nhà văn hoá lao động, bọn nó thường gọi nước mía, nhưng tôi thích đá me hơn. Ly đá me màu nâu sẫm, những hạt me màu cánh kiến ngon lành, khi lên thành phố học đại học tôi vẫn hay uống ở căn tin, nhưng không bao giờ hương vị lại ngon mát như ly đá me tôi uống trước cổng nhà văn hoá lao động nữa. Chắc người ta vẫn pha chưa đúng cách - Hoặc tôi đã có nhiều thứ quan tâm hơn thay vì chú tâm thưởng thức ly đá me sau mỗi trận bóng. </p>
+<p>Sau cuộc phẫu thuật hơn 6 tháng dần dà tôi cũng nhận ra mình sẽ không bao giờ đá bóng được như xưa nữa, dần dần tôi cũng chấp nhận nó như một sự thật hiển nhiên, rằng một thằng đầy đủ chân tay như tôi - sẽ có những thứ mà tôi không làm được nữa, cho dù tôi có yêu thích làm điều đó đến chừng nào. Cách tốt nhất là đối diện với nó, và tôi cũng đối diện với việc chạy dưới cái nắng kinh dị của Okinawa theo cách đó. Thoạt đầu tôi có bảo với Tuấn và các bạn rằng tôi sẽ chạy Marathon ở Okinawa, chắc chắn tôi sẽ làm thế, tôi chắc mẩm với khối lượng luyện tập 3 tháng vừa qua của mình, với hơn 1000km tôi đã bỏ lại sau lưng trong năm nay thì 42.2 km kia là chuyện dễ như bỡn.</p>
+<p>Sáng thứ 3, sau chuyến bay đến Okinawa, tôi lao ra đường. Hôm đó không nắng lắm, nhưng không khí ẩm đến khó chịu, vừa lao ra khỏi khách sạn, mồ hôi mẹ mồ hôi con của tôi đã tuôn ra như tắm. Đâu thể nào chịu thua nhanh vậy tôi liền đổi route, chạy ra phía bến tàu. Bến tàu Okinawa buổi sáng khá yên tĩnh không một bóng người, tôi chạy ra đến đó thì cảm thấy thấm mệt, mồ hôi ròng ròng, chạy cả vào trong mắt làm mắt tôi cay xè. Thôi không xong rồi, lần này chắc không hoàn thành được rồi. Đầu tôi nghĩ rất lung, chân tôi di chuyển tìm về phía khách sạn, trong bụng cứ thì thầm, mình còn hơn 3 ngày nữa ở đây tha hồ mà chạy lo gì, dù lúc đó nếu chạy tiếp thì chỉ ước có cơn mưa như ảnh bên dưới và đứa bạn nữa ( dù giờ nó đang đi dăng kí kết hôn )</p>
+<p><a href="https://gyazo.com/9b4b5b89fa444b711f8380c0121d5aa0"><img src="https://i.gyazo.com/9b4b5b89fa444b711f8380c0121d5aa0.jpg" alt="Image from Gyazo" /></a></p>
+<p>Nhưng tôi đã quá coi thường cái nóng ở Okinawa này, chắc chắn là như thế. Cái nóng thiêu đốt không chỉ thân xác tôi, mà còn cả willpower bên trong tôi nữa. Và đơn giản - Willpower doesn't work - Y chang như tên cuốn sách. Tôi đã quá đề cao sức mạnh ý chí cá nhân bản thân, nhưng so với ánh nắng ở Okinawa này cái sức mạnh ấy mới đáng thương làm sao, tôi lao ra bãi biển ở Nago, cố gắng chạy - dù cơn mưa bóng mây đã giúp tôi hạ nhiệt độ đi một tí - nhưng cũng không khá hơn là mấy, một lúc sau ánh nắng mặt trời lại rực rỡ. Và tôi bỏ cuộc - vì tôi không chịu nổi. Và tôi nghĩ nên chấm dứt sớm. (Bù lại thì có tấm hình mang tính lan toả quá đẹp )</p>
+<p><a href="https://gyazo.com/5ea97e6cff72986163c29cad565ad5eb"><img src="https://i.gyazo.com/5ea97e6cff72986163c29cad565ad5eb.jpg" alt="Image from Gyazo" /></a></p>
+<h2>Tháng 7 - 2020 - Ngón tay / Ý hướng / Con đường / Bước chân</h2>
+<p>Tôi khá là ê mặt khi không thể hoàn tất được FM trong tháng 7 này, nhưng bù lại, những hoạt động lan toả khác lại khá tốt. </p>
+<p>Vừa đáp xuống Tokyo từ Okinawa tôi đã tham gia vào BKC online, cảm nhận được năng lượng học hỏi từ các bạn trẻ khác, giúp cho mình thấy phấn chấn hẳn lên. Hi vọng tham gia cùng mọi người để có thể duy trì được thói quen đọc sách của mình ( và lan toả nữa ^^)</p>
+<p><a href="https://www.facebook.com/bookichi.official">Link nhóm thích đọc sách Bookichi</a></p>
+<p>Một nhóm chạy của cộng đồng người Việt tại Nhật đã được thành lập - Hi vọng sẽ là một nơi để giúp mọi người gắn kết với nhau đồng thời cũng là nơi để mọi người có thể sinh hoạt chia sẻ thắc mắc về bộ môn chạy bộ </p>
+<p><a href="https://www.facebook.com/groups/2767747920166824">Link nhóm chạy bộ </a></p>
+<p>Em V, thành viên mới trong nhóm chạy Hoàng Cung đã tham gia cùng tôi. Một tay chạy rất cừ, tốc độ tốt, chúng tôi vừa hoàn thành 15km trong tuần rồi ( suýt nữa thì 21km nhưng làm gì thì cũng phải từ từ - không thì các bạn cơ bắp lại biểu tình cho mà xem). Một nhóm chạy cũng đã được hình thành. Dù số thành viên tham gia mỗi tuần vẫn là số nhiều (2) nhưng còn hơi ít, hi vọng sẽ có nhiều bạn can đảm hơn nữa tham gia nhóm. </p>
+<p>Em T, cũng đã bắt đầu chạy bộ, vừa mua đôi giày chạy bộ hôm qua. Hi vọng chúng ta có thể đồng hành  với nhau trong những km sắp tới. </p>
+<p>Bạn NMC, bạn cấp 3, đàn em Đại học, đồng nghiệp, du học sinh Mẽo, đại sứ ẩm thực Việt Nam tại Seattle cũng đã có những bước chạy đầu tiên. Chưa biết Dewberry với Quả chanh ở km thứ 19 cái nào chua hơn, nhưng bạn đã rất dũng cảm :D </p>
+<p>Em B, dù chưa bắt đầu chạy bộ, nhưng tôi nghĩ chắc chắn sớm muộn B cũng tham gia chạy bộ, B luôn có một nguồn năng lượng tích cực nhờ B mà tôi có thêm dũng cảm, tự tin hơn vào bản thân, thì chắc chắn B còn năng lượng rất nhiều trong cơ thể mà chưa khai phóng. </p>
+<p>Tháng 7 khép lại, với cái nóng của Okinawa, số 17, quả chanh, cái chén.</p>
+<p><em>Không phải ngón tay</em>
+<em>Mà là phương hướng</em>
+<em>Không phải con đường</em>
+<em>Mà là bước chân</em></p>
+<p>(Sứ giả)</p>
+<p><a href="https://gyazo.com/71f6bcda6aa07ea9a23244aa260b4ac5"><img src="https://i.gyazo.com/71f6bcda6aa07ea9a23244aa260b4ac5.jpg" alt="Image from Gyazo" /></a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/customizing-your-site</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/customizing-your-site" />
-    <title>Customizing Your Site</title>
-    <published>2018-12-24T00:00:00+00:00</published>
-    <updated>2018-12-24T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/my-running-life-june-2020</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-june-2020" />
+    <title>My Running Life  - June 2020</title>
+    <published>2020-07-09T00:00:00+00:00</published>
+    <updated>2020-07-09T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">This starter template comes pre-loaded with Tailwind CSS, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the &lt;code&gt;/source/_assets/sass&lt;/code&gt; folder,......</summary>
+    <summary type="html">
+&amp;quot;Pain is evitable, suffering is optional&amp;quot; - &amp;quot;Đau khổ là không thể tránh khỏi, chịu đựng là sự lựa chọn&amp;quot;, không khi nào mà mình hiểu rõ câu này hơn trong 3 tháng vừa qua. Ba tháng vừa qua là 3......</summary>
     <content type="html"><![CDATA[
-        <p>This starter template comes pre-loaded with <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the <code>/source/_assets/sass</code> folder, set up with the expectation that you can add any custom CSS into <code>_blog.scss</code>.</p>
-<blockquote>
-<p>You can also re-work the architecture of the Sass files any way you’d like; just make sure to keep the <code>@tailwind</code> references in your final <code>main.scss</code> file.</p>
-</blockquote>
-<pre><code class="language-scss">// source/_assets/sass/main.scss
-
-@tailwind preflight;
-@tailwind components;
-
-// Code syntax highlighting,
-// https://highlightjs.org
-@import '~highlightjs/styles/default';
-
-@import 'base';
-@import 'navigation';
-@import 'mailchimp';
-@import 'blog';
-
-@tailwind utilities;</code></pre>
-<hr />
-<h2>Typography Styles</h2>
-<p>Here’s a quick preview of what some of the basic type styles will look like in this starter template:</p>
-<h1>h1 Heading</h1>
-<h2>h2 Heading</h2>
-<h3>h3 Heading</h3>
-<h4>h4 Heading</h4>
-<h5>h5 Heading</h5>
-<h6>h6 Heading</h6>
-<p>The quick brown fox jumps over the lazy dog</p>
-<p><s>The quick brown fox jumps over the lazy dog</s></p>
-<p><u>The quick brown fox jumps over the lazy dog</u></p>
-<p><em>The quick brown fox jumps over the lazy dog</em></p>
-<p><strong>The quick brown fox jumps over the lazy dog</strong></p>
-<p><code>The quick brown fox jumps over the lazy dog</code></p>
-<p><small>The quick brown fox jumps over the lazy dog</small></p>
-<blockquote>
-<p>The quick brown fox jumps over the lazy dog</p>
-</blockquote>
-<p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
-<pre><code class="language-php">class Foo extends bar
-{
-    public function fooBar()
-    {
-        //
-    }
-}</code></pre>    ]]></content>
+        <h2>Những buổi chạy tháng 6</h2>
+<p>&quot;Pain is evitable, suffering is optional&quot; - &quot;Đau khổ là không thể tránh khỏi, chịu đựng là sự lựa chọn&quot;, không khi nào mà mình hiểu rõ câu này hơn trong 3 tháng vừa qua. Ba tháng vừa qua là 3 tháng mình tập trung vào việc chạy bộ nhứt kể từ khi mình bắt đầu chạy bộ.
+Mình là một kiểu người mà dễ bị mát tập trung - ít ra thì không phải kiểu dạng ngồi xuống một phát là tập trung được ngay, mà phải mất một hồi lâu thì mình mới có thể (gọi là) có một ít tập trung để có thể thực hiện những công việc mà mình cần làm ( chẳng hạn như viết bài blog này). Viết bài blog này chẳng phải là lựa chọn của mình sao?</p>
+<p>Nói về việc chạy bộ trong 3 tháng vừa qua, có thể nói mình đã đạt được khá nhiều những cột mốc mới mà mình nghĩ nếu không có nhóm chạy bộ <strong>&quot;D21 đi muôn nơi&quot;</strong> thì mình sẽ khó mà có thể thực hiện được. </p>
+<p><strong>&quot;Muốn đi nhanh thì đi một mình, muốn đi xa thì hãy đi cùng nhau.&quot;</strong> </p>
+<p>( bên dưới là ảnh KPI tháng này của nhóm)</p>
+<p><a href="https://gyazo.com/e41f958c59935afe9d6315446f76a65b"><img src="https://i.gyazo.com/e41f958c59935afe9d6315446f76a65b.png" alt="Image from Gyazo" /></a></p>
+<h2>Chạy mùa mưa</h2>
+<p>Tháng 6, ở Nhật đã bắt đầu bước vào mùa mưa, trời mưa nhiều dần. Mưa ở Nhật không chợt đến chợt đi như cơn mưa ở Sài Gòn, mà nó rả rích đêm ngày, và ngày mưa thì thường là mưa cả ngày, dù xen kẽ sẽ có lúc mưa ngừng rơi, nhưng hẳn mùa mưa này sẽ có ảnh hưởng nhất định đối với những người chạy bộ như mình.
+Tháng 6, mình bước vào giai đoạn luyện tinh, để có thể chuẩn bị cơ thể một cách tốt nhất cho VNExpress Marathon Huế sẽ diễn ra vào tháng 9.</p>
+<p><a href="https://gyazo.com/cb3a0ab1b954b451acea4f0baab25aaf"><img src="https://i.gyazo.com/cb3a0ab1b954b451acea4f0baab25aaf.png" alt="Image from Gyazo" /></a></p>
+<p>Nếu tháng 4,5 mình tăng dần cự ly để có thể bắt cơ thể mình quen dần với việc chạy dài và chạy liên tục, thì tháng 6 mình bắt đầu có những sức ép nhất định lên cơ bắp để bắt chúng quen với cường độ dài hơn - nhằm đẩy sức chịu đựng đến cực hạn trước cuộc đua một tháng. </p>
+<ul>
+<li>Tháng 3: 140km</li>
+<li>Tháng 4: 168km</li>
+<li>Tháng 5: 221km </li>
+<li>Tháng 6: 277km</li>
+</ul>
+<p>Tuy nhiên, cái thời tiết ỏng eo này thì không phù hợp mấy cho việc chạy bộ của mình, mình thích cái thời tiết mùa đông, dù có hơi khô, nhưng không ẩm ướt, và giày chạy hay đường sá cũng được khô ráo thông thoáng hơn là phải chạy trong cơn mưa rả rích của tháng 6.</p>
+<p>Tháng 6 này, mình đã phát hiện ra một đoạn đường chạy mới, đối với mình nó kiểu như Columbus phát hiện ra Châu Mỹ vậy. </p>
+<p><a href="https://gyazo.com/cf2f7b32b01db1fd4b40fa63cd965196"><img src="https://i.gyazo.com/cf2f7b32b01db1fd4b40fa63cd965196.jpg" alt="Image from Gyazo" /></a></p>
+<p>Đường chạy này rất dài và đẹp, nó uốn lượn dọc theo sông Tsurumi, nên gần như là không có đèn giao thông và cũng ít xe cộ ( lác đác chỉ có vài chiếc xe đạp lâu lâu vút qua trong buổi chiều buồn). Đoạn đường này nếu chịu khó chạy thì sẽ ra đến biển, mình chưa chạy hết cung đường, nhưng sau khi qua đoạn cao tốc nối Kawasaki và Yokohama thì đã nghe mùi biển xộc vào, nếu rẽ phải ở Cao Tốc, chạy theo hướng Yokohama thì mình có thể chạy lại đoạn đường ngày xưa (hơn 3 năm trước mình hay chạy), tự nhiên có một cảm giác ở cổ họng - 4 năm rồi, mình đã gắn bó với môn chạy này, từ khi hổn hà hổn hển chạy được hơn 1km ra đến sân đua ngựa gần Kawasaki Taishi, đến lúc chạy được 21km mỗi tuần như hiện giờ cũng là một quãng đường dài... và trong lúc đang hổn hểnh hoàn thành 21km cho <em>Sacombank - Ngày không tiền mặt</em> race, mình lại nhớ về việc tại sao mình lại bắt đầu chạy bộ ở nước Nhật này. </p>
+<h2>Tại sao mình chạy?</h2>
+<p>Suốt 4 năm qua, mình đã chạy bộ, tuy không liên tục như hiện giờ, nhưng mình luôn nghĩ, ngành kĩ sư là một ngành có nhiều <em>ảnh hưởng xấu</em> đến sức khoẻ ( thử liệt kê ra nào thì ngồi nhiều, ăn uống thất thường, làm việc quá sức ...), biết bao là tác hại. Đấy, đôi khi chúng ta lại bị <strong>nhiễm độc</strong> từ chính cái nghề mà chúng ta chọn, mà mình thì không muốn kết thúc hành trình làm kĩ sư sớm như thế ( thử lên twitter, lâu lâu lại nghe tin, ông kỹ sư A đột quị ngỏm, ông kĩ sư B quá cân, bị đái tháo đường đang phải điều trị... ) nên ưu tiên với mình là phải tìm ra một phương pháp để có thể <strong>giải độc</strong> một cách hiệu quả, đâu ai muốn kết thúc cuộc đời của mình trên bàn máy tính, khi chưa có vợ con, và vẫn còn mấy con bugs chưa fix được phải không nào?</p>
+<p>Nếu vẫn ở Việt Nam thì ắt hẳn mình sẽ khó mà chọn chạy bộ, vì có quá nhiều môn thể thao để lựa chọn đi, nào là: tennis, cầu lông, bóng đá, bóng chuyền... mà nếu lọt vào cái mê hồn trận này, chắc mình sẽ chết vì nhiễm độc, trước khi chọn lựa được một môn để giải độc. Môn mình yêu thích nhất vẫn là <strong>Bóng đá</strong> , đương nhiên rồi, mình vẫn hay đá banh ở Việt Nam với bạn học, đồng nghiệp, nhưng sau khi bị chấn thương dây chằn năm 2013, rồi phẫu thuật, rồi lại đá tiếp, tự nhiên có một khoảnh khắc mình nghĩ: <em>&quot;Này, sao không chọn một môn khác mà chơi, một môn an toàn hơn, chạy bộ chẳng hạn.&quot;</em> . </p>
+<p>Nếu ở Việt Nam thì mình sẽ gạt phắc cái ý tưởng này đi, có quá nhiều bạn bè chơi đá banh, mình đã chơi đá banh từ bé, cái hành lang đường đi bộ ở Việt Nam là của bà bán xôi, ... hàng tỉ lí do cái nảy ra trong đầu để phản đối cái ý tưởng chạy bộ, nhưng đó là khi mình ở Việt Nam... nhưng giờ mình đang ở Nhật, phải có một môn mà mình có thể chơi nhưng không cần quá nhiều logistics và người chơi cùng chứ? Chạy bộ suy cho cùng là lựa chọn khả dĩ nhất cho mình. (gọi là lựa chọn, chứ khi đó mình làm gì có chọn lựa nào khác đâu !??), và thế là một chiều tháng 6 năm 2016, mình bắt đầu chạy bộ những km đầu tiên ở đất Nhật, như một phương pháp <strong>giải độc</strong> và kéo dài tuổi thọ với ngành IT cho mình, chỉ có thế. </p>
+<p><a href="https://gyazo.com/3193664eeb38c035fca88cedf69c93e8"><img src="https://i.gyazo.com/3193664eeb38c035fca88cedf69c93e8.png" alt="Image from Gyazo" /></a></p>
+<p><strong>Hành trinh vạn dặm bắt đầu từ bước chân đầu tiên</strong> (Lão Tử)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/custom-404-page</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/custom-404-page" />
-    <title>Custom 404 Pages</title>
-    <published>2018-12-23T00:00:00+00:00</published>
-    <updated>2018-12-23T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/tips-cac-loi-trong-suy-nghi</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-cac-loi-trong-suy-nghi" />
+    <title>Các lỗi trong suy nghĩ - quyết định</title>
+    <published>2020-05-09T00:00:00+00:00</published>
+    <updated>2020-05-09T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">This starter template includes a custom 404 Not Found error page, located at &lt;code&gt;/source/404.blade.php&lt;/code&gt;. To preview the 404 page, you can visit &lt;code&gt;/404&lt;/code&gt; in your browser.
-
-
-Depending on where your site is hosted, you may need to configure......</summary>
+    <summary type="html">Có bao giờ các bạn nghĩ não bộ của chúng ta hoạt động như thế nào? Hoặc điều gì là động lực thúc đẩy cho các quyết định của chúng ta? Chúng ta đưa ra những quyết định dựa trên các tiêu chuẩn......</summary>
     <content type="html"><![CDATA[
-        <p>This starter template includes a custom <strong>404 Not Found</strong> error page, located at <code>/source/404.blade.php</code>. <a href="/404">To preview the 404 page</a>, you can visit <code>/404</code> in your browser.</p>
-<pre><code class="language-html">&lt;!-- source/404.blade.php --&gt;
+        <p>Có bao giờ các bạn nghĩ não bộ của chúng ta hoạt động như thế nào? Hoặc điều gì là động lực thúc đẩy cho các quyết định của chúng ta? Chúng ta đưa ra những quyết định dựa trên các tiêu chuẩn như thế nào … Hiển nhiên các bạn sẽ đưa ra câu trả lời “Chúng ta đưa ra quyết định dựa trên lí trí”, “Chúng ta đưa ra quyết định dựa trên mô hình thực dụng, nên sẽ chọn lựa chọn có lợi ích cao nhất rồi”, thực sự có phải như vậy không? Chúng ta hãy cùng tìm hiểu nhé</p>
+<h2>I. Hành vi của chúng ta được điều khiển bởi 2 hệ thống khác nhau - Một cái tự động - Một cái hay suy xét</h2>
+<p>Có một vở kịch hấp dẫn diễn ra trong tâm trí chúng ta, một câu chuyện giống trên phim giữa hai nhân vật với nhiều chi tiết lắt léo, kịch tích và mẫu thuẫn. Hai nhân vật bao gồm Hệ thống 1 - bản năng, tự động và cảm tính; và Hệ thống 2 - chín chắn, chậm rãi, và toan tính. Khi đối đầu với nhau, sự tương tác của chúng quyết định cách ta nghĩ, đưa ra phán xét, quyết định và hành động.</p>
+<p>Hệ thống 1 là phần bộ não hoạt động theo trực giác và đột ngột, thường không có sự kiểm soát có ý thức. Bạn có thể trải nghiệm hệ thống này hoạt động khi bạn nghe thấy một âm thanh rất lớn và đột ngột. Bạn sẽ làm gì? Có thể bạn ngay lập tức và tự động chuyển hướngchú ý của mình đến nó. Đó là Hệ thống 1.</p>
+<p>Hệ thống này là di sản của quá trình tiến hóa hàng triệu năm: những lợi thế sống còn nằm bên trong khả năng ra quyết định và phán đoán nhanh chóng.</p>
+<p>Hệ thống 2 là thứ ta ám chỉ khi tưởng tượng phần bộ não chịu trách nhiệm cho quá trình ra quyết định, lập luận và niềm tin của mỗi cá nhân. Nó điều khiển các hoạt động có ý thức của tâm trí như tự kiểm soát, khả năng lựa chọn và chủ ý tập trung.</p>
+<p>Ví dụ, tưởng tượng bạn đang tìm kiếm một cô gái giữa đám đông. Tâm trí của bạn sẽ cố tình tập trung vào nhiệm vụ: nó nhớ lại những đặc điểm của người đó hay bất cứ thứ gì giúp xác định tọa độ của cô. Khả năng này giúp loại trừ những sự sao lãng, giúp bạn bỏ qua đối tượng không liên quan. Nếu bạn suy trì sự tập trung có chủ ý này, bạn có thể phát hiện ra cô ấy trong vài phút, trái lại nếu bạn bị phân tâm, bạn sẽ khó có thể tìm thấy cô ấy.</p>
+<p>Như bạn sẽ thấy trong phần tiếp, Hệ thống 1 sẽ có những lỗi thường gặp như thế nào.</p>
+<p><img src="https://cdn1.nyt.com/images/2011/11/27/books/review/HOLT-sub/HOLT-sub-jumbo.jpg" alt="thinking-fast-slow" /></p>
+<h2>II. Các lỗi suy nghĩ thường gặp khi chúng ta đưa ra quyết định</h2>
+<h3>1. Tính tương đối đánh lừa sự lựa chọn</h3>
+<p>Các chuyên viên marketing của Tạp chí The Economist đã quảng cáo giá đặt báo một năm với 3 lựa chọn sau: (1) Tạp chí điện tử: 59 đô; (2) Tạp chí in: 125 đô; (3) Tạp chí điện tử và tạp chí in: 125 đô.</p>
+<p>Để đánh giá hiệu quả của chiêu marketing này, tác giả đã cho 100 sinh viên Trường Quản trị kinh doanh Sloan lựa chọn. Kết quả là: 16 sinh viên chọn (1), không sinh viên nào chọn (2) và 84 sinh viên chọn (3).</p>
+<p>Sau đó tác giả bỏ đi lựa chọn (2), chỉ để lại lựa chọn (1) và (3). Khi đó 68 sinh viên đã chọn (1) so với 16 trước đó; 32 sinh viên chọn (3) so với 84 trước đó.</p>
+<p>Rõ ràng là các chuyên viên marketing của The Economist đã nắm rõ hành vi con người: con người ít khi đưa ra lựa chọn cái gì đó theo một tiêu chuẩn tuyệt đối, thay vào đó chúng ta sẽ ước tính giá trị của một vật bằng cách so sánh ưu thế tương đối của vật này so với vật kia.</p>
+<p>Khi so sánh tương đối, sẽ không có khách hàng nào quyết định lựa chọn (2) cả vì lựa chọn (3) hiển nhiên tốt hơn lựa chọn (2). Bằng cách đưa lựa chọn (2) ra làm nền, The Economist muốn dẫn dắt khách hàng theo lựa chọn (3), theo đó tạp chí điện tử, vốn được bán với giá 59 đô, được miễn phí ở lựa chọn (3).</p>
+<p>Một số ví dụ khác về tính tương đối ảnh hưởng đến hành động của con người. Một người có thể dễ dàng cho thêm 200 đô la Mỹ tiền tip cho bữa ăn trị giá 5.000 đô, nhưng lại tận dụng phiếu giảm giá để tiết kiệm 25 xu cho hộp cháo 1 đô.</p>
+<p>Một người sẵn sàng bỏ ra 3.000 đô la Mỹ để nâng cấp những chiếc ghế da cho chiếc xe mới giá 25.000 đô, nhưng băn khoăn khi chi khoản tiền đó để mua ghế sofa da mới ở nhà.</p>
+<p>Một người, đáng lẽ rất vui vẻ với mức lương của mình, đã rất không hạnh phúc khi biết lương của mình thấp hơn đồng nghiệp, hay thấp hơn người em rể.</p>
+<p>Để tránh những hành vi phi lý trí dẫn đến những lựa chọn không thông minh, đôi khi chúng ta phải phá vỡ đi sự so sánh tương đối đó.</p>
+<h3>2. Mỏ neo và quy luật cung - cầu</h3>
+<p><img src="https://st.quantrimang.com/photos/image/2016/08/03/quyet-dinh-4.jpg" alt="moneo" />
+Hiệu ứng Mỏ neo (Anchoring Effect) thường xuất hiện nhiều nhất khi đề cập đến giá cả. Nếu giá ghi trên một chiếc đồng hồ mới là 500 USD thì có thể bạn sẽ cân nhắc nó quá đắt so với số tiền bạn có thể chi trả. Tuy nhiên, nếu đi dạo trong cửa hàng và đầu tiên, bạn nhìn một chiếc đồng hồ có giá 5.000 USD ở trước quầy thì đột nhiên con số 500 USD dường như là mức giá có thể chấp nhận được. Rất nhiều sản phẩm cao cấp mà các cửa hàng trưng bày chưa bao giờ được kỳ vọng là sẽ bán được với số lượng nhiều. Tuy nhiên, chúng đóng vai trò quan trọng trong việc tạo &quot;mỏ neo&quot; trong tư duy của khách hàng và kích thích bạn quyết định mua các sản phẩm có giá mà bạn nghĩ là &quot;rẻ hơn&quot; rất nhiều so với chúng. Vì vậy để tránh phải hiệu ứng mỏ neo, chúng ta phải có nhiều tạo ra những mỏ neo với những mẫu khác ( có thể là một loại đồng hồ khác ... ), hoặc sử dụng mô hình phân tích mới để đưa ra quyết định. </p>
+<h3>3. Chúng ta luôn sợ mất mát ( Loss-aversion)</h3>
+<p><img src="https://st.quantrimang.com/photos/image/2016/08/03/quyet-dinh-2.jpg" alt="matmac" />
+Tưởng tượng có hai kịch bản: Trong trường hợp 1, bạn được cho $1000 và phải chọn giữa: 100% nhận được $500 hoặc đánh cược 50/50 để thắng $1000 nữa.Trong trường hợp 2, bạn được cho $2000 và phải chọn giữa: 100% mất $500 hoặc đánh cược 50/50 mất $1000.
+Nếu chúng ta chỉ quyết định lý trí, thì bạn sẽ lựa chọn giống nhau trong hai trường hợp.
+Nhưng thực tế không phải thế. Trong ví dụ đầu, đa số mọi người sẽ chọn giải pháp an toàn là lấy $500, nhưng trong trường hợp 2, đa số lại đánh liều.
+Tại sao chúng ta lại hành hành động phi thực dụng như thế ? Trong khi ở cả 2 trường hợp kết quả đều là nhận được 1500USD. Thực tế là ta sợ thua lỗ (trong trường hợp 2 là mất $500 từ $2000) hơn là nhận được lời. Chúng ta luôn muốn ăn chắc thay vì rủi ro.</p>
+<h3>4. Thiên kiến xác nhận (Confirmation Bias)</h3>
+<p>Thiên kiến xác nhận (Confirmation Bias) ám chỉ <strong>xu hướng tìm kiếm các thông tin để khẳng định cho những suy nghĩ, niềm tin hiện tại đang có theo nhận thức thiên vị</strong>, đồng thời <strong>bỏ qua và đánh giá thấp những thông tin khiến chúng ta nghi ngờ niềm tin vốn có của mình.</strong>
+Chẳng hạn, A tin rằng biến đổi khí hậu là một vấn đề nghiêm trọng. Sau đó, A chỉ tìm kiếm và đọc các câu chuyện liên quan đến bảo vệ môi trường, thay đổi khí hậu hay năng lượng thay thế. Kết quả, A tiếp tục xác nhận và củng cố thêm cho những gì mà anh ta tin.</p>
+<p>Trong khi đó, B không tin rằng biến đổi khí hậu là một vấn đề nghiêm trọng. Sau đó, B chỉ tìm kiếm và đọc các câu chuyện thảo luận rằng biến đổi khí hậu vẫn còn là một bí ẩn, tại sao các nhà khoa học mắc sai lầm và mọi người đang bị lừa như thế nào. Kết quả, B tiếp tục xác nhận và củng cố thêm cho những gì mà anh ta tin.</p>
+<p>Việc hình thành một giả thuyết và sau đó kiểm tra bằng nhiều cách khác nhau để chứng minh nó là điều sai lầm là hành vi rất lạ lẫm với nhiều người. Thay vì như vậy, nhiều khả năng chúng ta đặt ra một giả thuyết, sau đó, giả sử nó đúng và chỉ tìm kiếm các thông tin để bảo vệ cho định kiến của mình. <strong>Đa phần không ai muốn những thông tin mới, họ muốn xác nhận thông tin họ đã biết mà thôi</strong>.</p>
+<h3>5. Thành kiến sống sót (Survivor Bias)</h3>
+<p>Có một câu chuyện rất hay về <strong>Thành kiến sống sót</strong> như sau. Trong chiến tranh thế giới thứ 2, nhà thống kê học Abraham Wald có nhiệm vụ thống kê những vị trí thường hay dễ bị tổn thương của máy bay ném bom, để quân đội có thể gia cố chúng, và các nhà khoa học khác đã đồng thuận là sẽ gia cố giáp ở những phần có nhiều chấm đỏ như bên dưới </p>
+<p><img src="https://miro.medium.com/max/1400/1*FD_DTgmZQpscjhzmNWmJ2Q.png" alt="survivor_bias" /></p>
+<p>Tuy nhiên Wald đã phản bác lại, và cho rằng cần phải gia cố những phần ít chấm đỏ nhất, vì <strong>những chiếc máy bay không thể quay trở về là những chiếc máy bay đã bị bắn vào phần ít chấm đỏ nhất</strong></p>
+<p>Một ví dụ khác: &quot;Richard Branson, Bill Gates và Mark Zuckerberg, tất cả đều bỏ học và trở thành tỷ phú! Bạn không cần đến trường để thành công. Các doanh nhân chỉ cần dừng việc lãng phí thời gian tại các lớp học và bắt đầu sự nghiệp sớm&quot;.</p>
+<p>Richard Branson thành công mặc dù đã chọn con đường đó chứ không phải thành công bởi vì đã chọn nó. Ngoại trừ Branson, Gates và Zuckerberg, có hàng ngàn người khởi nghiệp khác đã thất bại, tiền nợ ngân hàng chồng chất và bỏ dở những gì họ đang làm. Thành kiến sống sót không phải đơn thuần chỉ nói rằng một chiến lược có thể không phù hợp với bạn mà nó cũng nhấn mạnh tới việc chúng ta không thực sự hiểu rõ liệu chiến lược đó có phải lúc nào cũng mang đến hiệu quả.</p>
+<p>Khi chỉ nghĩ đến những kẻ chiến thắng mà quên rằng vẫn còn có rất nhiều người thất bại thì thật khó để khẳng định một chiến lược nào đó chắc chắn sẽ dẫn tới thành công. (và sẽ khó đưa ra được quyết định đúng nếu không để ý đến cái bẫy này.)</p>
+<h3>6. Nguỵ biện chi phí chìm ( Sunk-cost Fallacy)</h3>
+<p>Đầu tiên, chúng ta phải tìm hiểu chi phí chìm (sunk cost) là gì. Trong ngành kinh tế, nó là các chi phí đã trả và không thể hồi phục lại được. Ví dụ như một công ty đầu tư hàng triệu USD vào trang thiết bị phần cứng máy chủ, số tiền này gọi là chi phí chìm vì nó không thể hồi phục lại được. Theo nguyên tắc về quyết định khi cân nhắc và so sánh chi phí, chi phí chìm có thể bỏ qua.</p>
+<p>Một ví dụ khác, giả sử bạn đã mua vé đến một lễ hội, tuy nhiên đến ngày nó diễn ra, bạn bị sốt nặng, tuy nhiên bạn vẫn cố &quot;lết&quot; đến vì bạn nghĩ: &quot;Vé mua mắc thế này rồi, không đi thì phí ra&quot;.</p>
+<p>Và thế là bạn đã ngụy biện cho chi phí chìm. Bạn đã bỏ tiền ra mua vé và không thể nào lấy lại được. Tuy nhiên nếu bạn đi đến đó với tình trạng sốt nặng, bạn sẽ không thể nào tận hưởng cuộc vui một cách trọn vẹn.</p>
+<p>Như vậy, sự ngụy biện cho chi phí chìm được hiểu đơn giản là bạn tiếp tục làm một việc gì đó vì đã đầu tư quá nhiều thời gian, tiền bạc và công sức vào đó, tuy nhiên việc làm này không phải là lựa chọn khôn ngoan nhất.</p>
+<h3>7. Trải nghiệm có sẵn ( Affect Heuristic)</h3>
+<p>Availability Heuristic có thể được hiểu là &quot;trải nghiệm có sẵn&quot; hoặc &quot;cảm tính về sự sẵn có&quot;. Tuy nhiên, điều này không quan trọng. Vấn đề ở đây là &quot;lỗi tâm lý&quot; này ám chỉ một sai lầm phổ biến do bộ não của chúng ta tạo ra: coi những thứ xuất hiện trong tâm trí một cách dễ dàng cũng là những thứ quan trọng nhất hoặc phổ biến nhất. Hay nói cách khác, chúng ta có xu hướng phán đoán về điều có khả năng xảy ra nhiều hơn dựa trên những ký ức dễ nhớ, sinh động và có ấn tượng mạnh.</p>
+<p>Ví dụ, một người có thể tranh cãi rằng hút thuốc không phải là không lành mạnh dựa trên cơ sở là ông nội của anh ấy đã sống tới 100 tuổi và đã hút 3 gói thuốc một ngày, một lập luận phớt lờ khả năng ông nội của anh ấy là một trường hợp ngoại lệ.</p>
+<p>Thêm nữa, một nghiên cứu được thực hiện bởi Steven Pinker tại Đại học Harvard cho thấy chúng ta hiện đang sống trong giai đoạn ít bạo lực nhất của lịch sử. Nhiều người đang được sống trong yên bình hơn trước đây. Tỷ lệ những kẻ giết người, tấn công tình dục, hãm hiếp và lạm dụng trẻ em nói chung có xu hướng giảm.</p>
+<p>Đa phần mọi người đều cảm thấy choáng khi nghe những con số thống kê này. Một vài người không muốn tin chúng. Nếu có một thời điểm yên bình nhất trong lịch sử thì tại sao hiện nay lại có quá nhiều cuộc chiến tranh diễn ra đến vậy? Tại sao mỗi ngày chúng ta đều nghe đến những vụ hãm hiếp, giết người, tội phạm? Tại sao mọi người lại nói quá nhiều về những hành động hủy diệt và khủng bố?</p>
+<p>Chào đón bạn đến với thế giới của những người quá tin vào &quot;trải nghiệm sẵn có&quot;!</p>
+<p>Câu trả lời là chúng ta không chỉ đang sống trong thời kỳ yên bình nhất của lịch sử mà còn đang sống trong thời kỳ mà thông tin trở nên bùng nổ nhất trong lịch sử. Tin tức về các thảm họa hay tội phạm giờ đây quá thịnh hành. Chỉ cần một thao tác tìm kiếm nhanh trên Internet là bạn đã nhận được vô số thông tin về các cuộc tấn công khủng bố gần đây nhất hơn bất kỳ một tờ báo giấy nào có thể truyền tải cách đây 100 năm.</p>
+<p>Phần trăm các sự kiện nguy hiểm xét về tổng thể có xu hướng giảm nhưng xét riêng từng loại nguy hiểm thì nhiều trong số đó lại có xu hướng tăng. Và bởi vì các sự kiện này sẽ đi vào tâm trí chúng ta một cách dễ dàng nên bộ não sẽ giả định rằng chúng xảy ra với tần suất lớn hơn so với thực tế.</p>
+<p>Chúng ta đánh giá quá cao tác động của những thứ mà chúng ta có thể nhớ và đánh giá quá thấp sự phổ biến của những sự kiện mà chúng ta chưa nghe bao giờ.</p>
+<h2>III. Checklist</h2>
+<p>Bên dưới là một số câu hỏi, bạn có thể sử dụng để kiểm tra xem khi ra quyết định mình có rơi vào cái bẫy nào bên trên không ?</p>
+<ol>
+<li>
+<p>Thiên kiến xác nhận </p>
+<ul>
+<li>Những số liệu này chúng ta tìm nó có thật sự là FACTS hay để phục vụ cho những sự xác nhận ý kiến?</li>
+<li>Nếu phải tìm những số liệu để phản bác lại quyết định này, chúng ta sẽ có những số liệu nào?</li>
+</ul>
+</li>
+<li>
+<p>Thiên kiến trải nghiệm có sẵn</p>
+<ul>
+<li>Nếu phải ra quyết định này thêm một lần nữa, chúng ta sẽ cần thêm thông tin nào? Chúng ta có thể tìm thấy nó ở đâu? </li>
+<li>Chúng ta có thể lập checklists những dữ liệu cần thiết cho mỗi quyết định được không?</li>
+</ul>
+</li>
+<li>
+<p>Mỏ neo</p>
+<ul>
+<li>Những con số được đưa ra này dựa vào đâu? Chúng ta có thể biết nguồn gốc của nó không ? </li>
+<li>Những dữ liệu này được đưa ra để định hướng chúng ta vào một quyết định nào đó có phải không ? </li>
+<li>Nếu sử dụng mô hình khác thì những số liệu này sẽ thay đổi như thế nào? Chúng ta có thể yêu cầu một mô hình phân tích mới không?</li>
+</ul>
+</li>
+<li>
+<p>Chi phí chìm </p>
+<ul>
+<li>Chúng ta có đang bị ám ảnh bởi một trải nghiệm nào trong quá khứ không?</li>
+<li>Nếu ở một vị trí khác thì những vấn đề chúng ta có thể thấy là gì?</li>
+</ul>
+</li>
+<li>
+<p>Thiên kiến sợ mất mát </p>
+<ul>
+<li>Chúng ta có quá thận trọng không? Được và mất ở đây là gì?</li>
+<li>Nếu không có rủi ro này thì chúng ta sẽ quyết định như thế nào? Nếu có rủi ro này thì phần trăm nhận thêm lợi nhuận là gì? </li>
+</ul>
+</li>
+</ol>
+<h2>IV. Sources and References</h2>
+<p><a href="https://jasoncollins.blog/2016/06/29/re-reading-kahnemans-thinking-fast-and-slow/">https://jasoncollins.blog/2016/06/29/re-reading-kahnemans-thinking-fast-and-slow/</a>
+<a href="https://doanhnhansaigon.vn/ke-sach/hoc-cach-tranh-nhung-sai-lam-phi-ly-tri-1062693.html">https://doanhnhansaigon.vn/ke-sach/hoc-cach-tranh-nhung-sai-lam-phi-ly-tri-1062693.html</a>
+<a href="https://hbr.org/2016/03/a-checklist-for-making-faster-better-decisions">https://hbr.org/2016/03/a-checklist-for-making-faster-better-decisions</a>
+<a href="https://fs.blog/2011/06/before-you-make-that-big-decision/">https://fs.blog/2011/06/before-you-make-that-big-decision/</a>
+<a href="https://thedecisionlab.com/biases/salience-bias/">https://thedecisionlab.com/biases/salience-bias/</a>
+<a href="https://genk.vn/vi-sao-doi-khi-ban-lo-dai-roi-ma-van-co-do-la-vi-ban-da-mac-vao-hien-tuong-nguy-bien-cho-chi-phi-chim-2016082713254704.chn">https://genk.vn/vi-sao-doi-khi-ban-lo-dai-roi-ma-van-co-do-la-vi-ban-da-mac-vao-hien-tuong-nguy-bien-cho-chi-phi-chim-2016082713254704.chn</a>
+<a href="https://quantrimang.com/5-thanh-kien-nhan-thuc-ngan-ban-dua-ra-quyet-dinh-dung-dan-124479">https://quantrimang.com/5-thanh-kien-nhan-thuc-ngan-ban-dua-ra-quyet-dinh-dung-dan-124479</a>
+<a href="https://tamly.blog/5-kieu-nham-lan-tam-ly-khien-ban-dua-ra-quyet-dinh-sai-lam/">https://tamly.blog/5-kieu-nham-lan-tam-ly-khien-ban-dua-ra-quyet-dinh-sai-lam/</a></p>
+<h2>V. Further Reading</h2>
+<ul>
+<li>Nudge: Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein</li>
+<li>Think Twice: Harnessing the Power of Counterintuition by Michael J. Mauboussin</li>
+<li>Think Again: Why Good Leaders Make Bad Decisions and How to Keep It from Happening to You by Sydney Finkelstein, Jo Whitehead, and Andrew Campbell</li>
+<li>Predictably Irrational: The Hidden Forces That Shape Our Decisions by Dan Ariely</li>
+<li>Thinking, Fast and Slow by Daniel Kahneman</li>
+<li>Judgment and Managerial Decision Making by Max Bazerman</li>
+</ul>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/my-running-life-march-2020</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-march-2020" />
+    <title>My Running Life  - March 2020 -</title>
+    <published>2020-04-07T00:00:00+00:00</published>
+    <updated>2020-04-07T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)......</summary>
+    <content type="html"><![CDATA[
+        <h2>Mở</h2>
+<p>Tháng rồi mình chạy khá ổn, cự ly đang tăng dần - Tháng 3 mình chạy được tổng cộng là 140km, một con số ấn tượng (vì ban đầu mình cũng không nghĩ là tháng 3 lại chaỵ được nhiều như thế này.)
+Tháng 3, mình hoàn tất được một half marathon, và điều lạ là bước sang tháng 4 mình đã có thể hoàn tất được 2 half marathon trong 3 ngày. Cơ thể mình có vẻ đang dần thích nghi được với việc chạy bộ trên 10km. Thật sự mà nói trước đây mình hiếm khi nào chạy trên 10km, cũng không hiểu vì sao, gần đây mình lại có dũng cảm nhấn chân chạy qua km thứ 10 rồi thứ 11 (có phải là do ảnh hưởng câu chuyện con ếch của đứa bạn không nhỉ ? ). Mọi thứ cũng dần dần tốt hơn, nhịp thở, sải chân cũng như nhịp tim.
+Cuối tháng 3 cũng là mùa sakura nở rộ, nhất là vào cuối tuần trước (tầm 2020.04.05 ~ 06). Mình chạy half-marathon dọc bờ sông　旧江戸川 vào sáng thứ 7, cảm giác thật thanh bình và thư thái, đây là course mình đã canh me từ lâu trên runtrip, một là vì nó đẹp, hai là cũng muốn chạy ngang disneyland một lần, nhưng mình cũng sợ không biết có hoàn thành nổi course đó không vì nó hơn 20 cây số mà 2 ngày trước mình vừa chạy xong một half.
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/92316701_852686901864356_6140147274279288832_n.jpg?_nc_cat=102&amp;_nc_sid=b96e70&amp;_nc_ohc=lHxh-06dnxAAX96NxC3&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=9&amp;_nc_ht=scontent.xx&amp;oh=c7352f5d6a4fec1bcb410778d3c7053e&amp;oe=5EACAA62" alt="sakura" /></p>
+<h2>Trung</h2>
+<p>Nhắc đến half-marathon đầu tiên trong tháng 4, mình cũng hơi kinh hãi, chẳng là vì gió ngược khá mạnh. Quãng dọc bờ sông Tamagawa từ phía Shinmaruko về Kamata thì rất là thoải mái mình chạy khá nhanh tầm pace 5:50 tuy vậy quãng ngược lại thì khá là kinh khủng vì gió ngược, pace mình rơi xuống còn pace 6:45 đôi khi là pace 7. Đấy, con người thật đúng nực cười, khi anh chạy nhanh thì anh nghĩ là do mình mạnh khoẻ, khi anh chạy chậm thì đổ thừa gió máy, ôi con người mới tội nghiệp và bất nhất làm sao. Nghĩ thì thế rồi lại cười, nhấn chân tiếp cho hết 6km còn lại để hoàn thành một half-marathon ( không thôi bị bảo là con ếch ộp - sau này ngồi nghĩ lại, ừ, có là con ếch ộp thì có sao đâu - biết mình khi nào là con ếch ộp mới quan trọng )
+<img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/91972455_667246510705768_9106216178107285504_n.jpg?_nc_cat=105&amp;_nc_sid=b96e70&amp;_nc_ohc=fXVYlqFTkpAAX-Jl7zG&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zor=9&amp;_nc_ht=scontent.xx&amp;oh=ea78603bde5801d8e23c36d8a8d74785&amp;oe=5EB0B6C9" alt="tamagawa" /></p>
+<p>Mình cũng đọc lại quyển &quot;Running with the mind of Medidation&quot; của Sakyong Mipham, đây là quyển sách về chạy bộ thứ 2 mình đọc sau quyển &quot;Tôi nói gì khi nói về chạy bộ&quot; của Murakami, mình nhớ là mình mua nó vào năm 2016, đến giờ đã hơn 4 năm rồi. Mình mua vì mình thấy nó có một sợi dây liên kết mơ hồ nào đó giữa chạy bộ và thiền. Thật ra lúc mình bắt đầu chạy bộ, khá là chật vật, mình vẫn còn nhớ đó là quãng thời gian mình vừa sang Nhật được 3 tháng, tầm tháng 7, lúc trời mưa lâm thâm mà mình thì chỉ có đi làm về vào phòng chat chit lung tung rồi đi ngủ ( vì mình làm gì có bạn với biết chỗ nào đi chơi nhiều ở Nhật) thế rồi nảy ra ý tưởng chạy bộ cho mệt về cho dễ ngủ. Vậy là lục tục lên mạng tìm giày. Đôi giày đầu tiên mình mang chạy bộ là đôi giày mình mang từ Việt Nam sang, đế khá cứng và nặng, cảm tưởng cứ như giày này để tránh giẫm phải đinh khi đi quốc lộ chứ không phải là giầy chạy. Sau này mới thấy đế gìay có cứng và nặng, nhưng không quyết đoán mà chạy thì cái tư tưởng đó còn cứng và nặng hơn gấp ngàn lần.
+Thế rồi bắt đầu chạy, ban đầu là dùng ứng dụng RunKeeper, để lưu lại số km mình đã từng chạy. 3km, 5km rồi 10km. Sau này mình vẫn nhớ lần đầu mình hoàn thành được 10K đầu đời, đó là khi chạy vào chiều thứ 7, quãng đường từ Kawasaki đến Yokohama, đó là một quãng chạy mà đến giờ mình vẫn nhớ.
+Đường chạy của mình dọc theo đường tàu Keihin, mình cứ chạy một đoạn thì lại thấy tàu chạy xuôi chiều hoặc ngược lại, lúc đó lại biết mình đã chạy đc tầm 4 phút rồi (tất nhiên là App RunKeeper có thông báo với mình) tuy nhiên mình thích nhìn xung quanh nên mình tắt nốt cái tiếng đó. Nhiều người khi chạy bộ thích nghe nhạc, mình thì không. Không hẳn là mình không thích âm nhạc, vì mình khi code vẫn hay nghe nhạc, và lúc mình nghe nhạc Rock Hunno (của nhóm The HU) thì mình code được nhanh nhất, tuy nhiên nó không áp dụng cho khi chạy bộ. Khi chạy mình thích lắng nghe âm thanh xung quanh hơn - đôi khi đó đơn giản chỉ là tiếng nện chân xuống mặt đường, tiếng thở khi phải lên dốc hoặc đơn giản là một tiếng roạc khi đầu gối của mình chạy trên những chỗ hơi gồ ghề. Đấy, chỉ đơn giản là những âm thanh đấy mà mình nghe đi nghe lại liên tục trong hơn 2 tiếng đồng hồ. Ấy vậy rồi cũng tới đích. Đôi khi điều khó nhất ngăn cản giữa sự vĩ đại và tầm thường lại chín là sự nhàm chán. (Mình lại nhớ đến câu chuyện trong quyển Tôi nói gì khi nói về chạy bộ của Murakami - Ở đó ông gặp một vận động viên tầm cỡ olimpic - cũng trả lời là để đạt được tầm cỡ thứ duy nhất ta phải chịu đựng là sự nhàm chán.)</p>
+<p>Và rồi từ từ mình bắt đầu chạy được lâu hơn, ban đầu mình chỉ thấy được 4m trước mặt, nhưng cứ nhấn bước rồi sẽ thấy quãng đường mình đi là bao xa.</p>
+<p><img src="https://i.gyazo.com/df01a8e417736421dfbc326e7d445f82.png" alt="gyazo" /></p>
+<p>Tiếp theo mình sẽ kể câu chuyện con ếch:
+Có năm con ếch ngồi trên một khúc gỗ. Bốn con quyết định nhảy khỏi khúc gỗ đó. Vậy hỏi còn bao nhiêu con ? </p>
+<p>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.</p>
+<p>Câu trả lời là 5 con. Vì sao ư ? Vì có khoảng cách rất lớn giữa việc quyết định và việc thực hiện
+(trích: 15 nguyên tắc vàng về phát triển bản thân)</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/my-running-life-april-2020</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-april-2020" />
+    <title>My Running Life  - March 2020 -</title>
+    <published>2020-04-07T00:00:00+00:00</published>
+    <updated>2020-04-07T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Tháng 4 năm 2020, do ảnh hưởng của corona virus, nước Nhật đang phải oằn mình chống chọi lại dịch bệnh. Hầu hết các công ty đều cho nhân viên của minh làm việc tại nhà ( công ty của mình đã cho......</summary>
+    <content type="html"><![CDATA[
+        <h2>Trung</h2>
+<p>Tháng 4 năm 2020, do ảnh hưởng của corona virus, nước Nhật đang phải oằn mình chống chọi lại dịch bệnh. Hầu hết các công ty đều cho nhân viên của minh làm việc tại nhà ( công ty của mình đã cho phép làm việc ở nhà từ tháng 3) và mình cũng có thể sắp xếp thời gian chạy bộ nhiều hơn.
+Ngoài ra ngày 31 tháng 3 D21 và mình đã tham gia giải chạy ảo VRace của VNExpress tổ chức. Bọn mình đăng kí chạy 100km trong 3 tuần (ban đầu mình cho rằng 100km chắc là vừa đủ) tuy nhiên giờ lại thấy 100km là hơi ít :D, bọn mình đã đạt được 100km vào đầu tuần thứ 2, </p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/what-i-read-atomic-habits</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-atomic-habits" />
+    <title>What I read - Atomic Habits , an easy &amp; proven way to build good habits and break bad ones</title>
+    <published>2020-03-14T00:00:00+00:00</published>
+    <updated>2020-03-14T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Một quyển sách mà mình nghĩ rất là nên đọc nếu các bạn muốn xây dựng những thói quen tốt và hiểu rõ hơn về động lực cũng như nguyên nhân hình thành các thói quen của mình.
+Quyển sách này có các......</summary>
+    <content type="html"><![CDATA[
+        <p>Một quyển sách mà mình nghĩ rất là nên đọc nếu các bạn muốn xây dựng những thói quen tốt và hiểu rõ hơn về động lực cũng như nguyên nhân hình thành các thói quen của mình.</p>
+<p>Quyển sách này có các phần chính như bên dưới </p>
+<ul>
+<li>Fundamentals: cơ bản về thói quen </li>
+<li>4 Quy luật cơ bản của thói quen 
+<ul>
+<li>Quy luật 1: Làm cho thói quen trở nên rõ ràng</li>
+<li>Quy luật 2: Làm cho thói quen trở nên cuốn hút </li>
+<li>Quy luật 3: Làm cho thói quen trở nên dễ dàng </li>
+<li>Quy luật 4: Làm cho thói quen trở nên thoả mãn </li>
+</ul></li>
+<li>Các chiến thuật nâng cao</li>
+</ul>
+<p>Có khá nhiều ý chính mình đã notes ra như bên dưới:</p>
+<ul>
+<li>Thói quen chính là những hạt nhân trong cuộc sống của chúng ta. Mỗi thói quen sẽ xây dựng thành những đơn vị cơ bản và đóng góp cho sự phát triển toàn thể của bản thân.</li>
+<li>Thói quen ảnh hưởng đến hình ảnh bản thân của bạn như thế nào ?
+<ul>
+<li>Hình thái tối cao của động lực nội tại là khi thói quen trở thành một phần hình ảnh mà chúng ta xây dựng, lúc đó không phải là <strong>tôi muốn làm điều này</strong> nữa mà sẽ là <strong>tôi làm điều này vì tôi là tuýp người như thế này</strong></li>
+<li>Thói quen không giúp cho chúng ta đạt được những thành công, nếu có thì chúng cũng là những mục tiêu phụ, thói quen là việc mà chúng ta trở thành một ai đó. Giống như mình rất yêu thích chạy bộ, nhưng đôi khi mình cảm thấy dậy lúc 6:30 sáng để chạy bộ đôi khi là một cực hình, nếu lật lại vấn đề thì một người chạy bộ sẽ hành xử như thế nào ? - Nếu đặt mình vào vị trí của một người mà mình muốn trở thành mình sẽ có thể có thêm những insight mới :D </li>
+<li>Khi những thao tác thừa được bỏ đi và những thao tác có ích được củng cố - đó là lúc thói quen đang được hình thành </li>
+<li>Thói quen có thể xem là những đường tắt (trong suy nghĩ - hành động) mà chúng ta học được từ kinh nghiệm cá nhân </li>
+<li>Thói quen nếu có một kế hoạch cụ thể ( thời gian, địa điểm) mà chúng ta thực hiện thì sẽ dễ để thành công hơn.</li>
+<li>Nhiều người cho rằng <strong>họ thiếu sự quyết tâm</strong>, nhưng đôi khi cái <strong>chúng ta thiếu là sự rõ ràng</strong>.</li>
+<li>Khi chúng ta ăn đồ ăn nhanh, hoặc cập nhật mạng xã hội thì cái chúng ta muốn đôi khi không phải là khoai tây chiên, hoặc là likes mà chúng ta muốn đó là sự khác biệt.</li>
+<li>Chúng ta không hành động vì chúng ta sợ sự thất bại - đây là điều thường gặp khi chúng ta tạo thói quen mới.</li>
+<li>Đôi khi sự di chuyển không hẳn là sẽ hoàn thành công việc - mà chỉ là chúng ta đang chuẩn bị để getting thing done.</li>
+<li>Con người luôn luôn tuân thủ quy luật ít tốn công sức nhất.</li>
+<li>Chúng ta duy trì thói quen xấu, vì bộ não rất thực dụng - Nó muốn những hành động mang đến những phần thưởng ngay lập tức - và thói quen xấu thì luôn mang đến điều đó.</li>
+<li>Khi mà thước đo tốt trở thành mục tiêu thì nó không còn là một thước đo tốt.</li>
+<li>Những nhà vô địch thế giới là những người chịu được sự nhàm chán</li>
+<li>Mối nguy hại lớn nhất với sự vĩ đại không phải là thất bại mà chính là sự nhàm chán.</li>
+<li>Cách duy nhất để có thể trở nên vĩ đại là có thể làm hoài một điều mà không chán - Bạn phải yêu sự nhàm chán </li>
+</ul></li>
+</ul>
+<p>Nhưng thói quen cũng có những điểm không tốt.
+Đúng vậy, theo nghiên cứu thì khi có một thói quen, thì nếu bạn vẫn thực hiện nó thì hiệu quả của bạn sẽ bị giảm theo thời gian, lúc đó chúng ta cần có sự tỉnh thức, để có thể xây dựng đánh giá lại thói quen cũ và xây dựng thói quen mới trên nền tảng những thói quen cũ. </p>
+<p>Quyển sách đề cập rất nhiều phương pháp để thực hiện - review lại những thói quen mà các bạn có thể download các template trên trang web của tác giả: <a href="https://www.jamesclear.com">jamesclear.com</a></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
+    <title>TIL - Run multiple php-fpm instances on centos</title>
+    <published>2019-12-23T00:00:00+00:00</published>
+    <updated>2019-12-23T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Working as an Infrastructure Engineer, I have to deal a lot with migration tasks. One of my most paintful experience is to using multiple versions of php on the same server.
+Here is my notes when installing multiple php-fpm on the same servers 
+For......</summary>
+    <content type="html"><![CDATA[
+        <p>Working as an Infrastructure Engineer, I have to deal a lot with migration tasks. One of my most paintful experience is to using multiple versions of php on the same server.
+Here is my notes when installing multiple php-fpm on the same servers </p>
+<p>For example when I install php-fpm-7.2 and php-fpm-7.1 on the same server, I always get this error when starting the two processes:</p>
+<pre><code>$ sudo /etc/init.d/php-fpm-7.2 start
+$ sudo /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>When running these two commands, I always got php-fpm-7.1 started, not php-fpm-7.2, so what is the problem ?
+Because these two processes used the same configurations file in <code>/etc/php-fpm.conf</code> so whether we started <code>php-fpm-7.1</code> or <code>php-fpm-7.2</code>, only one processes get called.
+So what can you do in this situation ?</p>
+<ol>
+<li>Rename the file in <code>/etc/php-fpm.conf</code> to something else</li>
+<li>Enable custom config file in <code>/etc/sysconfig/php-fpm-7.2</code>. Below is the file's content :</li>
+</ol>
+<pre><code>  1 # Additional environment file for php-fpm
+  2 # Uncomment below to use the php 7.2 specific configuration file
+  3 OPTIONS="-y /etc/php-fpm-7.2.conf"</code></pre>
+<p>Just uncomment the third line, then everything is OK.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/others-my-dev-day</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/others-my-dev-day" />
+    <title>Others - My Dev day</title>
+    <published>2019-11-15T00:00:00+00:00</published>
+    <updated>2019-11-15T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Hi, my name is Khanh, who is working as a web application engineer at the company called in-g.jp in Yokohama.
+I also work at a startup called &amp;quot;AskVietnamese&amp;quot;,:x and we are working hard to make our first release this...</summary>
+    <content type="html"><![CDATA[
+        <p>Hi, my name is Khanh, who is working as a web application engineer at the company called in-g.jp in Yokohama.
+I also work at a startup called &quot;AskVietnamese&quot;,:x and we are working hard to make our first release this</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
+    <title>TIPS - How to install Apache 2.4.41 on Amazon Linux AMI</title>
+    <published>2019-10-21T00:00:00+00:00</published>
+    <updated>2019-10-21T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This guide will guide you needed steps to install Apache 2.4.41 on Amazon Linux AMI. Apache 2.4.41 has been released on 2019.08 but Amazon has not yet released the package to
+Amazon Repositories, so we will have to install it from source.
 
-@extends('_layouts.master')
+
+
+
+
+
+
+Download......</summary>
+    <content type="html"><![CDATA[
+        <p>This guide will guide you needed steps to install Apache 2.4.41 on Amazon Linux AMI. Apache 2.4.41 has been released on 2019.08 but Amazon has not yet released the package to
+Amazon Repositories, so we will have to install it from source.</p>
+<h2>1. Yum update</h2>
+<pre><code class="language-bash">$ yum -y update</code></pre>
+<h2>2. Install OpenSSL 1.1.1</h2>
+<h3>2.1 Install perl-core and zlib-devel</h3>
+<pre><code class="language-bash">$ yum -y install zlib-devel
+$ yum -y install perl-core</code></pre>
+<h3>2.2 Install OpenSSL from source</h3>
+<ol>
+<li>Download the package</li>
+</ol>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget https://www.openssl.org/source/openssl-1.1.1c.tar.gz</code></pre>
+<ol start="2">
+<li>Run these commands below to unzip, make and install the package</li>
+</ol>
+<pre><code class="language-bash">$ tar xzvf openssl-1.1.1c.tar.gz
+$ cd openssl-1.1.1c
+$ ./config --prefix=/usr/local/openssl-1.1.1c shared zlib
+$ make depend
+$ make
+$ make test
+$ make install</code></pre>
+<ol start="3">
+<li>Set the path for OpenSSL</li>
+</ol>
+<pre><code class="language-bash">$ echo /usr/local/openssl-1.1.1c./lib &gt; /etc/ld.so.conf.d/openssl1111.conf
+$ ldconfig</code></pre>
+<h2>3. Install prerequisite tools for Apache Httpd</h2>
+<p>Prerequisites tools : <code>pcre-devel</code> and <code>expat-devel</code></p>
+<pre><code class="language-bash">$ yum -y install pcre-devel
+$ yum -y install expat-devel</code></pre>
+<h3>Install APR</h3>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget http://ftp.jaist.ac.jp/pub/apache//apr/apr-1.7.0.tar.gz
+$ tar xvzf apr-1.7.0.tar.gz
+$ cd apr-1.7.0/
+$ ./configure
+$ make
+$ make install</code></pre>
+<h3>Install APR Util</h3>
+<pre><code class="language-bash">$ cd /usr/local/src/
+$ wget http://ftp.jaist.ac.jp/pub/apache//apr/apr-util-1.6.1.tar.gz
+$ tar xvzf apr-util-1.6.1.tar.gz
+$ cd apr-util-1.6.1/
+$ ./configure --with-apr=/usr/local/apr
+$ make
+$ make install</code></pre>
+<h2>4. Install Apache 2.4.41</h2>
+<pre><code class="language-bash">$ cd /usr/local/usr
+$ wget http://ftp.jaist.ac.jp/pub/apache//httpd/httpd-2.4.41.tar.gz</code></pre>
+<p>Unzip the downloaded file and change to that directory</p>
+<pre><code class="language-bash">$ tar xvzf httpd-2.4.41.tar.gz
+$ cd httpd-2.4.41</code></pre>
+<p>Config and build from source</p>
+<pre><code class="language-bash">./configure \
+--enable-http2 \
+--enable-ssl \
+--with-ssl=/usr/local/openssl-1.1.1c \
+--with-apr=/usr/local/apr \
+--with-apr-util=/usr/local/apr \
+--enable-so \
+--enable-mods-shared=all \
+--enable-mpms-shared=all
+
+make
+make install</code></pre>
+<p>We can check the server information by running:</p>
+<pre><code class="language-bash">$ /usr/local/apache2/bin/httpd -v</code></pre>
+<h2>5. Thoughts</h2>
+<p>Apache 2.4.41 fixed some CVEs that has been noted from 2.4.39, so it is advised that you guys should update to this version asap.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/tips-install-mcrypt-on-php73</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-mcrypt-on-php73" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/tips-install-mysql57-centos-6</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-mysql57-centos-6" />
+    <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
+    <published>2019-10-18T00:00:00+00:00</published>
+    <updated>2019-10-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">This blog post guide you around installing multiple versions of PHP on Amazon Linux
+
+
+Install PHP 5.6 and php56-fpm
+
+
+
+Install PHP 7.1 and php71-fpm
+
+
+
+
+Update your httpd first:
+
+
+
+
+Install fcgi modules
+
+The easy way:
+
+We just run this command
+
+If your......</summary>
+    <content type="html"><![CDATA[
+        <p>This blog post guide you around installing multiple versions of PHP on Amazon Linux</p>
+<h2>1. Install Multiple Versions of PHP</h2>
+<ol>
+<li>Install PHP 5.6 and php56-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php56 php56-fpm</code></pre>
+<ol start="2">
+<li>Install PHP 7.1 and php71-fpm</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum install php71 php71-fpm</code></pre>
+<h2>2. Install Apache fcgi modules</h2>
+<ol>
+<li>Update your httpd first:</li>
+</ol>
+<pre><code class="language-bash">$ sudo yum update httpd</code></pre>
+<ol start="2">
+<li>
+<p>Install fcgi modules</p>
+<ol>
+<li>The easy way:</li>
+</ol>
+<p>We just run this command</p>
+<pre><code class="language-bash">$ sudo yum install mod_fcgid</code></pre>
+<p>If your server can install the module as normal, then proceed to step 3. If not, you have to install <code>mod_fcgi</code> the hard way(from source).</p>
+<ol start="2">
+<li>
+<p>The hard way:
+2.1 Download the latest tar ball from source</p>
+<pre><code>$ cd /usr/local/src &amp;&amp; wget http://ftp.jaist.ac.jp/pub/apache//httpd/mod_fcgid/mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.2 Unzip</p>
+<pre><code>$ tar -xzvf mod_fcgid-2.3.9.tar.gz</code></pre>
+<p>2.3 Build it</p>
+<pre><code>$ cd mod_fcgid-2.3.9
+$ ./configure.apxs</code></pre>
+<p>If you get some error like me, congratulation, we have to fix somethings.</p>
+<pre><code class="language-bash">./configure.apxs must be able to find apxs in your path, or the environment variable APXS must provide the full path of APXS,
+or you may specify it with: APXS=/path/to/apxs ./configure.apxs</code></pre>
+<p>You can refer to this link to get the apsx [link]()</p>
+</li>
+<li>
+<p>Config the build</p>
+<pre><code class="language-bash">$ ./configure.apxs
+$ make
+$ make install</code></pre>
+<p>You can check the result by calling phpinfo.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>3. Config PHP-FPM listening ports</h2>
+<p>We have installed <code>php71-fpm</code> and <code>php56-fpm</code>, so the next step is to configure these tools to listen on different ports.
+Firstly, we will make <code>php71-fpm</code> listens on some port like <code>9071</code> and <code>php56-fpm</code> listens on port <code>9056</code>.
+We will edit the file <code>/etc/php-fpm-5.6.d/www.conf</code> and add the row below</p>
+<pre><code class="language-bash">listen = 127.0.0.1:9056</code></pre>
+<p>We have to rename the default php-fpm.conf file to another name (I don't know how to work around this problem yet.)</p>
+<pre><code class="language-bash">$ mv /etc/php-fpm.conf /etc/php-fpm.conf.backup</code></pre>
+<p>We then force these service to read from its own config file by uncomment these lines:</p>
+<pre><code class="language-bash">$ vim /etc/sysconfig/php-fpm-7.1</code></pre>
+<p>we uncomment this line <code>#OPTIONS="-y /etc/php-fpm-7.3.conf"</code></p>
+<p>The default listening ports is <code>9000</code> but it seems a little difficult to remember so I changed it to <code>9056</code>
+We do the same thing for <code>php71-fpm</code> and make it listens to port <code>9071</code>.
+Then we will start both service by the comment below:</p>
+<pre><code class="language-bash">$ /etc/init.d/php-fpm-5.6 start
+$ /etc/init.d/php-fpm-7.1 start</code></pre>
+<p>Mutliple php versions help us to check the consistency of our application.
+With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
+    <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
+    <published>2019-09-05T00:00:00+00:00</published>
+    <updated>2019-09-05T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Today I have been working with AWS and some serious trouble has been occurred since 2019.08.24.
+The AWS Data center has been outage for around 8 hours which brought all the servers in &lt;code&gt;ap-northeast-1&lt;/code&gt; region down
+(some what they referred as......</summary>
+    <content type="html"><![CDATA[
+        <h2>Preface</h2>
+<p>Today I have been working with AWS and some serious trouble has been occurred since 2019.08.24.
+The AWS Data center has been outage for around 8 hours which brought all the servers in <code>ap-northeast-1</code> region down
+(some what they referred as the temperature failure has been the main problem to this incident).
+And one of our servers has died forever (due to the underlying EBS has been in trouble and couldn't be restored)</p>
+<h2>Workaround</h2>
+<p>Wow, trouble happened and we don't have any backup for that EBS (holy...)
+and we don't have any backup, but luckily, we have 2 instances. And the remaining still working.</p>
+<h2>Make the fix</h2>
+<p>Ofcourse the hotfix is :</p>
+<ul>
+<li>Create the new ebs from the remaining server snapshot</li>
+<li>Stop the error server, detach its ebs and attach a new one</li>
+<li>Restart the error server.</li>
+<li>Testing the new server </li>
+<li>If everything is ok it will be attached to main ELB</li>
+</ul>
+<h2>Root causes fix</h2>
+<p>The root cause is we don't have any or perform any backups. Although AWS has claimed there SLA is 99.99%
+There should be at time where the 0.01% occurred.
+So we intend to use AWS DLM to make the backup regularly and automatically.
+You can read documents about AWS DLM here (Link)[<a href="https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html">https://docs.aws.amazon.com/dlm/latest/APIReference/Welcome.html</a>].</p>
+<h2>TLDR</h2>
+<p>If we don't backup our data regularly. We will have a lot of mess.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/til-automation-cherry-picking-process</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-automation-cherry-picking-process" />
+    <title>TIL - Automation cherry-picking process</title>
+    <published>2019-08-19T00:00:00+00:00</published>
+    <updated>2019-08-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Sometimes, I want to cherry-pick all merge-commit from a branch. For example, I have a feature that has been developing in &lt;code&gt;feature/xxx&lt;/code&gt; and this branch has been merge to &lt;code&gt;develop&lt;/code&gt; by multiple PRs.
+Now, I want to release this......</summary>
+    <content type="html"><![CDATA[
+        <h3>Use case</h3>
+<p>Sometimes, I want to cherry-pick all merge-commit from a branch. For example, I have a feature that has been developing in <code>feature/xxx</code> and this branch has been merge to <code>develop</code> by multiple PRs.</p>
+<p>Now, I want to release this <code>feature/xxx</code> to <code>master</code>. What should I do ? </p>
+<h3>1. List out all merge commit from feature branch to develop</h3>
+<p>I ran the command below to get all the commit hash </p>
+<pre><code>khanh in ~/project/x on develop &gt; git log --first-parent --oneline | grep feature/xxx
+43501043 Merge pull request #757 feature/573 into develop
+2189c7dd Merge pull request #756 feature/573 into develop
+15196ecd Merge pull request #755 feature/573 into develop
+fa50af01 Merge pull request #735 feature/573 into develop
+b3c729e8 Merge pull request #734 feature/573 into develop
+ec60235e Merge pull request #730 feature/573 into develop
+1c9315ad Merge pull request #725 feature/573 into develop
+9d92b98a Merge pull request #722 feature/573 into develop
+bf8b3f5c Merge pull request #717 feature/573 into develop
+f818f46a Merge pull request #716 feature/573 into develop
+6a257fa6 Merge pull request #715 feature/573 into develop
+c24e194f Merge pull request #712 feature/573 into develop
+89f821df Merge pull request #711 feature/573 into develop
+c0803282 Merge pull request #710 feature/573 into develop
+65dca36f Merge pull request #707 feature/573 into develop</code></pre>
+<p><strong>Note :</strong> To display the merge commit in reverse order, you should </p>
+<h3>2. Copy the result to a file</h3>
+<p>Maybe I will save the file as <code>list_commit.txt</code></p>
+<h3>3. Run the command below to cherry-pick each commit in that file</h3>
+<p>Run the shell script below to cherry-pick all commits in a file ( if there is any conflicts, the command will stop and you should resolve conflicts before continuing.)</p>
+<pre><code>#!/usr/bin/env bash
+
+LIST_FILE="${1}"
+
+if [ "${LIST_FILE}" = "" ] ; then
+  echo "Pleas give path to commit list file!"
+  echo "Usage: cherry-pick-list &lt;file/to/picklist&gt;"
+  exit 1
+fi
+
+echo "Cherry-picking all commits from file ${LIST_FILE} ..."
+
+COUNT=1
+IFS=$'\n'
+for commit in $(cat "${LIST_FILE}") ; do
+  hash=$(echo ${commit} | cut -d$'\t' -f 1)
+  echo -n "cherry picking ${hash} ... "
+  git cherry-pick -m 1 "${hash}"
+
+  if [ $? -eq 0 ] ; then
+    echo "done."
+  else
+    echo "There are conflicts to resolve!"
+    read -p "Press [ENTER] key if you have resolved the conflicts and to continue ..."
+  fi
+
+  COUNT=$((COUNT+1))
+done
+
+echo "Maybe you want to rebase: git rebase -i HEAD~${COUNT}"</code></pre>
+<h3>4. Referrals</h3>
+<p><a href="https://git-scm.com/docs/git-log">https://git-scm.com/docs/git-log</a></p>
+<p><a href="https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh">https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh</a></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/til-rails-server-in-docker-not-start</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-rails-server-in-docker-not-start" />
+    <title>TIL - Rails server not start after turn off docker</title>
+    <published>2019-08-08T00:00:00+00:00</published>
+    <updated>2019-08-08T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Recently, I have a project which was build by 
+
+Docker
+Rails 
+Sidekiq (Job Scheduler)
+Redis (Cache server)
+MinIO (File storage)
+
+We use &lt;code&gt;docker-compose up&lt;/code&gt;, but sometimes after I turn off docker compose, I couldn&#039;t start the webserver process......</summary>
+    <content type="html"><![CDATA[
+        <p>Recently, I have a project which was build by </p>
+<ul>
+<li>Docker</li>
+<li>Rails </li>
+<li>Sidekiq (Job Scheduler)</li>
+<li>Redis (Cache server)</li>
+<li>MinIO (File storage)</li>
+</ul>
+<p>We use <code>docker-compose up</code>, but sometimes after I turn off docker compose, I couldn't start the webserver process again, as the log below</p>
+<pre><code class="language-bash">web_1      | =&gt; Booting Puma
+web_1      | =&gt; Rails 5.1.4 application starting in development
+web_1      | =&gt; Run `rails server -h` for more startup options
+web_1      | A server is already running. Check /app/tmp/pids/server.pid.
+web_1      | Exiting
+server_web_1 exited with code 1
+</code></pre>
+<p>I kill docker process by command line, and run <code>docker-compose up</code> again, but no hope.</p>
+<h2>Problem:</h2>
+<p>Rails server can't not stop normally when we use <code>Ctrl+C</code> or <code>docker-compose down</code>, this problem should be fixed when we publish docker images or we have to manually remove the <code>pid</code> file that remained in the project folder : <code>&lt;project_root&gt;/tmp/pids/server.pid</code></p>
+<h2>Solution:</h2>
+<p>We have to removed the <code>server.pid</code> file and restart the webserver again.
+With the recent update of docker, we have seen that this problem has been fixed in <code>2.1.0.0</code> (mine was <code>2.0.0.0</code>) as an issue here:
+<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>
+<h2>Reference</h2>
+<p><a href="https://qiita.com/kmt/items/89c31d647bf42bf2300c">https://qiita.com/kmt/items/89c31d647bf42bf2300c</a>
+<a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/what-i-read-norwegian-wood</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-norwegian-wood" />
+    <title>What I read - Norwegian Wood</title>
+    <published>2019-07-13T00:00:00+00:00</published>
+    <updated>2019-07-13T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Thay đổi chủ đề một tí, trong những ngày mưa ẩm ương của tháng 7 này, mình bỗng nhiên muốn đọc một cái gì đó ma mị một tí, ít nhất là cũng man mác, và u uất buồn như cái tiết trời tháng 7......</summary>
+    <content type="html"><![CDATA[
+        <p>Thay đổi chủ đề một tí, trong những ngày mưa ẩm ương của tháng 7 này, mình bỗng nhiên muốn đọc một cái gì đó ma mị một tí, ít nhất là cũng man mác, và u uất buồn như cái tiết trời tháng 7 này.</p>
+<h2>Tại sao mình lại chọn quyển này ?</h2>
+<p>Kì lạ là mình lại chưa đọc <strong>Rừng Nauy</strong> bao giờ, kể cả việc xem phim. Thật ra mình có nghe nhắc đến nó vào những năm đầu của đại học, tuy nhiên mình lại cảm thấy chưa có hứng thú tìm hiểu về nó lúc đó. Có lẽ đó cũng là một cái duyên, để đến bây giờ mình mới bắt đầu đọc nó sau khi đọc được một trích dẫn của thằng bạn, đại để là : &quot;Cậu chỉ nên đọc những cuốn sách đã được thử thách bởi thời gian. Những cuốn sách mà tác giả đã chết từ 30 năm trở lên. Nếu cậu chỉ đọc những cuốn sách mà người khác cũng đang đọc, cậu cũng sẽ chỉ nghĩ mà những điều người khác đang nghĩ.&quot; (Nagasawa - trích Rừng Na Uy), nghe cũng hơi rùng mình... mình cũng đang đọc theo list của Bill Gates, thì đúng là thế, nên quyết định đọc <strong>Rừng Nauy</strong>, từ lúc quyết định tới lúc đọc xong là 3 ngày. Tuy nhiên khi đóng trang sách cuối cùng, mình cảm thấy mình không sai khi chọn quyển này :) </p>
+<p>Đấy, chỉ đơn giản là như thế thôi </p>
+<h2>Nội dung quyển sách</h2>
+<p>Bắt đầu với việc Watanabe đáp xuống ở sân bay, anh ấy dần dần nhớ lại sự việc của hơn 20 năm trước, khi rời Kobe để lên Tokyo bắt đầu cuộc sống của một sinh viên tại một trường đại học tư.<br />
+Cậu rời bỏ quê nhà một cách nhanh chóng, chỉ vì cậu muốn đi xa khỏi đó, nơi mà có quá nhiều kỉ niệm của cậu và người bạn quá cố, Kizuki.
+Watanabe vô tình gặp lại Naoko bạn gái của Kizuki ở Tokyo, và 2 người đã gặp và nói chuyện với nhau, Naoko cũng như Watanabe muốn quên đi cái chết của Kizuki mà bỏ tất cả và bắt đầu cuộc sống mới ở Tokyo. Và rồi trong lần sinh nhật thứ 20 của mình, Watanabe và Naoko đã quan hệ với nhau, sau đó, Naoko rời bỏ Tokyo mà không nói với Watanabe một lời. Ở đại học, anh đã gặp Nagasawa một senpai của mình, một con người thông minh tài năng, và rất có tham vọng. Anh ta đã dạy cho Watanabe câu trích dẫn ở trên, cũng dạy cho Watanabe cách tìm kiếm tình một đêm, đây là một nhân vật rất có chiều sâu, mặc dù đôi lúc mình thấy anh ấy ích kỉ và quá ngạo mạn... anh ấy có mục tiêu, rõ ràng nhưng có phải chính vì thế mà anh ấy sẵn sàng đánh đổi luôn cả tình cảm của người yêu mình, Hatsumi? Nhân vật nữ tiếp theo là Reiko, Reiko Ishida, một nhạc công Piano tài năng, nhưng rơi vào cái bẫy của chính học trò mình đến mức suy sụp tâm lí, và gặp Naoko ở bệnh viện tâm lí khu vực Kyoto. Trong lúc Watanabe đang tìm kiếm Naoko, anh vô tình gặp phải Midori, (cá nhân mà nói đây là nhân vật mình yêu thích nhất trong truyện), con gái của một ông chủ hiệu sách ở khu Toshima ngoại ô Tokyo. Midori, tràn đầy năng lượng, trẻ trung và thành thật. Khá bất ngờ khi cô đề cập đến chuyện tình dục và nhiều vấn đề khác rất thẳng thắn (như đòi xem phim S&amp;M ) hay muốn Watanabe đưa đi các shop đồ chơi...
+Midori, một cô gái tuy đơn giản, nhưng lại cực kì sâu sắc (tại sao mình lại nói như thế, chắc phải đọc các bạn sẽ hiểu được), đặc biệt sau khi cô tham gia vào một nhóm mà nhóm đó lại muốn cách mạng, và bắt cô phải đọc quyển <strong>Tư bản</strong> của Karl Marx. Và Midori cảm nhận được sự chân thành cũng như đáng yêu của Watanabe... Naoko hay Midori sẽ là lựa chọn của Watanabe. Hãy đọc kĩ quyển sách nhé. ^^. Bên dưới là SPOILER nên các bạn có thể không xem. </p>
+<h2>Những hình ảnh , ẩn dụ trong quyển sách</h2>
+<p>Thường thì tác phẩm của Murakami có rất nhiều ẩn dụ và hình ảnh, tất nhiên ý nghĩa của những ẩn dụ đó theo mình sẽ thay đổi, tuỳ vào tâm trạng cũng như kinh nghiệm hiện tại của bạn. Có thể lúc 30 tuổi bạn đọc sẽ khác , lúc 35 tuổi cảm nhận sẽ khác, nó có nhiều tầng và nhiều lớp nghĩa. Ở dưới mình list ra một số ẩn dụ mà mình cảm thấy là hay nhất và ý nghĩa nhất.</p>
+<ul>
+<li><strong>Cậu bạn quốc xã</strong>: Cậu bạn này là bạn cùng phòng với Watanabe, một người sạch sẽ và cực kì đúng giờ, cậu ta là một sinh viên ở khoa bản đồ học. Cậu đơn giản, chân thật và đúng giờ, tuy nhiên một ngày nào đó cậu ấy đã rời bỏ Watanabe. Không một lí do. Nhưng chắc chắn Watanabe đã chịu ảnh hưởng rất nhiều từ cậu ta. Nhất là với một người nghệ sĩ như Watanabe... Một mô típ hay lặp lại trong các tiểu thuyết của Murakami, một nhân vật biến mất. Không rõ nguyên do, không biết kết cuộc. Có thể xem đó là nhân vật đã chết. Tuy nhiên cái chết này, còn không được nhắc tới, họ chỉ xuất hiện, đơn giản là thế, và Biến Mất.</li>
+<li><strong>Tình bạn của cả 3 người</strong>: Trong truyện của Murakami, việc duy trì sự cân bằng dường như cực kì cần thiết. Giống như sau này quyển <strong>Colorless Tsukuru and the Pilgrimage</strong> cũng đề cập, mỗi người là một liên kết, duy trì được sự cân bằng cho cả nhóm. Khi mà một thành viên trong nhóm mất đi, đó cũng là lúc những thành viên còn lại bị ảnh hưởng. Tuy nó không rõ rệt như <strong>Colorless Tsukuru</strong> nhưng thật sự, chỉ khi có mặt của Watanabe, Kizuki mới có thể hiển thị thế mạnh của mình. Có nhiều lí do dẫn đến cái chết của Kizuki, nhưng mình nghĩ, cậu ấy không muốn phải thấy Watanabe đi xa, và khi một mình thì cậu ấy cảm thấy bé nhỏ và mệt mỏi. Đó chính xác là những gì cậu ấy có, và cậu ấy không muốn Naoko phải thấy mình như thế. Cậu ta có thể chọn <strong>Chết</strong> vì không muốn như thế.</li>
+<li><strong>Nỗi khổ thiên tài</strong>: thử nghĩ, cậu chẳng cần làm gì, lên đàn một bản sonate trong một cuộc thi, giải nhất. lúc đó bạn cảm nhận thấy gì ??? Rỗng tuếch phải không ? Thiên tài nó đau đớn ở chỗ đó, hầu như họ không cần phải <strong>khổ luyện</strong>, từ đó không có trong tự điển của họ. Họ cần nó, để thấy sự tưởng thưởng là xứng đáng. Thử nghĩ, chúng ta sinh ra ở ngay vạch đích, mọi thứ trong tay, lúc đó chúng ta sẽ mất phương hướng như thế nào ? Đó chính xác là điều đã xảy ra với Reiko. Và khi ngón tay út của cô bị liệt cô lại trở về làm một người bình thường. Những điều đó tốt hơn cho cô, cho đến khi ....</li>
+<li><strong>Midori</strong>: nhân vật mình yêu thích nhất trong truyện. Một cô gái trẻ mạnh mẽ nhưng gìau tình cảm. Không quá ma mị hay u uất như Naoko, cô mang đến cho Watanabe một nguồn năng lượng tích cực. &quot;Trong khi những cô học sinh cấp 3 khác có tiền mua son phấn, cô phải để dành tiền mua chảo rán trừng.&quot; ... Có một hình ảnh nhỏ giưã bố cô và cô, khi ông ở trong bệnh viện. &quot;Ueno, vé, Midori.&quot;. Midori là nhân vật có thể gọi là ánh nắng trong tác phẩm này. Nếu xem Naoko là hình ảnh khu rừng u uất thì có thể xem Naoko là một đóm lửa, và nếu đốt cháy cả Naoko ta có thể thấy được hình ảnh của Midori trong đó. </li>
+</ul>
+<p><strong>Ngoài lề:</strong> Do mình đã đọc quyển <strong>Colorless Tsukuru and the Pilgrimage</strong> nên những hình ảnh miêu tả về tính dục cuadr Murakami không làm mình quá dội... Tuy nhiên nếu 10 năm trước mình đọc thì chắc sẽ khác. Nhưng mình nghĩ hình ảnh tình dục của Murakami cũng chỉ là ẩn dụ cho những khao khát sâu thẳm bên trong con người. Lựa chọn của Watanabe có chính xác ? Nếu bạn gặp Naoko trong lần sinh nhật thứ 20 đấy, bạn có xử lý giống như Watanabe? Cách sống của Nagasawa có chính xác? Hay Nagasawa chính là Watanabe ở một phương diện nào đấy, nếu Watanabe không có tình yêu, liệu cậu ta có trở thành Nagasawa ?....</p>
+<h2>So What's Next ?</h2>
+<p>Mình nghĩ tiếp theo sẽ là quyển <strong>Kafka bên bờ biển</strong>, nhưng ai biết được có thể sẽ là một chọn lựa khác.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/tips-fix-fuelphp-email-header-broken</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-fix-fuelphp-email-header-broken" />
+    <title>TIPS - How to fix header broken in FuelPHP</title>
+    <published>2019-06-21T00:00:00+00:00</published>
+    <updated>2019-06-21T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">FuelPHP was a good framework from beginning. It was super easy, intuitivea and straightforward. Although it lacks some of must-have features such as : 
+
+Dependencies Injection
+Templating Engine
+
+Then, come Laravel and other newer frameworks make......</summary>
+    <content type="html"><![CDATA[
+        <p><a href="https://fuelphp.com">FuelPHP</a> was a good framework from beginning. It was super easy, intuitivea and straightforward. Although it lacks some of must-have features such as : </p>
+<ul>
+<li>Dependencies Injection</li>
+<li>Templating Engine</li>
+</ul>
+<p>Then, come <a href="http://laravel.com">Laravel</a> and other newer frameworks make <code>FuelPHP</code> become less attrative on GitHub
+... So long for introducing part, let me introduce our problem. </p>
+<h2>1. The problem</h2>
+<pre><code>When I was using Fuelphp to send email via SES in Japanese the header is completely wrong. </code></pre>
+<p>Here is the header:</p>
+<pre><code>From: hogehoge@mail.com
+To: nukinuki@mail.com
+Subject: 【Some subject】パスワー
+Message-ID: &lt;0100016b50670058-da13fc7f-cbf7-4fde-9083-b4faab1275f9-000000@email.amazonses.com&gt;
+Date: Thu, 13 Jun 2019 10:34:16 +0000
+X-SES-Outgoing: 2019.06.13-54.240.8.90
+Feedback-ID: 1.us-east-1.3cLUpO+HD0L+B+FopedfEoY28igDyGu4bMyBMMzGqdQ=:AmazonSES
+
+ =?UTF-8?Q?=E3=83=89=E5=86=8D=E7=99=BB=E9=8C=B2=E3=81=AE=E3=81=94=E6=A1=88?=
+
+ =?UTF-8?Q?=E5=86=85?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit</code></pre>
+<p>Of-course, the header is broken, and user can't see any of the contents 😭</p>
+<h2>2. The solution</h2>
+<p>After a little time googling, we found this <a href="http://watanabeyu.blogspot.com/2014/06/fuelphpses.html">Link</a>
+Ofcourse, this guy told us the fact that: <code>If your header is more than 18 bytes, your header will be broken and there is no way to fix this ?</code></p>
+<p>Are you fucking kidding me ??
+Japanese email is <code>somewhat long and cumbersome</code>, so limit your header under 18 bytes (or 9 kanji characters) <strong>is unacceptable</strong>. I know what happen when I told my boss about this.
+So I tried to figure out what is the real problem here :</p>
+<ul>
+<li>Header maybe encoded and encoded result is wrong.</li>
+<li>If we allow, encoding header, what should we do? </li>
+</ul>
+<h3>2.1 The easy way</h3>
+<p>Because of the encoding header configuration, things has been gone wrong, so the most intuitive way is to disable it.</p>
+<pre><code class="language-php">&lt;?php
+
+return array(
+   //省略
+    'defaults' =&gt; array(
+        'encode_headers' =&gt; false,
+    )
+    //省略
+);
+</code></pre>
+<h3>2.2 The hard way</h3>
+<p>Because encoding header setting need <code>mbstring</code> to be installed, we must have install <code>mbstring</code> first.</p>
+<h3>Thoughts:</h3>
+<p>Don't have any special thoughts about this problem. I'm considering to move away from FuelPHP to another framework.</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/til-404-redirect-in-s3</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-404-redirect-in-s3" />
+    <title>TIL - 404 Redirect in S3 static blog post</title>
+    <published>2019-06-20T00:00:00+00:00</published>
+    <updated>2019-06-20T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Today I received a comment from my friends telling me that my blog doesn&#039;t redirect to 404.
+Oops...
+I should have been set it from the beginning instead of making my blog showing something like this:
+
+We should have been let user see something much more......</summary>
+    <content type="html"><![CDATA[
+        <p>Today I received a comment from my friends telling me that my blog doesn't redirect to 404.
+Oops...
+I should have been set it from the beginning instead of making my blog showing something like this:</p>
+<pre><code>403 Forbidden
+Code: AccessDenied
+Message: Access Denied
+RequestId: 5F9506201FD3BF09
+HostId: DlHKCh+6eIyX1OILlLEt2FVz2BMgn3luo6lNcx6xxMr3F0wntH5jDqHQ78Q77i1JWcoEN9xb//c=</code></pre>
+<p>We should have been let user see something much more <strong>friendly</strong> instead of something frank, coldhearted like the error above.
+Below is the steps I have done to make it works.</p>
+<ol>
+<li>Create a 404 folder and its content (the friendlier things I want my user to see)</li>
+<li>Settings S3 error pages in AWS console</li>
+<li>Invalidate cloudfront cache (in case you are using Cloudfront as your CDN)</li>
+</ol>
+<h3>1. Create a 404 folder</h3>
+<p>I've used <code>Jigsaw</code> as my blog cms, so things is super easy. I just have to create a <code>404.blade.php</code> and put it in my root directory. When I do compile the code for deploy, <code>404.html</code> file will be generated.</p>
+<pre><code class="language-html">@extends('_layouts.master')
 
 @section('body')
     &lt;div class="flex flex-col items-center text-grey-darker mt-32"&gt;
@@ -153,73 +1095,620 @@ Depending on where your site is hosted, you may need to configure......</summary
         &lt;/p&gt;
     &lt;/div&gt;
 @endsection</code></pre>
-<hr />
-<p>Depending on where your site is hosted, you may need to configure your server to use the custom 404 page. For more details, visit the <a href="https://jigsaw.tighten.co/docs/custom-404-page/">Jigsaw documentation about configuring a custom 404 page</a>.</p>    ]]></content>
+<p>Now, things is pretty better like this </p>
+<p><img src="/assets/img/custom-404.png" alt="404-image" /></p>
+<h3>2. Settings S3 error pages in AWS Console</h3>
+<p>S3 console provide a way to set your error pages (whenever some key is not found or permission forbidden)
+You can set the error pages as below (the path will be based on the bucket root directory )</p>
+<p><img src="/assets/img/s3-error-config.png" alt="s3-error-config" /></p>
+<p>If you don't use any CDN, you can skip step 3, everything now should work fine.
+If you use CDN, you need to clear the cache (or request invalidation as in AWS )</p>
+<h3>3. Create invalidation request</h3>
+<p>You can use AWS Console to create invalition request ( a cache clear request - all of the cache will be updated to the newest contents from origin - so this is an expensive step, please use it considerably).</p>
+<p>I use aws command line to create invalidation, you can use my command or console to create invalidation.</p>
+<pre><code class="language-bash"> aws cloudfront create-invalidation --distribution-id &lt;distribution_id&gt; --paths "/*" --profile &lt;profile_id&gt;</code></pre>
+<p>After that, you can confirm whether your changes have been updated and delegated to all edge locations
+(Please wait about 4,5 minutes for changes completely reflected all edge locations.)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/fuse-search</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/fuse-search" />
-    <title>Fuse Search</title>
-    <published>2018-12-22T00:00:00+00:00</published>
-    <updated>2018-12-22T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
+    <title>What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice</title>
+    <published>2019-05-09T00:00:00+00:00</published>
+    <updated>2019-05-09T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">To provide fast, local search of your blog, this starter template comes with a pre-built Vue.js component that uses Fuse.js. Fuse.js is a &amp;quot;lightweight fuzzy-search library with no dependencies.&amp;quot; It works by running queries against a JSON index......</summary>
+    <summary type="html">Đây là quyển mình đã dành khoảng cuối tháng 4 để đọc. Tất nhiên chủ đề của quyển sách này như tựa của nó, không hướng về lịch sử mà lần này là thiên về
+&lt;code&gt;thiền&lt;/code&gt; của thiền sư......</summary>
     <content type="html"><![CDATA[
-        <p>To provide fast, local search of your blog, this starter template comes with a pre-built Vue.js component that uses Fuse.js. <a href="http://fusejs.io/">Fuse.js</a> is a &quot;lightweight fuzzy-search library with <em>no</em> dependencies.&quot; It works by running queries against a JSON index of your content.</p>
-<p>During the <a href="http://jigsaw.tighten.co/docs/building-and-previewing/">build process</a>, the contents of your <code>posts</code> collection is processed by the <code>GenerateIndex.php</code> listener, and an <code>index.json</code> file is generated in the build directory. The <code>Search.vue</code> component provides a search input that queries this local index.</p>
-<p>If you'd like to customize the generation of your search index, take a look at the <code>handle</code> method of the <code>GenerateIndex.php</code> file.</p>    ]]></content>
+        <p>Đây là quyển mình đã dành khoảng cuối tháng 4 để đọc. Tất nhiên chủ đề của quyển sách này như tựa của nó, không hướng về lịch sử mà lần này là thiên về
+<code>thiền</code> của thiền sư <a href="https://en.wikipedia.org/wiki/Shunry%C5%AB_Suzuki">Shunryu Suzuki</a></p>
+<p>Ông chính là người đã đưa thiền thuật đến với thế giới phương Tây và phát triển nó ( thầy Thích Nhất Hạnh, hay các Rinpoche của phật giáo Tây Tạng cũng là những người đầu tiên đưa phật giáo thực hành phương Đông đến với phương Tây).</p>
+<p>Quyển sách có 3 phần chính như bên dưới </p>
+<ol>
+<li>Luyện tập đúng</li>
+<li>Thái độ đúng</li>
+<li>Hiểu đúng </li>
+</ol>
+<p>Thật ra thì Shunryu Suzuki không phải là người viết nên quyển sách này, nhưng đây là quyển sách được ghi lại bởi Richard Baker, người mà sau này trở thành truyền nhân chính thức của Suzuki trong Soto Zen, một tổ chức truyền bá thực hành Thiền Soto ở phương Tây</p>
+<p>Mình có vài điều đọng lại rất lâu sau khi đọc quyển sách này.</p>
+<h3>1. Đi về phương đông một dặm , cũng là đi về phương Tây một dặm.</h3>
+<p>Câu này nghe thì hơi vô lý. Vì Đông - Tây là hai khái niệm ngược nhau hoàn toàn. Nhưng, sẽ như thế nào nếu chúng ta biết trái đất là hình cầu? Đi về phương Đông cũng chính là đi về phương Tây, vì thật ra trái Đất hình cầu, chúng ta nếu cứ đi mãi về phía Đông, chẳng phải sẽ đến phía Tây sao? </p>
+<h3>2. Chỉ cần thực hiện nó - Quên đi con người lý tính cũng như trạng tính, quên đi cả bản thân chúng ta khi đang luyện tập.</h3>
+<p>Chúng ta thường hay luyện tập một thứ gì đó, và nghĩ ra thêm hàng tá lí do để thực hiện nó. Ví dụ, tôi chạy bộ vì : chạy bộ tốt cho tim mạch này, chạy bộ giúp tôi giảm stress này, chạy bộ giúp tôi cân đối tiêu mỡ, ... Vậy thì khi chạy bộ, trong đầu chúng ta sẽ có hàng tỉ tưởng tượng diễn ra trong đầu... và nếu thế thì việc chạy bộ sẽ không còn ở mức cao nhất của nó. Điều này làm mình nhớ tới quyển: <code>Running Meditation</code> mà mình có review ở đây <a href="http://nech.info/2018/07/13/running-with-the-mind-of-meditation-phan-1-xay-dung-nen-tang/">Link</a> . Tất nhiên chúng ta có nhiều level, nhưng cao nhất là khi chúng ta là một với điều chúng ta đang luyện tập. </p>
+<h3>3. Và để giải quyết vấn đề, hãy là một phần của vấn đề</h3>
+<p>Chúng ta khi vừa ra đời đã khóc. Cuộc đời của chúng ta sẽ có rất nhiều <code>vấn đề</code>  phía trước. Vậy thì <strong>Vấn đề</strong> chính là một phần của chúng ta. Chúng ta sẽ không hiện hữu nếu không có vấn đề. Khi và chỉ khi chúng ta trở thành một với vấn đề thì vấn đề mới được giải quyết. Tất nhiên, sẽ không bao giờ hết vấn đề cả. Và ngay cả sau khi chết, vẫn còn có vấn đề.</p>
+<h3>4. Hãy nuôi dưỡng tâm hồn. Nhưng đừng có phễu lọc khi tiếp nhận chúng.</h3>
+<p>Thời đại internet phát triển, chúng ta hay có khẩu hiệu <strong>Hãy nuôi dưỡng tâm hồn</strong> , và để nuôi dưỡng tâm hồn, chúng ta làm gì nào: </p>
+<ul>
+<li>Chúng ta đi đi đi và đi tìm nó ở tít các <em>Vương Quốc Hạnh Phúc</em>, <em>Xứ sở cờ hoa</em> ... </li>
+<li>Chúng ta đọc sách một cách công nghiệp, đọc một cách không phân biệt hay dở mà chỉ đọc số lượng.</li>
+<li>Chúng ta ngồi thiền và mơ mộng một ngày nào đó chúng ta sẽ thành công. Chúng ta khinh bỉ những đứa không thiền, cho rằng nó là một tâm hồn thui chột, chúng ta là thanh cao.</li>
+</ul>
+<p>Khi tiếp nhận thông tin, chúng ta thường mang ý muốn sở hữu chúng, thông tin đều phải đi qua bộ lọc của chúng ta, chúng ta thường hay chỉ thích nghe những thông tin <strong>phù hợp với suy nghĩ của mình từ trước</strong>. Giả sử bạn nhìn thấy một ngọn núi cao và đẹp khi đi du lịch, nhưng nó không đẹp như trong cái Wallpaper của bạn đang lưu trong máy tính. Bạn phụng phịu bảo <em>'Trong máy tính của mình còn đẹp hơn'</em>. Không, hãy cảm nhận cảnh ở đó, không so sanh gì với bất kì những thứ có trước đó, đừng cố gắng co ép mọi thứ theo ý mình. Đó mới là điều quan trọng.</p>
+<h3>5. Và để đón nhận được sự thật - Là phải sống lúc này, ở đây</h3>
+<p>Đây cũng là một câu nói quen thuộc của thiền sư Thích Nhật Hạnh, khi ông nói về hạnh phúc. Đơn giản là <strong>Lúc này, Ở đây</strong> hay <strong>Đã về, Đã tới</strong> . Đây cũng chính là sự thật duy nhất trong vũ trụ, khi Đức Phật nhắc đến trong kinh kệ của ngài, Hạnh phúc - Trí Tuệ - Vũ Trụ nằm trong mỗi sát-na. Chúng ta không cần tìm kiếm ở tương lai, không cần nuối tiếc quá khứ, khoảng cách địa lý là vô nghĩa, nếu có thể sống <strong>Lúc này, Ở đây</strong>.</p>
+<h2>What's Next</h2>
+<p>Mình đang đọc quyển <a href="https://www.goodreads.com/book/show/38526454-enlightment-now">Enlightment Now</a> và sẽ lại review sau khi hoàn tất</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/mailchimp-newsletters</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/mailchimp-newsletters" />
-    <title>Mailchimp Newsletters</title>
-    <published>2018-11-21T00:00:00+00:00</published>
-    <updated>2018-11-21T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/what-i-read-genghis-khan</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-genghis-khan" />
+    <title>What I read - Genghis Khan and the Making of the Modern World</title>
+    <published>2019-05-01T00:00:00+00:00</published>
+    <updated>2019-05-01T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">Mailchimp is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.
-To begin accepting......</summary>
-    <content type="html"><![CDATA[
-        <p><a href="https://mailchimp.com/">Mailchimp</a> is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.</p>
-<p>To begin accepting subscribers, simply add your list URL to the form <code>action</code> in the <code>source/_components/newsletter-signup.blade.php</code> file.</p>
-<pre><code class="language-html">&lt;!-- source/_components/newsletter-signup.blade.php --&gt;
+    <summary type="html">Tiếp nối những quyển sách lịch sử, tháng 3 và một nửa tháng 4 của mình đã đọc quyển sách này. 
 
-&lt;div id="mc_embed_signup"&gt;
-    &lt;form action="https://your-mail-chimp-list-manage-url" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate&gt;
-        &lt;div id="mc_embed_signup_scroll"&gt;
-            &lt;h2&gt;Sign up for newsletter&lt;/h2&gt;
-            &lt;div class="mc-field-group"&gt;
-                &lt;label for="mce-EMAIL"&gt;Email Address &lt;/label&gt;
-                &lt;input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address"&gt;
-            &lt;/div&gt;
-            &lt;div id="mce-responses" class="clear"&gt;
-                &lt;div class="response" id="mce-error-response" style="display:none"&gt;&lt;/div&gt;
-                &lt;div class="response" id="mce-success-response" style="display:none"&gt;&lt;/div&gt;
-            &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+Cũng không có nhiều lý do lắm đâu 
 
-            &lt;div style="position: absolute; left: -5000px;" aria-hidden="true"&gt;&lt;input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""&gt;&lt;/div&gt;
-            &lt;div class="clear"&gt;&lt;input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/form&gt;
-&lt;/div&gt;</code></pre>
-<h3>Example</h3>
-<img src="/assets/img/newsletter.png">
-<p><a href="https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form">See how to get your Mailchimp list URL.</a></p>    ]]></content>
+Mình luôn thích sống kiểu Normadic (du canh du cư). Ai cần một ngôi......</summary>
+    <content type="html"><![CDATA[
+        <p>Tiếp nối những quyển sách lịch sử, tháng 3 và một nửa tháng 4 của mình đã đọc quyển sách này. </p>
+<h2>Tại sao mình lại chọn quyển này ?</h2>
+<p>Cũng không có nhiều lý do lắm đâu </p>
+<ul>
+<li>Mình luôn thích sống kiểu <strong>Normadic</strong> (du canh du cư). Ai cần một ngôi nhà nào ? </li>
+<li>Genghis Khan là một trong những vị tướng lĩnh tài ba (khi có thể thống nhất được các bộ lạc Mongols), và tất nhiên còn là một nhà chính trị kiệt xuất nữa.</li>
+<li>Năm nay mình muốn đọc 4 quyển lịch sử, đây là quyển thứ 3</li>
+</ul>
+<p>Đấy, chỉ đơn giản là như thế thôi </p>
+<h2>Nội dung quyển sách</h2>
+<p>Quyển sách được chia làm 3 phần chính:</p>
+<ol>
+<li>Cuộc đời của Genghis Khan thưở còn ấu thơ</li>
+<li>Cuộc chinh phạt thống nhất các bộ tộc Mongolia và chống lại các vương quốc Hồi Giáo (Iraq, Iran, Syria)</li>
+<li>Cuộc chinh phạt của người Mongolia sau khi Genghis Khan qua đời (Khubilai thống Nhất Trung Quốc...)</li>
+</ol>
+<h2>Những điều ngộ nhận trước khi đọc sách</h2>
+<p>Tất nhiên trước khi đọc quyển sách này, dù cũng rất thần tượng người Mongolia, nhưng so với các Kỵ sĩ Paladin của Châu Âu thì mình vẫn nghiêng về phía các kỵ binh châu Âu. Tuy nhiên đọc xong quyển sách mình mới thấy rằng việc Mongolia thắng được các Kỵ Binh châu Âu là điều cực kì hợp lý. Ngoài ra mình còn cho rằng Mongolia là man tộc, thắng chẳng qua là nhờ <strong>ăn may</strong>, chẳng hạn như lúc đó, tại Trung Nguyên, Tống đang đánh nhau với Kim, Mongolia đánh Kim thắng là nhờ Kim đang dồn quân với Tống (cũng sai nốt. Lúc này thật ra là Mông Cổ liên quân với Tống, cùng nhau đánh Kim.). Và mình cũng cho rằng đây là thời kì đen tối của châu Á, vì một tộc Man di như Mongol lại làm trùm cả châu Á, đạp lên trên cả <strong>Trung Hoa</strong> anh hùng thì thật là nhọ cho châu Á. Nói chung là ban đầu mình không có cái nhìn thiện cảm lắm với việc đi chinh phạt của Mongol, sâu xa hơn là không chịu có một bộ lạc chăn thả lại thắng cả một nền văn minh lúa nước, phát minh ra giấy, la bàn, thuốc súng như Trung Hoa.
+Tất nhiên là mọi thứ đều có lý do của nó cả. </p>
+<h2>Những thông tin / điều mình học được sau khi đọc quyển sách</h2>
+<p>Nói về những thông tin trong sách thì cực kì nhiều luôn. Thôi để mình chắc lọc lại </p>
+<ol>
+<li>Cha của Gengis Khan, không phải là cha ruột của ông ấy. Mẹ ông ấy bị cướp đi khi cha ruột đang dẫn mẹ ông ấy về lại bộ tộc của mình.</li>
+</ol>
+<blockquote>
+<p>Những bộ lạc du mục, khi một người con trai muốn cưới một người con gái, họ phải đến làm việc cho nhà gái từ 3,4 năm để chứng tỏ năng lực lao động của mình. Cha của Gengis Khan đã ở rể được 3 năm, và khi đang đưa mẹ của Genghis Khan quay lại bộ tộc thì bị cha nuôi của Genghis Khan cướp mất. Và đó là lần cuối cùng Mẹ của Genghis Khan gặp mặt cha ông ấy.</p>
+</blockquote>
+<ol start="2">
+<li>Genghis Khan đã giết anh trai cả của mình sau khi cha ông ấy qua đời.</li>
+</ol>
+<blockquote>
+<p>Đây là một câu chuyện khác, người cha dượng của Genghis Khan đã có vợ và con, theo luật bộ tộc khi người cha qua đời, con trai trưởng có quyền lên thay thế, và cưới hết vợ của cha mình !??? , đây là một trong những lý do Genghis Khan đã giết người con cả này và lên nắm quyền điều khiển gia đình thay cho người anh ấy. Tất nhiên việc này khiến cả gia đình Genghis Khan phải bị bỏ lại, và ông phải tự xây dựng bộ tộc cho riêng mình.</p>
+</blockquote>
+<ol start="3">
+<li>Genghis Khan là một người khá chung thuỷ</li>
+</ol>
+<blockquote>
+<p>Tại sao mình lại nhận định như vậy? Vì khi ông đang xây dựng bộ tộc của mình, trong một lần đi săn, vợ của ông là Borte, đã bị bộ lạc Merkid cướp đi, ông đã phải nhờ tới bạn của bố dượng là Ong Khan để mượn binh cướp lại vợ mình, về sau khi đã nắm quyền ở Mongol ông vẫn xem bà là vợ chính thức duy nhất, và bà là Hoàng Hậu duy nhất của cả đế chế.</p>
+</blockquote>
+<ol start="4">
+<li>Gengis Khan là một người tài giỏi ở cả lĩnh vực chính trị và khoa học.</li>
+</ol>
+<blockquote>
+<p>Thật khó để tin được rằng Genghis Khan là một người hoàn toàn cởi mở và ham học hỏi. Mỗi lần chinh phạt được một thành bang, ông sẽ chia thường dân và học giả làm 2 hàng. Với những người thường dân mà có nghề nghiệp ổn định (kiểu kỹ sư, đầu bếp, thợ xây...) họ sẽ được ông đưa về Mongol để xây dựng bộ lạc. Ngoài ra, ông không hề bắt những người hồi giáo phải bỏ đạo, họ được quyền có tín ngưỡng của riêng họ, được thờ cúng và xây dựng đền đài. Đây là một bước tiến vượt bậc nếu so với cuộc thánh chiến của kỵ sĩ Paladin và Hồi giáo Mameluke.</p>
+</blockquote>
+<ol start="5">
+<li>Người Mongol khoẻ mạnh hơn các bộ tộc trồng lúa vì họ ăn thịt và không lạm dụng quá nhiều đường.</li>
+</ol>
+<blockquote>
+<p>Các bạn ăn theo chế độ low-carb chắc thích sống kiểu Mongol. Những chiến binh Mongol họ ăn uống một chế độ gìau protein và ít chất đường bột hơn bất kì những binh lính nào khác. Ngoài ra, những kị binh Mongol, thường có một tảng thịt mang theo bên mình và để dươí yên ngựa, mục đích là khi phi ngựa đường xa, miếng thịt sẽ trở nên mềm hơn, và khi cần ăn uống họ chỉ cần xẻ thịt ăn, và uống một ít sữa cừu lên men. Có lẽ nhờ chế độ này nên quân Mongol có thể hành quân khá nhanh và đánh đấm được lâu hơn.</p>
+</blockquote>
+<ol start="6">
+<li>Nhờ người Mongol mà giao thương giữa Âu - Á được thuận lợi, mở ra kỷ nguyên <strong>con đường tơ lụa.</strong></li>
+</ol>
+<blockquote>
+<p>Ngày xưa mình cứ nghĩ con đường tơ lụa là thời nhà Đường, thật ra vẫn chưa chính xác. Thời Nhà Đường chỉ mới mở rộng giao thương tới Ấn Độ là cùng, vẫn chưa thể mở rộng được giao thương tới châu Âu. Người đầu tiên làm được việc đó chính là Genghis Khan. Với việc vó ngựa Mongol trải dài từ Đông sang Tây như hình bên dưới, việc phải có một đội ngũ Logistics chuyên lo việc đưa thư cũng như giao dịch là cực kì cấp thiết. Chính Genghis Khan là người nghĩ ra chế độ trạm thư khi đưa thư. Cứ mỗi 30km sẽ có một trạm thư, nơi thư từ và bưu chính được phân chia, xử lý. Nếu không có hệ thống hậu cần hoàn chỉnh thì đế chế Mongol không bao giờ có thể rộng lớn được như vậy.</p>
+<p><img src="https://s3-ap-northeast-1.amazonaws.com/blog-khanh/assets/img/Genghis_khan_empire_at_his_death.png" alt="Bản đồ đế chế Mongol (1227)" /></p>
+</blockquote>
+<ol start="7">
+<li>Ông không tàn sát người dân như trong lịch sử châu Âu ghi lại </li>
+</ol>
+<blockquote>
+<p>Cái này cũng rất là mơ hồ, vì hầu hết chúng ta thường được nghe việc tàn sát người dân của người Mongol thông qua các sử gia Châu Âu. Tuy nhiên ngoài việc xử lý tầng lớp quý tộc của những thành bang mà ông ấy chiếm, việc tàn sát người dân không được ghi lại rõ ràng, ngoài ra cộng với việc mong muốn giao thương giữa các địa bàn mà ông ấy chiếm được mình không cho rằng Genghis Khan là người cổ xuý cho những việc này. Ông không coi việc chém giết là thú vui như một vài thú vui của quí tộc phương Tây thời đó. </p>
+</blockquote>
+<p>Quyển sách đề cập khá là nhiều về văn hoá, tín ngưỡng của người Mongol, thông qua hình ảnh của Genghis Khan, ông có thể xem là một người có tư duy đổi mới, sáng tạo, bình đẳng (ông là vua duy nhất xem trọng vai trò của Phụ nữ mà mình biết, tất nhiên ông không bị ảnh hưởng của Nho giáo, cũng như các học thuyết khác từ Trung Hoa nên có thể ông có cái nhìn đặc sắc và mới lại hơn. )</p>
+<p>Nhưng thiết nghĩ đây cũng là lúc trả lại ông ấy vào vị trí xứng đáng, thay vì xem ông ấy và Mongol là một lũ mọi rợ. </p>
+<p><strong>Ngoài lề:</strong> Mông Cổ hiện giờ đã bị phá nát văn hoá khá nhiều do bị Trung Quốc cũng như Liên Bang Xô Viết quản lý, chữ viết của họ ( giống như chữ viết của người Uighur) đã bị huỷ thay vào đó là chữ Cyrillic, những người trẻ Mông Cổ bị cấm tìm hiểu về ông cha của họ, về tổ tiên của mình, hầu hết gia phả đều bị huỷ... nếu là những người Mông Cổ trẻ và đọc những bài viết này, ắt hẳn họ sẽ thêm tự hào về nguồn gốc của họ.</p>
+<h2>So What's Next ?</h2>
+<p>Mình đã đọc quyển này, tuy nhiên chưa có review, <a href="https://www.goodreads.com/book/show/402843.Zen_Mind_Beginner_s_Mind">Zen Mind Beginner's Mind</a> do vẫn còn hơi mông lung vài chỗ. Chắc sẽ có review sớm thôi, khi mình có thời gian.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://my-jigsaw-blog.com/blog/my-first-blog-post</id>
-    <link type="text/html" rel="alternate" href="https://my-jigsaw-blog.com/blog/my-first-blog-post" />
-    <title>My First Blog Post</title>
-    <published>2017-03-23T00:00:00+00:00</published>
-    <updated>2017-03-23T00:00:00+00:00</updated>
+    <id>https://www.khanh.page/blog/til-mongodb-with-fuelphp</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-mongodb-with-fuelphp" />
+    <title>TIL - MongoDB with FuelPHP (PHP7.x)</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
     <author>
-        <name>Author Name</name>
+        <name>Khanh Nguyen</name>
     </author>
-    <summary type="html">This is the start of your first blog post....</summary>
+    <summary type="html">Due to lack of keyboard and my own intend to write in English.
+From now on, all of my blog post will be written in English, but I will try to translate some of its content to Vietnamese to encourage reader from Vietnam
+(Of course I want to encourage......</summary>
     <content type="html"><![CDATA[
-        <p>This is the start of your first blog post.</p>    ]]></content>
+        <p>Due to lack of keyboard and my own intend to write in English.
+From now on, all of my blog post will be written in English, but I will try to translate some of its content to Vietnamese to encourage reader from Vietnam
+(Of course I want to encourage Vietnamese reader to learn another )</p>
+<h2>FuelPHP and MongoDB</h2>
+<h3>1. The Story of PHP MongoDB Driver.</h3>
+<p>Yes, the FuelPHP core has a class support for MongoDB a long, long time ago.
+We can find it here
+<code>fuel/core/classes/mongo/db.php</code></p>
+<p>But the problem is, MongoDB PHP Driver has been re-written.
+<a href="https://derickrethans.nl/new-drivers.html">Link</a>
+Denik Rethans has started to become a MongoDB PHP Driver maintainer around 2012, and he released it around the end of 2015 and this driver supported the newer PHP7.x
+You can read more about the story why he undertook this effort as well as the architect under the hood <a href="https://derickrethans.nl/new-drivers-part2.html">here</a> . </p>
+<p>Now we move on to the next, integrate the new driver with the FuelPHP framework.
+To integrate the framework with our current blogpost</p>
+<pre><code></code></pre>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
+    <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Nhân ngày cuối tuần rảnh rỗi chờ đồ đang giặt, mình sẽ viết vài dòng về quyển sách này, mình nghĩ đây thực sự là một quyển sách rất đáng đọc cho những người muốn xây dựng một tổ chức hay......</summary>
+    <content type="html"><![CDATA[
+        <p>Nhân ngày cuối tuần rảnh rỗi chờ đồ đang giặt, mình sẽ viết vài dòng về quyển sách này, mình nghĩ đây thực sự là một quyển sách <em>rất đáng đọc</em> cho những người muốn xây dựng một tổ chức hay một công ty khởi nghiệp : -)</p>
+<p>Quyển sách bao gồm 9 phần như bên dưới</p>
+<ol>
+<li>Từ chủ nghĩa cộng sản tới nhà đầu tư mạo hiểm</li>
+<li>“Tôi sẽ tồn tại”</li>
+<li>Cảm xúc với khoảng thời gian</li>
+<li>Khi tất cả mọi thứ nằm ngoài tầm kiểm soát</li>
+<li>Quan tâm đến : Con người, Sản phẩm và Lợi Nhuận - theo thứ tự như thế</li>
+<li>Để ý tới những vấn đề đang cần được để ý : ))</li>
+<li>Cách dẫn đường ngay cả khi bạn không biết rõ tổ chức sẽ đi về đâu</li>
+<li>Luật đầu tiên của khởi nghiệp : Không có</li>
+<li>Kết thúc của sự bắt đầu.</li>
+</ol>
+<p>Chà có vẻ hơi hàn lâm. Nhưng thôi sau đây mình sẽ viết vài nhận xét của mình.
+Quyển này kể về cái con đường mà Ben Horowitz, và đồng sự của ông đã startup, kể từ lúc ông tốt nghiệp và làm cho Netscape sau đó cùng với bạn ông là Andressen ( giờ mình mới biết bác này là người viết nên Mossaic, tiền thân của các thể loại Web Browser hiện giờ <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)">Mosaic (web browser) - Wikipedia</a>)</p>
+<p>Trong đó ấn tượng, nhất với mình là câu chuyện về làm sản phẩm và cách vượt qua những giai đoạn khó khăn, khi mà CEO là người phải đưa ra quyết định về hướng đi cho công ty dựa trên rất, rất nhiều dữ kiện (và không bao giờ là đủ.)
+Trước tiên, một CEO, cần phải là <em>người định nghĩa sản phẩm</em> vì ?</p>
+<ul>
+<li>“Customer only knows what she thinks she wants based on her experience with the current product”: Chúng ta có thể lắng nghe customer, nhưng việc quyết định các tính năng cần thiết của sản phẩm phải là việc của CEO và cộng sự. </li>
+</ul>
+<p><em>Chương 4</em> là một chương cực hay, chúng ta có thể tham khảo , vì chương này chủ yếu đề cập đến các vấn đề của một startup, ví dụ như : định nghĩa về sự <em>đấu tranh</em> (struggle), một startup luôn luôn phải chống chọi với nó. Struggle không phải là thất bại, nó có thể gây ra sự thất bại (tất nhiên rồi) nhưng đó cũng là nơi bắt đầu của sự <em>Vĩ đại</em>. Tiếp theo nó đề cập đến <em>sự thành thật</em>. Công ty đang khó khăn và bạn phải cho thôi việc hơn 1/2 số nhân viên, tốt thôi, bạn là CEO hãy nói điều đấy với các nhân viên ngay khi bạn đã ra quyết định thôi việc. Nếu là mình, làm việc tại một cty mà cứ nơm nớp nhận mail cho thôi việc thì chắc hiệu suất công việc sẽ giảm, đó là điều chắc chắn.
+Và khi đó, những người quản lý trực tiếp phải là người ra quyết định cho thôi việc cấp dưới của họ. HR chỉ có nhiệm vụ gửi mail, vì chính manager mới là người sâu sát và nắm được nhân viên nào nên đi, nhân viên nào nên ở.
+Một vấn đề mình thấy khá hay nữa là: <em>Giáng cấp</em> : )).  Khi startup có những người bạn thân đã cùng chúng ta startup, từ lúc cty mới có 5 người cho tới khi phát triển lên cả trăm người. Tới một lúc bạn nhận thấy, người bạn đó không còn khả năng điều hành <em>một nhóm lớn tầm 40 người</em>  chẳng hạn. Bạn phải giáng cấp. Làm nó như thế nào, để người bạn kia không cảm thấy bị <em>phản bội</em> hay <em>quê</em> cũng là một chủ đề quan trọng. </p>
+<p><em>Chương 5</em> thiên về phát triển và mở rộng tổ chức, chủ yếu là</p>
+<ul>
+<li>Xây dựng quy trình tuyển dụng, ở đây mình thấy có một bài học khá quý giá tác giả đề cập: <em>Hire for their strength rather than lack of weakness</em>, đại để là tuyển dụng một người mà làm tốt công việc mà họ sẽ làm, thay vì là tuyển một người cái gì cũng làm được nhưng không giỏi xuất sắc cái gì.</li>
+<li>Training nội bộ công ty: Ok, dù là startup nhưng cũng cần phải có training nội bộ, đừng lấy cái cớ là không có thời gian, hay phải ưu tiên cơm áo gạo tiền (nếu thế bạn cần phải quay lại tiêu đề chương 5, xem lại thứ tự ưu tiên. Bên dưới là vài lý do trong sách mình thấy hay
+<ul>
+<li><em>Tăng năng suất</em>:</li>
+<li><em>Giúp có thể đánh giá được chất lượng công việc của nhân viên</em> bạn train một người và xây dựng một bộ quy tắc đánh giá chất lượng, họ sẽ lấy bộ quy tắc làm chuẩn, và sẽ tất cả mọi người sẽ có cùng 1 bộ tiêu chuẩn.</li>
+<li><em>Quản lý chất lượng</em>: nếu không được training về chất lượng (ví dụ như mình làm Software Development, nếu không được training về một bộ Tiêu chuẩn lập trình aka Coding Convention chẳng hạn) mình sẽ code lung tung beng, copy những đoạn code có sẵn, code trên mạng, và cuối cùng, sản phẩm của mình sẽ là một thứ hỗn độn</li>
+<li><em>Giữ chân được nhân viên</em>: thông thường thì nhân viên sẽ có hướng phát triển của riêng họ, và nếu công ty không có training, không giúp nhân viên học được những thứ mới, thì đây cũng sẽ là một lý do để họ rời bỏ.
+Nếu làm tốt những điều trên, đây sẽ là một môi trường tốt để nhân viên làm việc, đa phần mình thấy những công ty trước mình làm (điển hình là cty E+1)  thường mọi người sẽ đấu đá lẫn nhau, đôi khi còn không biết mình vào cty để làm gì, và khi kết thúc công việc họ cũng không có cách nào đo đếm công việc đã hoàn thành chưa, chất lượng là tốt - xấu hay tệ…
+Chương 5 này còn đề cập tới một vấn đề mà mình đã từng trải nghiệm nhưng không biết gọi tên nó là gì : <em>Technical Debt</em>. Thuật ngữ <em>“Technical Debt”</em> hay được dùng trong giới Engineer, ở đó :
+/Chúng ta sẽ mượn thời gian, để viết những đoạn code nhanh và không tốt/ để hoàn thành kịp deadline. Đôi khi mình thấy viết nhanh để kịp deadline là có ý nghĩa, nhưng thường thì đây chỉ là một cách trì hoãn cho những vấn đề lớn hơn sẽ xảy ra sau khi release thôi : ))</li>
+</ul></li>
+</ul>
+<p><em>Chương 6</em> thiên về vận hành tổ chức và khi startup đã đi vào quỹ đạo,lúc này công ty đã không phải ở mức <em>Sống hay Chết</em> mà có khoảng thời gian để phát triển, lúc này chính là những lúc có thể xem là <em>/bình yên trước bão/</em> :)) , vì sắp tới sẽ phải đối diện với </p>
+<ul>
+<li>Chính trị</li>
+<li>Phong quan chức ( hơi giống mấy bộ phim Tàu, kiểu phải có tước hiệu cho từng người trong cty), kiểu này cũng có 2 trường phái
+<ul>
+<li>Không tước hiệu (mọi thứ bình đẳng)</li>
+<li>Chức là free có thể dùng thoải mái và ai cũng có : ))</li>
+</ul></li>
+<li>Văn hoá: cái này được bàn kĩ, mà mình cũng thích suy nghĩ về văn hoá. Vậy thì sẽ có các câu hỏi như :
+<ul>
+<li>Văn hoá là gì ??</li>
+<li>Văn hoá có ảnh hưởng như thế nào với cty ???
+Khi trả lời được các câu hỏi trên, mình mới thấy rằng công ty E+1 đã rất mạnh trong việc build văn hoá, và nhờ bộ văn hoá đó mà công ty có thể sống được với giá trị cốt lõi của nó đưa ra (tuy nhiên mình không nghĩ bộ văn hoá của công ty E+1 là phù hợp với mình ). Dù sao đi nữa, nếu đã đạt đến một mức độ thành công nhất định, sẽ thật là đau khổ khi không thấy văn hoá của cty đâu…(aka còn gọi là công ty giàu nhưng vô văn hoá : )) trọc phú chẳng hạn… ) </li>
+</ul></li>
+</ul>
+<p><em>Chương 7</em> đề cập đến công việc của một CEO một cách trần trụi và rõ ràng nhất : “<em>Ra quyết định</em>”.  Thật sự thì có cả tỉ thứ CEO phải ra quyết định từ việc nội bộ như : thuê ai , không thuê ai, cấu trúc hệ thống như nào, lương thưởng cho đến nhận đầu tư hay không nhận, bán mua công ty….
+Tất nhiên là có những lúc stress, nhưng CEO thành công là những người vượt qua được và “<em>đối diện với nỗi đau</em>” (và tất nhiên vì đối diện được nên họ cũng rất dũng cảm nữa :D ).
+Và, không ai sinh ra là một CEO cả, CEO là một ngành không thuộc về tài năng, nó thuộc về nỗ lực và sự học hỏi, đôi khi còn phải có dũng cảm nữa.
+<em>CEO are made not born</em>. </p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/what-i-read-napoleon-a-life</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-napoleon-a-life" />
+    <title>What I read - Napoleon</title>
+    <published>2019-03-19T00:00:00+00:00</published>
+    <updated>2019-03-19T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Hôm nay tự nhiên nghe bài Cát bụi của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là Napoleon
+Trước giờ mình toàn......</summary>
+    <content type="html"><![CDATA[
+        <p>Hôm nay tự nhiên nghe bài <strong>Cát bụi</strong> của Trịnh Công Sơn, mình lại nhớ đến quyển sách mình mới đọc hồi đầu năm, về một thần tượng của mình từ nhỏ đến giờ đó là <strong>Napoleon</strong></p>
+<p>Trước giờ mình toàn đọc về <strong>Napoleon</strong> thông qua các quyển sách kiểu tuyển tập, hay <em>Thập đại tùng thư</em> chưa bao giờ đọc một quyển kiểu về cuộc đời, như thế này (đa phần các quyển lịch sử của mình đọc ngày xưa cũng nói vế các sự kiện, mà trong đó con người nhân vật thường không được miêu tả một cách rõ ràng nhất.)</p>
+<p>Quyển sách này do tác giả <strong>Andrew Roberts</strong> một nhà lịch sử người Anh (trớ trêu là ngày xưa người ghét <em>Napoleon</em> nhất lại là người Anh) lại viết về Napoleon, và hơn hết quyển sách này cho thấy một Napoleon rất khác những cuốn trước mà mình đã đọc, nó nhắc đến <strong>cuộc đời của Napoleon</strong> chứ không phải là <strong>Napoleon's Wars</strong> hay <strong>Campaign</strong>.</p>
+<p>Ít người biết rằng <strong>Napoleon không phải là người Pháp</strong>. Khó có thể nói ông thuộc Pháp Quốc, vì đảo Corsica ban đầu thuộc về Italy và tổ tiên của Napoleon cũng có gốc là người Ý chứ không phải nguòi Pháp. Napoleon có một cuộc sống khá nghèo, với ông bố nợ nần, nhưng lại <strong>có một người mẹ cực kì tốt</strong>, trong cuốn hồi kí còn đề cập đến một câu nói cực kì hữu thú vị, lúc đó Napoleon đã trở thành vua của nước Pháp. Đại để là một lần, khi thấy số tiền mà Napoleon cấp dưỡng cho bà, nhưng bà không dùng đến, Napoleon đã đến và hỏi bà và nhận được câu trả lời: <em>&quot;Ta tiết kiệm số tiền này, vì biết đâu có khi đám con Nữ Hoàng, Hoàng Đế của ta lại sẽ có lúc dùng đến&quot;</em>, và lời tiên liệu của bà không sai, vài năm sau bà đã có dịp dùng đến số tiền đó, khi Napoleon bị đày sang đảo Elba.</p>
+<p><strong>Napoleon cực kì chăm đọc sách</strong>, và sách mà ông đọc là sách lịch sử, về các vị tướng quân, ông cũng đọc các sử thi, anh hùng ca, mình nghĩ chính những sách lịch sử này đã làm dậy lên trong ông tinh thần quốc gia, và yêu nước. Chính vì thế ngay cả khi xin vào học trường sĩ quan pháo binh, ông cũng rất chăm chỉ đọc sách, đến nỗi nhà chỉ có mỗi cái ghế, giường, còn lại là sách.
+Có thể nói nghịch cảnh từ nhỏ đã tạo cho Napoleon được một đức tính khá có ích là <strong>Tiết kiệm</strong> nhờ thế mà ở chiến dịch làm nên tên tuổi của mình, ông đã có thể phát huy được nó, và làm cho nên một trận Toulon lịch sử, để đưa ông tiếp cận được với giới quí tộc nước Pháp.</p>
+<p>Sau khi tham gia vào giới quí tộc nước Pháp,  Napoleon đã gặp được một người phụ nữ quan trọng nhất trong cuộc đời mình, đó chính là vợ ông <strong>Josephine</strong>. Josephine là vợ goá của một quí tộc Pháp, mà quí tộc Pháp thì bà nào bà nấy đều có quan hệ ngoài luồng, bà này cũng không ngoại lệ, vậy mà khi đăng quang làm Hoàng đế Pháp, Napoleon vẫn tấn phong bà này làm Hoàng Hậu, thật là khó hiểu !!???
+Và có một thói quen khá hay là mỗi lần Napoleon đi chiến dịch xa đều viết thư cho Josephine kể đầy đủ tình hình của ông , dù bà này ở Pháp quốc thì đang ngoại tình với một ông khác ?? : D ??
+Nhưng vẫn phải công nhận, Josephine chính là thần May Mắn của Napoleon, sau khi quen biết bà, sự nghiệp của Napoleon đã lên như diều gặp gió, từ một sĩ quan pháo binh cấp thấp, có thể bước vào giới quí tộc Pháp và trở thành Vua của Pháp.
+Có một điều rất hay là Napoleon là người đã đặt ra chế độ <strong>Quân đoàn</strong> hay còn gọi là <strong>Corps</strong> , đây là một chế độ cực kì hiệu quả trong các cuộc chíến khi nó có thể vận dụng ưu thế di chuyển tối đa mà cũng có thể tạo thành nhiều hướng tấn công khi mỗi Quân đoàn có thể xem là một đơn vị tác chiến - hành quân độc lập. Nhờ chế độ này mà Napoleon đã làm gỏi liên quân Nga - Áo trong trận Austerlitz (may mắn là nếu không có Davout dũng cảm chiếm được Pratzen để đưa pháo lên thì chắc người bị dồn xuống hồ là Napoleon)</p>
+<p>Cơ mà đó là những gì mình đọc về chiến dịch, mình cũng không định nói quá nhiều. Hãy đề cập về những biến đổi về mặt xã hội của Napoleon </p>
+<ul>
+<li>Ông là người đặt nền móng cho bình đẳng xã hội </li>
+<li>Ông là người đã tạo ra bộ luật Napoleon - Có thể xem là bộ luật dân sự hiện đại đầu tiên của thế giới</li>
+<li>Ông là người làm rung chuyển chế độ Phong Kiến ở Châu Âu (một thường dân mà dám lên làm vua của một nước )</li>
+<li>Ông là người tạo ra chế độ hành chính hiệu quả từ Trung Ương đến địa phương</li>
+<li>Ông là người phục hồi lại Paris, mang Paris trở thành kinh đô của thời trang văn hoá của châu Âu (để đến bây giờ vẫn còn là quốc gia tiên phong trong lĩnh vực thời trang và xa xỉ  ) </li>
+</ul>
+<p>Về mục tiêu cuộc đời, <strong>Napoleon làm mọi thứ đều cho Pháp</strong>, đơn cử như việc khi đang chinh chiến ở Ai Cập nhưng nghe tin chính phủ quyết định kí hoà đàm cắt lại những lãnh thổ ở Ý mà Napoleon đã giành được, ông lập tức lên tàu trở về châu Âu để làm cho ra lẽ.
+Napoleon không bao giờ chịu dừng lại, nên việc mang chiến tranh tới nước Nga cũng là bắt đầu cho điểm suy tàn của ông, à mà có lẽ nên nói lại 1 tí về Josephine. Bà này thì đúng là kiểu phụ nữ có tiền mà chồng đi chinh chiến xa, lúc nào cũng có tình nhân vây quanh, nhưng tới lúc Napoleon đòi li dị vì bà không thể đẻ được cho ông đứa con nào, bà đã khóc lóc suốt 2 ngày liền cho tới khi được đưa ra khỏi cung điện Tuileries. Chẳng phải nói, Napoleon cũng đã cắt đi sợi dây liên kết với thần May mắn của mình.</p>
+<p>Trong quan hệ với các tướng lĩnh, Napoleon cũng được xem là có số <strong>sát hữu</strong>  khi lần lượt những tướng quân và là bạn thân nhất của ông đều qua đời trên chiến trận : </p>
+<ul>
+<li>Jean Lannes : đây có thể gọi là người bạn thân thiết nhất của Napoleon, một vị chỉ huy kỵ binh tài năng thật sự, nhưng mất đi quá sớm trong trận Aspern-Eslings, nếu Lannes không qua đời sớm, thì chiến dịch của Napoleon ở Nga có thể thành công thay vì thất bại sml. </li>
+<li>Michel Ney: đây cũng là một trong những vị tướng được mệnh danh <em>the bravest of the brave</em>, dù không phải là không có mâu thuẫn với Napoleon, nhưng khi Napoleon trở về từ Elba, ông này đã theo phò tá và khi bị thua trong trận Waterloo, ông có một câu nói khá bất hủ : <em>”I’m French, and I will remain French”</em>. (Ông có quốc tịch Phổ, nếu ông nhận ông là người Phổ thì sẽ không bị xử tử)</li>
+</ul>
+<p>Nói về vợ thì Napoleon có 2 vợ, một là Josephine và người thứ 2 là bà Marie Louise (Duchess of Parma).
+Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là một công chúa, thích được quan tâm và chăm sóc. Có một đoạn trong sách kể khi Napoleon đang tham gia chiến dịch ở Nga, do đường tiếp vận bị cắt đứt nên không thể viết thư về cho Marie, bà này liền hỏi, <em>”Không biết chàng đã có ai ngoài kia hay sao mà lâu rồi không biên thư cho ta”</em> . Và chẳng mấy chốc sau khi Napoleon bị đày đi Elba, bà ấy đã sa vào vòng tay ái tình của một người khác và chưa bao giờ đến Elba để thăm chồng như lời cuối trong thư đã hứa.</p>
+<p>Có một bức tranh mô tả cảnh Napoleon chia tay đội cận vệ của ông, nói chung là mình thấy đội này rất cool và cũng rất là trung thành với Napoleon. Đây là đội quân duy nhất mà có thể phàn nàn về tất cả mọi điều, từ quân trang đến chiến dịch, chỗ cắm trại và thậm chí là cả hoàng đế. Mới nghe thì có vẻ giống vụ kiêu binh của vua Lê chúa Trịnh nhưng đội quân này lại không hề có cách ứng xử như kiêu binh. Họ cực kì tuân thủ kỷ luật, và cực kì trung thành với Napoleon. Đến nỗi khi mà cháu của ông là Louis Napoleon (tức Napoleon đệ tam ) lên, những người lính nằm trong đội cận vệ này đã mặc lại quân phục và tham gia diễu hành. Tất nhiên, cận vệ của Napoleon đệ tam thì thua xa đệ nhất.
+<img src="/assets/img/napoleon-good-bye-old-guard.jpeg" alt="old-guard" /></p>
+<p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/nmap-for-check-ssl-tls</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/nmap-for-check-ssl-tls" />
+    <title>Dùng nmap để check ssl và tls</title>
+    <published>2019-03-18T00:00:00+00:00</published>
+    <updated>2019-03-18T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Hôm nay mình được assign một task liên quan đến dùng check ssl, tls
+Thật ra original là từ cái này CVE-2016-2183
+Rất không may là nó dính lỗi &lt;code&gt;Sweet32&lt;/code&gt; nên mình phải bỏ nó ra khỏi cipher suite trong......</summary>
+    <content type="html"><![CDATA[
+        <h2>Mở đầu</h2>
+<p>Hôm nay mình được assign một task liên quan đến dùng check ssl, tls
+Thật ra original là từ cái này <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183">CVE-2016-2183</a>
+Rất không may là nó dính lỗi <code>Sweet32</code> nên mình phải bỏ nó ra khỏi cipher suite trong Apache. Đây là suy nghĩ của mình</p>
+<ul>
+<li>Check list cipher suite đang được enable bởi server hiện tại</li>
+<li>Bỏ settings của 3DES</li>
+<li>Check lại list cịper suite của server mất đi 3 cái cipher đang weak chưa</li>
+</ul>
+<h2>Check list cipher suite đang được enable</h2>
+<p>Mình dùng <code>nmap</code> để check thử trang blog của mình xem như nào <code>blog.khanh.page</code></p>
+<pre><code> nmap --script ssl-enum-ciphers -p 443 blog.khanh.page
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers:
+|   TLSv1.1:
+|     ciphers:
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|     compressors:
+|       NULL
+|     cipher preference: server
+|   TLSv1.2:
+|     ciphers:
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|     compressors:
+|       NULL
+|     cipher preference: server
+|_  least strength: A
+</code></pre>
+<p>Ok ngon quá. Trang của mình có strength được đánh giá loại <code>A</code> này.
+Thử với một trang khác của công ty xem nào (cái này mình không public được)</p>
+<pre><code>PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (dh 2048) - A
+|       TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 2048) - A
+|       TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 2048) - A
+|       TLS_DHE_RSA_WITH_SEED_CBC_SHA (dh 2048) - A
+|       TLS_RSA_WITH_SEED_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (secp256r1) - C
+|       TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 2048) - C
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_IDEA_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       64-bit block cipher IDEA vulnerable to SWEET32 attack
+|_  least strength: C
+</code></pre>
+<p>Ẹc, dính chấu rồi. Bị đánh giá loại <code>C</code> luôn.
+Bây giờ mình đi fix cái lỗi này thử nhé.</p>
+<h2>Bỏ settings của 3DES</h2>
+<p>Bỏ đi settings của 3DES thì cũng khá đơn giản. ở đây mình sẽ hướng dẫn cho <code>nginx</code> cũng như <code>apache</code></p>
+<h3>Nginx:</h3>
+<p>Với <code>nginx</code> thì chúng ta settings cipher trong vhost của từng application. Chẳng hạn mình đang có một file như bên dưới </p>
+<pre><code>server {
+    listen 443 ssl http2;
+    server_name ss_nps.test www.ss_nps.test *.ss_nps.test;
+    root /;
+    ssl_ciphers AES128-SHA:AES256-SHA:RC4-SHA:DES-CBC3-SHA:RC4-MD5;
+    charset utf-8;
+    client_max_body_size 128M;
+
+    location /41c270e4-5535-4daa-b23e-c269744c2f45/ {
+        internal;
+        alias /;
+        try_files $uri $uri/;
+    }
+    ...
+}</code></pre>
+<p>Hiên tại ciphers của bạn này đang bị lỗi ở :</p>
+<pre><code>|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity</code></pre>
+<p>Tạm thời chúng ta chỉ đối ứng lỗi <code>3DES</code> trước bằng cách thêm <code>!3DES</code> vào cuối dòng <code>ssl_ciphers</code> như bên dưới </p>
+<pre><code>ssl_ciphers AES128-SHA:AES256-SHA:RC4-SHA:DES-CBC3-SHA:RC4-MD5:!3DES;</code></pre>
+<p>Kiểm tra lại bằng <code>nmap</code></p>
+<pre><code>nmap --script ssl-enum-ciphers -p 443 ss_nps.test
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-03-18 16:06 JST
+Nmap scan report for ss_nps.test (127.0.0.1)
+Host is up (0.00051s latency).
+rDNS record for 127.0.0.1: localhost
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers:
+|   TLSv1.0:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.1:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.2:
+|     ciphers:
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|     compressors:
+|       NULL
+|     cipher preference: client
+|     warnings:
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|_  least strength: C
+</code></pre>
+<p>Ngon lành. Lỗi <code>Sweet32</code> đã biến mất</p>
+<h3>Apache</h3>
+<p>Cũng tương tự <code>nginx</code> ta có thể chỉnh trong file vhost của apache, bằng cách thêm đoạn <code>!3DES</code> như bên dưới </p>
+<pre><code>SSLCipherSuite DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!3DES</code></pre>
+<h2>Check lại list cịper suite của server mất đi 3 cái cipher đang weak chưa</h2>
+<p>Với việc sử dụng <code>nmap</code> chúng ta có thể kiểm tra được các lỗi liên quan đến <code>ssl</code>, <code>tls</code> của server.
+Tuy nhiên việc disable các ciphers trên có thể dẫn đến 1 số tình huống ví dụ như những browser quá cũ khi access vào sẽ không thể get data do chúng chỉ hỗ trợ cipher DES (ví dụ như: WinXP IE6, IE8).</p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/php-serverless-with-bref</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/php-serverless-with-bref" />
+    <title>Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
+    <published>2019-03-04T00:00:00+00:00</published>
+    <updated>2019-03-04T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) Is it......</summary>
+    <content type="html"><![CDATA[
+        <h2>Mở đầu</h2>
+<p>Hôm nay mình rất là hứng thú khi AWS bắt đầu roll out layer cho serverless. Tại sao vậy ? Bởi vì khi roll out layer cho serverless, chúng ta có thể chạy bất kì ngôn ngữ lập trình nào trên lambda service :) <strong>Is it cool?</strong></p>
+<p>Lambda với layer được giới thiệu vào cuối tháng 11/2018 bao gồm các feature như bên dưới </p>
+<ul>
+<li><strong>Lambda Layers</strong>: một dịch vụ giúp chúng ta có thể chia sẻ những đoạn code common, hoặc runtime, hoặc data. Mỗi một layers, chúng ta có thể versioning chúng. Sẽ có một vài lợi ích khi sử dụng <strong>Lambda Layers</strong>:
+<ul>
+<li>Tách lớp</li>
+<li>Giúp function code ít hơn, tập trung vào tính năng hơn </li>
+<li>Tăng tốc deployment (do các libraries cũng như runtime đã được deploy sẵn)</li>
+</ul></li>
+<li><strong>Lambda Runtime API</strong>: Đây là một bộ API do AWS cung cấp (Http API) để từng <em>custom layers</em> có thể nhận events từ Lambda và gửi response lại cho Lambda, nói cách khác để các layers trong Lambda tương tác với nhau, chúng ta có thể sử dụng Lambda Layers</li>
+</ul>
+<h2>Bref là gì</h2>
+<p>Bref là một bộ công cụ được cài đặt thông qua <code>Composer</code> (quá tuyệt vời), giúp chúng ta có thể deploy PHP applications lên AWS Lambda.
+Vậy thì Bref sẽ hỗ trợ chúng ta những gì ?</p>
+<ul>
+<li>PHP Runtimes cho AWS Lambda</li>
+<li>Công cụ để Deploy lên aws lambda </li>
+<li>Intergrate với các PHP Framework (vâng, chạy <code>Laravel</code> or <code>Symfony</code> trên AWS Lambda là hoàn toàn khả thi và đơn giản hơn trước nhiều)</li>
+</ul>
+<p>Bref sử dụng <strong>SAM</strong> để deploy serverless application. AWS đã có tài liệu rất rõ ràng về SAM ở đây.</p>
+<h3>Bref hoạt động như thế nào</h3>
+<p>Hai thành phần chính của Bref bao gồm Stacks và SAM</p>
+<h4>Stacks</h4>
+<p>Thật ra khi deploy một application thì sẽ có 1 cloudformation stack được tạo ra, bao gồm:</p>
+<ul>
+<li>lambda functions</li>
+<li>S3 bucket</li>
+<li>databases</li>
+</ul>
+<p>Mỗi khi các bạn deploy thì toàn bộ stacks sẽ được update và khi xoá stack thì toàn bộ các component của nó cũng sẽ bị xoá. Sạch và đẹp nhỉ </p>
+<h4>SAM</h4>
+<p>SAM cung cấp cho chúng ta một format config đơn giản để có thể deploy một serverless application dễ dàng hơn. (gọi là dễ dàng nhưng chắc cũng cần vài bước chứ không chỉ bằng một nút bấm được)
+Deploying sử dụng SAM thì bao gồm 3 steps</p>
+<ul>
+<li>Upload code lên S3 bucket</li>
+<li>Generate một file S3 Config template</li>
+<li>Deploy Cloudformation stack</li>
+</ul>
+<h3>Deploy với SAM</h3>
+<h4>Create deployment bucket</h4>
+<p>Đầu tiên chúng ta cần tạo deployment bucket (bucket này sẽ được quản lý bởi SAM, do đó chúng ta không được upload các file khác vào trong bucket này )</p>
+<pre><code>aws s3 mb s3://&lt;bucket-name&gt;</code></pre>
+<h4>Create Deployment bucket</h4>
+<p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/my-first-blog-post</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-first-blog-post" />
+    <title>Tôi đã start cái blog này như thế nào ?</title>
+    <published>2019-03-01T00:00:00+00:00</published>
+    <updated>2019-03-01T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: https://nech.info
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này......</summary>
+    <content type="html"><![CDATA[
+        <p>Ok. Nói cho đơn giản thì tôi đang có một cái blog ở đây: <a href="https://nech.info">https://nech.info</a>
+Nhưng nó chạy trên wordpress, mà wordpress thì kiểu gì cũng phải tốn một con server cho nó.
+Nên mình đã chuyển qua dùng cái này</p>
+<p><a href="https://jigsaw.tighten.co/">https://jigsaw.tighten.co/</a></p>
+<h2>Đôi điều về jigsaw</h2>
+<p>Jigsaw là một tools để generate html static pages, tạm dịch là trang tĩnh HTML, mà cái gì là static thì nhanh nhất rồi đấy.</p>
+<h2>Cấu trúc server</h2>
+<p>Trang web này mình tạo bao gồm các components sau:</p>
+<ol>
+<li>S3: tất cả những bài post này đều được viết dưới dạng markdown, và build thành static HTML rồi up lên S3</li>
+<li>CloudFront: Dùng để cache resources vào các Edges để tăng tốc độ load trang </li>
+<li>Goofys: Dùng để mount thư mục build lên S3</li>
+</ol>
+<p><img src="/assets/img/blog.khanh.page.png" alt="infrastructure" /></p>
+<h2>Đôi điều suy nghĩ</h2>
+<p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
+</entry>
+            <entry>
+    <id>https://www.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
+    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
+    <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
+    <published>2019-03-01T00:00:00+00:00</published>
+    <updated>2019-03-01T00:00:00+00:00</updated>
+    <author>
+        <name>Khanh Nguyen</name>
+    </author>
+    <summary type="html">
+...</summary>
+    <content type="html"><![CDATA[
+        <h2>Opening</h2>
+<h2>Closing</h2>    ]]></content>
 </entry>
     </feed>
