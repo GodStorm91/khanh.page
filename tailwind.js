@@ -195,7 +195,7 @@ screens: {
 
 fonts: {
   'sans': [
-    'Nunito Sans',
+    'Inter',
     'system-ui',
     'BlinkMacSystemFont',
     '-apple-system',
@@ -222,6 +222,7 @@ fonts: {
     'serif',
   ],
   'mono': [
+    'JetBrains Mono',
     'Menlo',
     'Monaco',
     'Consolas',
