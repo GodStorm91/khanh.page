@@ -49,6 +49,8 @@ jobs:
 
       - name: Compile assets
         run: npm run production
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
