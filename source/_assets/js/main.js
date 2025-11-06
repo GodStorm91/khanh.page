@@ -5,6 +5,45 @@ window.Vue = require('vue');
 import Search from './components/Search.vue';
 import hljs from 'highlight.js/lib/highlight';
 
+// Theme switching functionality
+(function() {
+    const THEME_KEY = 'khanh-theme';
+
+    // Get theme based on browser time (6am-6pm = light, otherwise dark)
+    function getDefaultTheme() {
+        const hour = new Date().getHours();
+        return (hour >= 6 && hour < 18) ? 'light' : 'dark';
+    }
+
+    // Get current theme from localStorage or default based on time
+    function getTheme() {
+        const savedTheme = localStorage.getItem(THEME_KEY);
+        return savedTheme || getDefaultTheme();
+    }
+
+    // Apply theme to document
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(THEME_KEY, theme);
+    }
+
+    // Toggle between light and dark theme
+    function toggleTheme() {
+        const currentTheme = getTheme();
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        applyTheme(newTheme);
+        return newTheme;
+    }
+
+    // Initialize theme on page load
+    applyTheme(getTheme());
+
+    // Expose theme functions globally
+    window.themeToggle = toggleTheme;
+    window.getTheme = getTheme;
+    window.setTheme = applyTheme;
+})();
+
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
 hljs.registerLanguage('css', require('highlight.js/lib/languages/css'));

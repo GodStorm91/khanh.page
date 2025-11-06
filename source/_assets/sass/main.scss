@@ -1,6 +1,9 @@
 @tailwind preflight;
 @tailwind components;
 
+// Theme variables for light/dark mode
+@import 'theme';
+
 // Code syntax highlighting,
 // powered by https://highlightjs.org
 // Using Dracula theme for dark mode
