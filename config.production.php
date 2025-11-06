@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://www.khanh.page',
+    'baseUrl' => 'https://godstorm91.github.io/khanh.page',
     'production' => true,
 ];
