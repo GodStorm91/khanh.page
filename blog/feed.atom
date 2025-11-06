@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Khanh&#039;s Blog</title>
-    <link href="https://www.khanh.page" />
-    <link type="application/atom+xml" rel="self" href="https://www.khanh.page/blog/feed.atom" />
-    <updated>2025-11-06T06:20:17+00:00</updated>
-    <id>https://www.khanh.page/blog/feed.atom</id>
+    <link href="https://godstorm91.github.io/khanh.page" />
+    <link type="application/atom+xml" rel="self" href="https://godstorm91.github.io/khanh.page/blog/feed.atom" />
+    <updated>2025-11-06T06:28:29+00:00</updated>
+    <id>https://godstorm91.github.io/khanh.page/blog/feed.atom</id>
     <author>
         <name>Khanh Nguyen</name>
     </author>
                 <entry>
-    <id>https://www.khanh.page/blog/my-running-life-july-2020</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-july-2020" />
+    <id>https://godstorm91.github.io/khanh.page/blog/my-running-life-july-2020</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/my-running-life-july-2020" />
     <title>My Running Life  - July 2020</title>
     <published>2020-08-05T00:00:00+00:00</published>
     <updated>2020-08-05T00:00:00+00:00</updated>
@@ -61,8 +61,8 @@ Các bạn có thể xem clip về Công Nhậm bên dưới ( tôi có gặp C�
 <p><a href="https://gyazo.com/71f6bcda6aa07ea9a23244aa260b4ac5"><img src="https://i.gyazo.com/71f6bcda6aa07ea9a23244aa260b4ac5.jpg" alt="Image from Gyazo" /></a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/my-running-life-june-2020</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-june-2020" />
+    <id>https://godstorm91.github.io/khanh.page/blog/my-running-life-june-2020</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/my-running-life-june-2020" />
     <title>My Running Life  - June 2020</title>
     <published>2020-07-09T00:00:00+00:00</published>
     <updated>2020-07-09T00:00:00+00:00</updated>
@@ -102,8 +102,8 @@ Tháng 6, mình bước vào giai đoạn luyện tinh, để có thể chuẩn 
 <p><strong>Hành trinh vạn dặm bắt đầu từ bước chân đầu tiên</strong> (Lão Tử)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-cac-loi-trong-suy-nghi</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-cac-loi-trong-suy-nghi" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-cac-loi-trong-suy-nghi</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-cac-loi-trong-suy-nghi" />
     <title>Các lỗi trong suy nghĩ - quyết định</title>
     <published>2020-05-09T00:00:00+00:00</published>
     <updated>2020-05-09T00:00:00+00:00</updated>
@@ -227,8 +227,8 @@ Chẳng hạn, A tin rằng biến đổi khí hậu là một vấn đề nghi�
 </ul>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/my-running-life-march-2020</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-march-2020" />
+    <id>https://godstorm91.github.io/khanh.page/blog/my-running-life-march-2020</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/my-running-life-march-2020" />
     <title>My Running Life  - March 2020 -</title>
     <published>2020-04-07T00:00:00+00:00</published>
     <updated>2020-04-07T00:00:00+00:00</updated>
@@ -283,8 +283,8 @@ Có năm con ếch ngồi trên một khúc gỗ. Bốn con quyết định nh�
 (trích: 15 nguyên tắc vàng về phát triển bản thân)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/my-running-life-april-2020</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-running-life-april-2020" />
+    <id>https://godstorm91.github.io/khanh.page/blog/my-running-life-april-2020</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/my-running-life-april-2020" />
     <title>My Running Life  - March 2020 -</title>
     <published>2020-04-07T00:00:00+00:00</published>
     <updated>2020-04-07T00:00:00+00:00</updated>
@@ -299,8 +299,8 @@ Tháng 4 năm 2020, do ảnh hưởng của corona virus, nước Nhật đang p
 Ngoài ra ngày 31 tháng 3 D21 và mình đã tham gia giải chạy ảo VRace của VNExpress tổ chức. Bọn mình đăng kí chạy 100km trong 3 tuần (ban đầu mình cho rằng 100km chắc là vừa đủ) tuy nhiên giờ lại thấy 100km là hơi ít :D, bọn mình đã đạt được 100km vào đầu tuần thứ 2, </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-atomic-habits</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-atomic-habits" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-atomic-habits</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-atomic-habits" />
     <title>What I read - Atomic Habits , an easy &amp; proven way to build good habits and break bad ones</title>
     <published>2020-03-14T00:00:00+00:00</published>
     <updated>2020-03-14T00:00:00+00:00</updated>
@@ -350,8 +350,8 @@ Quyển sách này có các......</summary>
 <p>Quyển sách đề cập rất nhiều phương pháp để thực hiện - review lại những thói quen mà các bạn có thể download các template trên trang web của tác giả: <a href="https://www.jamesclear.com">jamesclear.com</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-run-multiple-php-fpm-on-amazon-linux" />
     <title>TIL - Run multiple php-fpm instances on centos</title>
     <published>2019-12-23T00:00:00+00:00</published>
     <updated>2019-12-23T00:00:00+00:00</updated>
@@ -380,8 +380,8 @@ So what can you do in this situation ?</p>
 <p>Just uncomment the third line, then everything is OK.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/others-my-dev-day</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/others-my-dev-day" />
+    <id>https://godstorm91.github.io/khanh.page/blog/others-my-dev-day</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/others-my-dev-day" />
     <title>Others - My Dev day</title>
     <published>2019-11-15T00:00:00+00:00</published>
     <updated>2019-11-15T00:00:00+00:00</updated>
@@ -395,8 +395,8 @@ I also work at a startup called &amp;quot;AskVietnamese&amp;quot;,:x and we are 
 I also work at a startup called &quot;AskVietnamese&quot;,:x and we are working hard to make our first release this</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-install-apache-2441-on-amazon-linux</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-install-apache-2441-on-amazon-linux" />
     <title>TIPS - How to install Apache 2.4.41 on Amazon Linux AMI</title>
     <published>2019-10-21T00:00:00+00:00</published>
     <updated>2019-10-21T00:00:00+00:00</updated>
@@ -488,8 +488,8 @@ make install</code></pre>
 <p>Apache 2.4.41 fixed some CVEs that has been noted from 2.4.39, so it is advised that you guys should update to this version asap.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-install-multiple-php-versions-on-centos</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-install-multiple-php-versions-on-centos" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -589,8 +589,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-install-mcrypt-on-php73</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-mcrypt-on-php73" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-install-mcrypt-on-php73</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-install-mcrypt-on-php73" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -690,8 +690,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-install-mysql57-centos-6</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-install-mysql57-centos-6" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-install-mysql57-centos-6</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-install-mysql57-centos-6" />
     <title>TIPS - How to install multiple PHP versions on Centos 7 and config PHP versions base on Directory</title>
     <published>2019-10-18T00:00:00+00:00</published>
     <updated>2019-10-18T00:00:00+00:00</updated>
@@ -791,8 +791,8 @@ $ /etc/init.d/php-fpm-7.1 start</code></pre>
 With the help of <code>php-fpm</code> we can test multiple versions on the same servers. My next post is showing how to use docker to complete this task and compare these two methods.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-automate-backup-ebs-in-ec2" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-automate-backup-ebs-in-ec2</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-automate-backup-ebs-in-ec2" />
     <title>TIL - Backup EC2 snapshot by using AWS DLM</title>
     <published>2019-09-05T00:00:00+00:00</published>
     <updated>2019-09-05T00:00:00+00:00</updated>
@@ -830,8 +830,8 @@ You can read documents about AWS DLM here (Link)[<a href="https://docs.aws.amazo
 <p>If we don't backup our data regularly. We will have a lot of mess.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-automation-cherry-picking-process</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-automation-cherry-picking-process" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-automation-cherry-picking-process</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-automation-cherry-picking-process" />
     <title>TIL - Automation cherry-picking process</title>
     <published>2019-08-19T00:00:00+00:00</published>
     <updated>2019-08-19T00:00:00+00:00</updated>
@@ -903,8 +903,8 @@ echo "Maybe you want to rebase: git rebase -i HEAD~${COUNT}"</code></pre>
 <p><a href="https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh">https://github.com/Weltraumschaf/shell-scripts/blob/master/src/git-cherry-pick-list.sh</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-rails-server-in-docker-not-start</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-rails-server-in-docker-not-start" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-rails-server-in-docker-not-start</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-rails-server-in-docker-not-start" />
     <title>TIL - Rails server not start after turn off docker</title>
     <published>2019-08-08T00:00:00+00:00</published>
     <updated>2019-08-08T00:00:00+00:00</updated>
@@ -949,8 +949,8 @@ With the recent update of docker, we have seen that this problem has been fixed 
 <a href="https://github.com/docker/compose/issues/1393">https://github.com/docker/compose/issues/1393</a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-norwegian-wood</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-norwegian-wood" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-norwegian-wood</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-norwegian-wood" />
     <title>What I read - Norwegian Wood</title>
     <published>2019-07-13T00:00:00+00:00</published>
     <updated>2019-07-13T00:00:00+00:00</updated>
@@ -981,8 +981,8 @@ Midori, một cô gái tuy đơn giản, nhưng lại cực kì sâu sắc (tạ
 <p>Mình nghĩ tiếp theo sẽ là quyển <strong>Kafka bên bờ biển</strong>, nhưng ai biết được có thể sẽ là một chọn lựa khác.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/tips-fix-fuelphp-email-header-broken</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/tips-fix-fuelphp-email-header-broken" />
+    <id>https://godstorm91.github.io/khanh.page/blog/tips-fix-fuelphp-email-header-broken</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/tips-fix-fuelphp-email-header-broken" />
     <title>TIPS - How to fix header broken in FuelPHP</title>
     <published>2019-06-21T00:00:00+00:00</published>
     <updated>2019-06-21T00:00:00+00:00</updated>
@@ -1049,8 +1049,8 @@ return array(
 <p>Don't have any special thoughts about this problem. I'm considering to move away from FuelPHP to another framework.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-404-redirect-in-s3</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-404-redirect-in-s3" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-404-redirect-in-s3</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-404-redirect-in-s3" />
     <title>TIL - 404 Redirect in S3 static blog post</title>
     <published>2019-06-20T00:00:00+00:00</published>
     <updated>2019-06-20T00:00:00+00:00</updated>
@@ -1111,8 +1111,8 @@ If you use CDN, you need to clear the cache (or request invalidation as in AWS )
 (Please wait about 4,5 minutes for changes completely reflected all edge locations.)</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-beginner-mind-zen-beginner&#039;s-mind" />
     <title>What I read - Zen Mind, Beginner&#039;s Mind Informal Talks on Zen Meditation and Practice</title>
     <published>2019-05-09T00:00:00+00:00</published>
     <updated>2019-05-09T00:00:00+00:00</updated>
@@ -1153,8 +1153,8 @@ If you use CDN, you need to clear the cache (or request invalidation as in AWS )
 <p>Mình đang đọc quyển <a href="https://www.goodreads.com/book/show/38526454-enlightment-now">Enlightment Now</a> và sẽ lại review sau khi hoàn tất</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-genghis-khan</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-genghis-khan" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-genghis-khan</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-genghis-khan" />
     <title>What I read - Genghis Khan and the Making of the Modern World</title>
     <published>2019-05-01T00:00:00+00:00</published>
     <updated>2019-05-01T00:00:00+00:00</updated>
@@ -1238,8 +1238,8 @@ Tất nhiên là mọi thứ đều có lý do của nó cả. </p>
 <p>Mình đã đọc quyển này, tuy nhiên chưa có review, <a href="https://www.goodreads.com/book/show/402843.Zen_Mind_Beginner_s_Mind">Zen Mind Beginner's Mind</a> do vẫn còn hơi mông lung vài chỗ. Chắc sẽ có review sớm thôi, khi mình có thời gian.</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/til-mongodb-with-fuelphp</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/til-mongodb-with-fuelphp" />
+    <id>https://godstorm91.github.io/khanh.page/blog/til-mongodb-with-fuelphp</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/til-mongodb-with-fuelphp" />
     <title>TIL - MongoDB with FuelPHP (PHP7.x)</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1267,8 +1267,8 @@ To integrate the framework with our current blogpost</p>
 <pre><code></code></pre>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-the-hard-thing-about-hard-thing" />
     <title>What I read - The Hard Thing About Hard Things - Building a Business When There Are No Easy Answers</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1335,8 +1335,8 @@ Và, không ai sinh ra là một CEO cả, CEO là một ngành không thuộc v
 <em>CEO are made not born</em>. </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/what-i-read-napoleon-a-life</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/what-i-read-napoleon-a-life" />
+    <id>https://godstorm91.github.io/khanh.page/blog/what-i-read-napoleon-a-life</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/what-i-read-napoleon-a-life" />
     <title>What I read - Napoleon</title>
     <published>2019-03-19T00:00:00+00:00</published>
     <updated>2019-03-19T00:00:00+00:00</updated>
@@ -1378,8 +1378,8 @@ Bà vợ đầu thì chững chạc , còn bà vợ 2 thì đúng kiểu là m�
 <p>Napoleon sau khi bị đày ra St Helena, sống cuộc đời bình dị, học tiếng Anh, ông không được đọc nhiều về châu Âu cũng như Pháp quốc của mình, nhưng châu Âu thì đã mãi mãi thay đổi, chế độ phong kiến lung lay tận gốc rễ, nền cộng hoà nhen nhóm ở khắp các nơi. Napoleon trút hơi thở cuối cùng ở St Helena lúc 5.5.1821 ( theo nghiên cứu sau này cho thấy ông đã bị nhiễm độc asen) , trước khi chết ông nói câu sau : “Pháp, quân đội, tướng lĩnh, và Josephine” đó là những thứ quan trọng nhất với ông trong cuộc đời, Quốc Gia, Binh Nghiệp và Gia đình.  </p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/nmap-for-check-ssl-tls</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/nmap-for-check-ssl-tls" />
+    <id>https://godstorm91.github.io/khanh.page/blog/nmap-for-check-ssl-tls</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/nmap-for-check-ssl-tls" />
     <title>Dùng nmap để check ssl và tls</title>
     <published>2019-03-18T00:00:00+00:00</published>
     <updated>2019-03-18T00:00:00+00:00</updated>
@@ -1609,8 +1609,8 @@ PORT    STATE SERVICE
 Tuy nhiên việc disable các ciphers trên có thể dẫn đến 1 số tình huống ví dụ như những browser quá cũ khi access vào sẽ không thể get data do chúng chỉ hỗ trợ cipher DES (ví dụ như: WinXP IE6, IE8).</p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/php-serverless-with-bref</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/php-serverless-with-bref" />
+    <id>https://godstorm91.github.io/khanh.page/blog/php-serverless-with-bref</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/php-serverless-with-bref" />
     <title>Bref.sh, một tools giúp chạy PHP trên AWS Lambda</title>
     <published>2019-03-04T00:00:00+00:00</published>
     <updated>2019-03-04T00:00:00+00:00</updated>
@@ -1667,8 +1667,8 @@ Deploying sử dụng SAM thì bao gồm 3 steps</p>
 <p><a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/">Lambda Layer Release </a></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/my-first-blog-post</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/my-first-blog-post" />
+    <id>https://godstorm91.github.io/khanh.page/blog/my-first-blog-post</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/my-first-blog-post" />
     <title>Tôi đã start cái blog này như thế nào ?</title>
     <published>2019-03-01T00:00:00+00:00</published>
     <updated>2019-03-01T00:00:00+00:00</updated>
@@ -1697,8 +1697,8 @@ Nên mình đã chuyển qua dùng cái này</p>
 <p>Mình luôn muốn làm một cái gì đó cho mọi người, ít nhất là có thể giúp họ trong việc cảm thấy được <strong>cảm hứng</strong>. Mình đã được rất nhiều những người xung quanh truyền cảm hứng, và bây giờ mình muốn <em>truyền lại một cho các bạn khác nữa</em></p>    ]]></content>
 </entry>
             <entry>
-    <id>https://www.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
-    <link type="text/html" rel="alternate" href="https://www.khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
+    <id>https://godstorm91.github.io/khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1</id>
+    <link type="text/html" rel="alternate" href="https://godstorm91.github.io/khanh.page/blog/series-stop-cherry-picking-and-start-merging-part-1" />
     <title>Chấm dứt chery picking và bắt đầu merging - Phần 1</title>
     <published>2019-03-01T00:00:00+00:00</published>
     <updated>2019-03-01T00:00:00+00:00</updated>
